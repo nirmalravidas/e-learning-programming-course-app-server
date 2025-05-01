@@ -1,0 +1,83 @@
+{
+  "courses": [
+    {
+      "courseTitle": "Java Programming for Beginners",
+      "courseDescription": "Learn Java from scratch...",
+      "language": "Java",
+      "modules": [
+        {
+          "moduleTitle": "Introduction to Java",
+          "lessons": [
+            {
+              "title": "What is Java?",
+              "language": "java",
+              "content": "Java is a high-level, object-oriented programming language...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
+            },
+            {
+              "title": "How Java Works (JVM, JRE, JDK)",
+              "language": "java",
+              "content": "Java runs on the JVM (Java Virtual Machine) using the JRE and is developed using the JDK...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
+            },
+            {
+              "title": "Installing Java and Setting Up Environment",
+              "language": "java",
+              "content": "To install Java, download the JDK and set up the environment variables..."
+            }
+          ]
+        },
+        {
+          "moduleTitle": "Basics of Java",
+          "lessons": [
+            {
+              "title": "Java Syntax and Structure",
+              "language": "java",
+              "content": "Java syntax includes class declarations, methods, and more..."
+            },
+            {
+              "title": "Data Types in Java",
+              "language": "java",
+              "content": "Java supports primitive and reference data types..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "courseTitle": "Python Programming for Beginners",
+      "courseDescription": "Learn Python from scratch...",
+      "language": "Python",
+      "modules": [
+        {
+          "moduleTitle": "Introduction to Python",
+          "lessons": [
+            {
+              "title": "What is Python?",
+              "language": "python",
+              "content": "Python is a powerful, easy-to-learn programming language..."
+            },
+            {
+              "title": "Installing Python and Setup",
+              "language": "python",
+              "content": "You can download Python from python.org and install it easily..."
+            }
+          ]
+        },
+        {
+          "moduleTitle": "Python Basics",
+          "lessons": [
+            {
+              "title": "Python Syntax and Indentation",
+              "language": "python",
+              "content": "Python uses indentation instead of braces to define blocks..."
+            },
+            {
+              "title": "Variables in Python",
+              "language": "python",
+              "content": "Variables in Python are dynamically typed..."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
