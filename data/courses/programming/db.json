@@ -1,9 +1,12 @@
 {
   "courses": [
     {
+      "id": "C1",
       "courseTitle": "Java Programming for Beginners",
       "courseDescription": "Learn Java from scratch...",
       "language": "Java",
+      "type": "course",
+      "index": "0",
       "modules": [
         {
           "moduleTitle": "Introduction to Java",
@@ -43,9 +46,12 @@
       ]
     },
     {
+      "id": "C2",
       "courseTitle": "Python Programming for Beginners",
       "courseDescription": "Learn Python from scratch...",
       "language": "Python",
+      "type": "course",
+      "index": "1",
       "modules": [
         {
           "moduleTitle": "Introduction to Python",
