@@ -6,6 +6,7 @@
       "courseDescription": "Learn Java from scratch...",
       "language": "Java",
       "type": "course",
+      "pricingType": "Free",
       "index": "0",
       "modules": [
         {
@@ -51,6 +52,7 @@
       "courseDescription": "Learn Python from scratch...",
       "language": "Python",
       "type": "course",
+      "pricingType": "Free",
       "index": "1",
       "modules": [
         {
