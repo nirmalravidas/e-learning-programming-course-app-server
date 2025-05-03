@@ -11,19 +11,23 @@
       "index": "0",
       "modules": [
         {
+          "id": "M1-C1",
           "moduleTitle": "Introduction to Java",
           "lessons": [
             {
+              "id": "L1-M1-C1",
               "title": "What is Java?",
               "language": "java",
               "content": "Java is a high-level, object-oriented programming language...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
             },
             {
+              "id": "L2-M1-C1",
               "title": "How Java Works (JVM, JRE, JDK)",
               "language": "java",
               "content": "Java runs on the JVM (Java Virtual Machine) using the JRE and is developed using the JDK...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
             },
             {
+              "id": "L3-M1-C1",
               "title": "Installing Java and Setting Up Environment",
               "language": "java",
               "content": "To install Java, download the JDK and set up the environment variables..."
@@ -31,14 +35,17 @@
           ]
         },
         {
+          "id": "M2-C1",
           "moduleTitle": "Basics of Java",
           "lessons": [
             {
+              "id": "L1-M2-c1",
               "title": "Java Syntax and Structure",
               "language": "java",
               "content": "Java syntax includes class declarations, methods, and more..."
             },
             {
+              "id": "L2-M2-c1",
               "title": "Data Types in Java",
               "language": "java",
               "content": "Java supports primitive and reference data types..."
@@ -58,14 +65,17 @@
       "index": "1",
       "modules": [
         {
+          "id": "M1-C2",
           "moduleTitle": "Introduction to Python",
           "lessons": [
             {
+              "id": "L1-M1-C2",
               "title": "What is Python?",
               "language": "python",
               "content": "Python is a powerful, easy-to-learn programming language..."
             },
             {
+              "id": "L2-M1-C2",
               "title": "Installing Python and Setup",
               "language": "python",
               "content": "You can download Python from python.org and install it easily..."
@@ -73,14 +83,17 @@
           ]
         },
         {
+          "id": "M2-C2",
           "moduleTitle": "Python Basics",
           "lessons": [
             {
+              "id": "L1-M2-C2",
               "title": "Python Syntax and Indentation",
               "language": "python",
               "content": "Python uses indentation instead of braces to define blocks..."
             },
             {
+              "id": "L2-M2-C2",
               "title": "Variables in Python",
               "language": "python",
               "content": "Variables in Python are dynamically typed..."
