@@ -6,6 +6,7 @@
       "courseDescription": "Learn Java from scratch...",
       "language": "Java",
       "type": "course",
+      "courseBannerImageLink" : "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/java/java-programming-for-beginner.png",
       "pricingType": "Free",
       "index": "0",
       "modules": [
@@ -52,6 +53,7 @@
       "courseDescription": "Learn Python from scratch...",
       "language": "Python",
       "type": "course",
+      "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
       "pricingType": "Free",
       "index": "1",
       "modules": [
