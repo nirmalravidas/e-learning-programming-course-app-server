@@ -26,7 +26,7 @@
               "id": "L2-M1-C1",
               "title": "How Java Works (JVM, JRE, JDK)",
               "language": "java",
-              "content": "Java runs on the JVM (Java Virtual Machine) using the JRE and is developed using the JDK...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
+              "content": "Java runs on the **JVM (Java Virtual Machine)** using the JRE and is developed using the JDK...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
             },
             {
               "id": "L3-M1-C1",
