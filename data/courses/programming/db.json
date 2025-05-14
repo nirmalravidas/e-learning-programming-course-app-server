@@ -1,0 +1,311 @@
+{
+  "courses": [
+    {
+      "id": "C1",
+      "index": 0,
+      "type": "course",
+      "language": "Java",
+      "favourite": false,
+      "slug": "java-programming-for-beginners",
+      "courseTitle": "Java Programming for Beginners",
+      "courseDescription": "Learn Java from scratch...",
+      "courseBannerImageLink" : "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/java/java-programming-for-beginner.png",
+      "pricingType": "Free",
+      "modules": [
+        {
+          "id": "M1-C1",
+          "moduleTitle": "Introduction to Java",
+          "topics": [
+            {
+              "id": "L1-M1-C1",
+              "title": "What is Java?",
+              "language": "java",
+              "content": "Java is a high-level, object-oriented programming language...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
+            },
+            {
+              "id": "L2-M1-C1",
+              "title": "How Java Works (JVM, JRE, JDK)",
+              "language": "java",
+              "content": "Java runs on the **JVM (Java Virtual Machine)** using the JRE and is developed using the JDK...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
+            },
+            {
+              "id": "L3-M1-C1",
+              "title": "Installing Java and Setting Up Environment",
+              "language": "java",
+              "content": "To install Java, download the JDK and set up the environment variables..--- To install Java, download the **JDK** and set up the \n\n --------------------------- \n\n\n environment variables..."
+            }
+          ]
+        },
+        {
+          "id": "M2-C1",
+          "moduleTitle": "Basics of Java",
+          "topics": [
+            {
+              "id": "L1-M2-c1",
+              "title": "Java Syntax and Structure",
+              "language": "java",
+              "content": "Java syntax includes class declarations, methods, and more..."
+            },
+            {
+              "id": "L2-M2-c1",
+              "title": "Data Types in Java",
+              "language": "java",
+              "content": "Java supports primitive and reference data types..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "index": 1,
+      "favourite": false,
+      "slug": "python-programming-for-beginners",
+      "courseTitle": "Python Programming for Beginners",
+      "courseDescription": "Learn Python from scratch...",
+      "language": "Python",
+      "type": "course",
+      "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+      "pricingType": "Free",
+      "modules": [
+        {
+          "id": "M1-C2",
+          "moduleTitle": "Introduction to Python",
+          "topics": [
+            {
+              "id": "L1-M1-C2",
+              "title": "What is Python?",
+              "language": "python",
+              "content": "Python is a powerful, easy-to-learn programming language..."
+            },
+            {
+              "id": "L2-M1-C2",
+              "title": "Installing Python and Setup",
+              "language": "python",
+              "content": "You can download Python from python.org and install it easily..."
+            }
+          ]
+        },
+        {
+          "id": "M2-C2",
+          "moduleTitle": "Python Basics",
+          "topics": [
+            {
+              "id": "L1-M2-C2",
+              "title": "Python Syntax and Indentation",
+              "language": "python",
+              "content": "Python uses indentation instead of braces to define blocks..."
+            },
+            {
+              "id": "L2-M2-C2",
+              "title": "Variables in Python",
+              "language": "python",
+              "content": "Variables in Python are dynamically typed..."
+            }
+          ]
+        }
+      ]
+    },
+        {
+          "id": "C3",
+          "index": 2,
+          "favourite": false,
+          "slug": "c-plus-plus-for-beginners",
+          "courseTitle": "C++ Programming for Beginners",
+          "courseDescription": "Master C++ fundamentals including syntax, variables, and OOP concepts.",
+          "language": "C++",
+          "type": "course",
+          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+          "pricingType": "Free",
+          "modules": [
+            {
+              "id": "M1-C3",
+              "moduleTitle": "Introduction to C++",
+              "topics": [
+                {
+                  "id": "L1-M1-C3",
+                  "title": "What is C++?",
+                  "language": "cpp",
+                  "content": "C++ is a general-purpose programming language that is widely used for system and application software development..."
+                },
+                {
+                  "id": "L2-M1-C3",
+                  "title": "Setting Up C++ Environment",
+                  "language": "cpp",
+                  "content": "To write and run C++ programs, install a compiler like g++ and use an IDE like Code::Blocks or VSCode..."
+                }
+              ]
+            },
+            {
+              "id": "M2-C3",
+              "moduleTitle": "C++ Basics",
+              "topics": [
+                {
+                  "id": "L1-M2-C3",
+                  "title": "C++ Syntax and Structure",
+                  "language": "cpp",
+                  "content": "C++ programs begin with the main() function. Example:\n```cpp\n#include<iostream>\nint main() {\n  std::cout << \"Hello, World!\";\n  return 0;\n}\n```"
+                },
+                {
+                  "id": "L2-M2-C3",
+                  "title": "Data Types in C++",
+                  "language": "cpp",
+                  "content": "C++ supports various data types like int, float, char, etc..."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "index": 3,
+          "favourite": false,
+          "slug": "html-fundamentals",
+          "courseTitle": "HTML Fundamentals",
+          "courseDescription": "Learn how to build the structure of web pages using HTML.",
+          "language": "HTML",
+          "type": "course",
+          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+          "pricingType": "Free",
+          "modules": [
+            {
+              "id": "M1-C4",
+              "moduleTitle": "Getting Started with HTML",
+              "topics": [
+                {
+                  "id": "L1-M1-C4",
+                  "title": "What is HTML?",
+                  "language": "html",
+                  "content": "HTML stands for HyperText Markup Language. It's used to structure web content..."
+                },
+                {
+                  "id": "L2-M1-C4",
+                  "title": "Basic HTML Document Structure",
+                  "language": "html",
+                  "content": "HTML documents have a standard structure. Example:\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <title>My First Page</title>\n</head>\n<body>\n  <h1>Hello, world!</h1>\n</body>\n</html>\n```"
+                }
+              ]
+            },
+            {
+              "id": "M2-C4",
+              "moduleTitle": "HTML Elements and Attributes",
+              "topics": [
+                {
+                  "id": "L1-M2-C4",
+                  "title": "Common HTML Tags",
+                  "language": "html",
+                  "content": "Learn about `<p>`, `<a>`, `<div>`, and other common HTML tags..."
+                },
+                {
+                  "id": "L2-M2-C4",
+                  "title": "Using HTML Attributes",
+                  "language": "html",
+                  "content": "Attributes provide additional information about elements. Example:\n```html\n<a href=\"https://example.com\">Visit Example</a>\n```"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "index": 4,
+          "favourite": false,
+          "slug": "javascript-basics",
+          "courseTitle": "JavaScript Basics",
+          "courseDescription": "Understand JavaScript fundamentals and how it powers interactivity on the web.",
+          "language": "JavaScript",
+          "type": "course",
+          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+          "pricingType": "Free",
+          "modules": [
+            {
+              "id": "M1-C5",
+              "moduleTitle": "Introduction to JavaScript",
+              "topics": [
+                {
+                  "id": "L1-M1-C5",
+                  "title": "What is JavaScript?",
+                  "language": "javascript",
+                  "content": "JavaScript is a programming language used to create dynamic content on websites..."
+                },
+                {
+                  "id": "L2-M1-C5",
+                  "title": "Adding JavaScript to HTML",
+                  "language": "javascript",
+                  "content": "JavaScript can be included using `<script>` tags. Example:\n```html\n<script>\n  alert('Hello from JavaScript!');\n</script>\n```"
+                }
+              ]
+            },
+            {
+              "id": "M2-C5",
+              "moduleTitle": "JavaScript Basics",
+              "topics": [
+                {
+                  "id": "L1-M2-C5",
+                  "title": "Variables in JavaScript",
+                  "language": "javascript",
+                  "content": "JavaScript supports `var`, `let`, and `const` for variable declarations..."
+                },
+                {
+                  "id": "L2-M2-C5",
+                  "title": "JavaScript Functions",
+                  "language": "javascript",
+                  "content": "Functions are blocks of code designed to perform tasks. Example:\n```javascript\nfunction greet(name) {\n  console.log('Hello ' + name);\n}\ngreet('Nirmal');\n```"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "index": 5,
+          "favourite": false,
+          "slug": "data-structures-in-c",
+          "courseTitle": "Data Structures in C",
+          "courseDescription": "Learn essential data structures using the C programming language.",
+          "language": "C",
+          "type": "course",
+          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+          "pricingType": "Free",
+          "modules": [
+            {
+              "id": "M1-C6",
+              "moduleTitle": "Introduction to Data Structures",
+              "topics": [
+                {
+                  "id": "L1-M1-C6",
+                  "title": "What are Data Structures?",
+                  "language": "c",
+                  "content": "Data structures are ways of organizing and storing data for efficient access and modification..."
+                },
+                {
+                  "id": "L2-M1-C6",
+                  "title": "Arrays in C",
+                  "language": "c",
+                  "content": "Arrays store elements of the same type. Example:\n```c\nint arr[5] = {1, 2, 3, 4, 5};\n```"
+                }
+              ]
+            },
+            {
+              "id": "M2-C6",
+              "moduleTitle": "Linked Lists and Stacks",
+              "topics": [
+                {
+                  "id": "L1-M2-C6",
+                  "title": "Singly Linked Lists",
+                  "language": "c",
+                  "content": "A linked list is a linear data structure where each element points to the next. Example:\n```c\nstruct Node {\n  int data;\n  struct Node* next;\n};\n```"
+                },
+                {
+                  "id": "L2-M2-C6",
+                  "title": "Stack using Arrays",
+                  "language": "c",
+                  "content": "A stack follows LIFO. Here's a basic implementation using arrays..."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    
