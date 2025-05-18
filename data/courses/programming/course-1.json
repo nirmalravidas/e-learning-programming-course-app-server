@@ -1,0 +1,69 @@
+{
+  "id": "C1",
+  "slug": "c-course",
+  "language": "C",
+  "courseTitle": "Learn C Programming",
+  "courseDescription": "Master the basics of C programming including variables, control structures, and functions.",
+  "courseBannerImageLink": "https://example.com/images/c-banner.png",
+  "pricingType": "Free",
+  "favourite": false,
+  "modules": [
+    {
+      "moduleId": "C1-M1",
+      "moduleTitle": "Introduction to C",
+      "moduleDescription": "Learn the history, setup, and basics of C programming.",
+      "topics": [
+        {
+          "topicId": "C1-M1-T1",
+          "topicTitle": "What is C?",
+          "content": "C is a powerful general-purpose programming language developed in the early 1970s.",
+          "codeExample": null
+        },
+        {
+          "topicId": "C1-M1-T2",
+          "topicTitle": "Setting up Development Environment",
+          "content": "Install GCC compiler and an IDE or use a command-line compiler.",
+          "codeExample": null
+        }
+      ]
+    },
+    {
+      "moduleId": "C1-M2",
+      "moduleTitle": "Basics of C Programming",
+      "moduleDescription": "Understand variables, data types, input/output, and operators.",
+      "topics": [
+        {
+          "topicId": "C1-M2-T1",
+          "topicTitle": "Variables and Data Types",
+          "content": "Learn about int, float, char, and how to declare variables.",
+          "codeExample": "int age = 25;\nfloat price = 99.99;\nchar grade = 'A';"
+        },
+        {
+          "topicId": "C1-M2-T2",
+          "topicTitle": "Input and Output",
+          "content": "Using printf() and scanf() to interact with users.",
+          "codeExample": "printf(\"Enter your name: \");\nchar name[30];\nscanf(\"%s\", name);\nprintf(\"Hello %s\", name);"
+        }
+      ]
+    },
+    {
+      "moduleId": "c1-M3",
+      "moduleTitle": "Control Flow",
+      "moduleDescription": "Learn how to control the flow of your program using conditions and loops.",
+      "topics": [
+        {
+          "topicId": "C1-M3-T1",
+          "topicTitle": "If-Else Statements",
+          "content": "Execute code blocks based on conditions.",
+          "codeExample": "if (age >= 18) {\n  printf(\"Adult\");\n} else {\n  printf(\"Minor\");\n}"
+        },
+        {
+          "topicId": "C1-M3-T2",
+          "topicTitle": "Loops: For and While",
+          "content": "Perform repetitive tasks using loops.",
+          "codeExample": "for (int i = 0; i < 5; i++) {\n  printf(\"%d\\n\", i);\n}"
+        }
+      ]
+    }
+  ]
+}

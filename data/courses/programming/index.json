@@ -1,0 +1,86 @@
+[
+  {
+    "id": "C1",
+    "index": 0,
+    "slug": "c-course",
+    "language": "C",
+    "courseTitle": "Learn C Programming",
+    "courseDescription": "Master the basics of C programming including variables, control structures, and functions.",
+    "courseBannerImageLink": "https://example.com/images/c-banner.png",
+    "pricingType": "Free",
+    "favourite": false
+  },
+
+  {
+    "id": "C2",
+    "index": 1,
+    "slug": "cpp-course",
+    "language": "C++",
+    "courseTitle": "Learn C++",
+    "courseDescription": "Comprehensive introduction to C++ covering OOP concepts, STL, and file handling.",
+    "courseBannerImageLink": "https://example.com/images/cpp-banner.png",
+    "pricingType": "Free",
+    "favourite": false
+  },
+
+  {
+    "id": "C3",
+    "index": 2,
+    "slug": "python-course",
+    "language": "Python",
+    "courseTitle": "Learn Python",
+    "courseDescription": "Beginner-friendly guide to Python programming, syntax, data types, and control flow.",
+    "courseBannerImageLink": "https://example.com/images/python-banner.png",
+    "pricingType": "Free",
+    "favourite": true
+  },
+
+  {
+    "id": "C4",
+    "index": 3,
+    "slug": "java-course",
+    "language": "Java",
+    "courseTitle": "Learn Java",
+    "courseDescription": "Start coding in Java with object-oriented principles, exception handling, and multithreading.",
+    "courseBannerImageLink": "https://example.com/images/java-banner.png",
+    "pricingType": "Free",
+    "favourite": false
+  },
+
+  {
+    "id": "C5",
+    "index": 4,
+    "slug": "javascript-course",
+    "language": "JavaScript",
+    "courseTitle": "Learn JavaScript",
+    "courseDescription": "Dive into JavaScript for web development with variables, functions, and DOM manipulation.",
+    "courseBannerImageLink": "https://example.com/images/javascript-banner.png",
+    "pricingType": "Free",
+    "favourite": true
+  },
+
+  {
+    "id": "C6",
+    "index": 5,
+    "slug": "typescript-course",
+    "language": "TypeScript",
+    "courseTitle": "Learn TypeScript",
+    "courseDescription": "Learn TypeScript to add static typing to JavaScript and build scalable applications.",
+    "courseBannerImageLink": "https://example.com/images/typescript-banner.png",
+    "pricingType": "Free",
+    "favourite": false
+  },
+
+  {
+    "id": "C7",
+    "index": 6,
+    "slug": "html-course",
+    "language": "HTML",
+    "courseTitle": "Learn HTML",
+    "courseDescription": "Understand the foundation of web development with semantic HTML5 and best practices.",
+    "courseBannerImageLink": "https://example.com/images/html-banner.png",
+    "pricingType": "Free",
+    "favourite": false
+  }
+  
+]
