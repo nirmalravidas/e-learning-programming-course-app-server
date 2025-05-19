@@ -5,7 +5,7 @@
     "language": "JavaScript",
     "courseTitle": "Learn JavaScript Programming",
     "courseDescription": "Dive into JavaScript for web development with variables, functions, and DOM manipulation.",
-    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javasctipt/banner_image.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javascript/banner_image.png",
     "pricingType": "Free",
     "bookmarked": true,
     "modules": [
