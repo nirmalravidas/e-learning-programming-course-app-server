@@ -46,7 +46,7 @@
         },
 
         {
-            "moduleId": "c1-M3",
+            "moduleId": "C1-M3",
             "moduleTitle": "Control Flow",
             "moduleDescription": "Learn how to control the flow of your program using conditions and loops.",
             "topics": [

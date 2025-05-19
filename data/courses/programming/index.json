@@ -2,7 +2,7 @@
   {
     "id": "C1",
     "index": 0,
-    "slug": "c-course",
+    "slug": "course-1",
     "language": "C",
     "courseTitle": "Learn C Programming",
     "courseDescription": "Master the basics of C programming including variables, control structures, and functions.",
@@ -14,7 +14,7 @@
   {
     "id": "C2",
     "index": 1,
-    "slug": "cpp-course",
+    "slug": "course-2",
     "language": "C++",
     "courseTitle": "Learn C++ Programming",
     "courseDescription": "Comprehensive introduction to C++ covering OOP concepts, STL, and file handling.",
@@ -26,7 +26,7 @@
   {
     "id": "C3",
     "index": 2,
-    "slug": "python-course",
+    "slug": "course-3",
     "language": "Python",
     "courseTitle": "Learn Python Programming",
     "courseDescription": "Beginner-friendly guide to Python programming, syntax, data types, and control flow.",
@@ -38,7 +38,7 @@
   {
     "id": "C4",
     "index": 3,
-    "slug": "java-course",
+    "slug": "course-4",
     "language": "Java",
     "courseTitle": "Learn Java Programming",
     "courseDescription": "Start coding in Java with object-oriented principles, exception handling, and multithreading.",
@@ -50,11 +50,11 @@
   {
     "id": "C5",
     "index": 4,
-    "slug": "javascript-course",
+    "slug": "course-5",
     "language": "JavaScript",
     "courseTitle": "Learn JavaScript Programming",
     "courseDescription": "Dive into JavaScript for web development with variables, functions, and DOM manipulation.",
-    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javasctipt/banner_image.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javascript/banner_image.png",
     "pricingType": "Free",
     "bookmarked": true
   },
@@ -62,7 +62,7 @@
   {
     "id": "C6",
     "index": 5,
-    "slug": "typescript-course",
+    "slug": "course-6",
     "language": "TypeScript",
     "courseTitle": "Learn TypeScript Programming",
     "courseDescription": "Learn TypeScript to add static typing to JavaScript and build scalable applications.",
@@ -74,7 +74,7 @@
   {
     "id": "C7",
     "index": 6,
-    "slug": "html-course",
+    "slug": "course-7",
     "language": "HTML",
     "courseTitle": "Learn HTML Language",
     "courseDescription": "Understand the foundation of web development with semantic HTML5 and best practices.",
