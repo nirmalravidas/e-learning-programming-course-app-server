@@ -16,7 +16,7 @@
                 {
                     "topicId": "C4-M1-T1",
                     "topicTitle": "What is Java?",
-                    "topicContent": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible."
+                    "topicContent": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. \n \n Java runs on the **JVM (Java Virtual Machine)** using the JRE and is developed using the JDK...Example:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n```"
                 },
 
                 {
