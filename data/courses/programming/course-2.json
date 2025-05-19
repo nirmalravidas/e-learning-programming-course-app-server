@@ -2,7 +2,7 @@
     "id": "C2",
     "index": 1,
     "slug": "course-2",
-    "language": "C++",
+    "language": "C++ programming",
     "courseTitle": "Learn C++ Programming",
     "courseDescription": "Comprehensive introduction to C++ covering OOP concepts, STL, and file handling.",
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/cpp/banner_image.png",
