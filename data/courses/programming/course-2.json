@@ -1,0 +1,64 @@
+{
+    "id": "C2",
+    "index": 1,
+    "slug": "course-2",
+    "language": "C++",
+    "courseTitle": "Learn C++ Programming",
+    "courseDescription": "Comprehensive introduction to C++ covering OOP concepts, STL, and file handling.",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/cpp/banner_image.png",
+    "pricingType": "Free",
+    "bookmarked": false,
+    "modules": [
+        {
+            "moduleId": "C2-M1",
+            "moduleTitle": "Getting Started with C++",
+            "moduleDescription": "Setup and introduction to C++ programming.",
+            "topics": [
+                {
+                "topicId": "C2-M1-T1",
+                "topicTitle": "Introduction to C++",
+                "topicContent": "C++ is an extension of C with object-oriented features."
+                },
+                {
+                "topicId": "C2-M1-T2",
+                "topicTitle": "Your First C++ Program",
+                "topicContent": "Writing a simple Hello World program in C++."
+                }
+            ]
+        },
+        {
+            "moduleId": "C2-M2",
+            "moduleTitle": "Object-Oriented Programming",
+            "moduleDescription": "Learn classes, objects, inheritance, and polymorphism.",
+            "topics": [
+                {
+                "topicId": "C2-M2-T1",
+                "topicTitle": "Classes and Objects",
+                "topicContent": "Understanding the blueprint of objects."
+                },
+                {
+                "topicId": "C2-M2-T2",
+                "topicTitle": "Inheritance",
+                "topicContent": "Derive new classes from existing ones."
+                }
+            ]
+        },
+        {
+            "moduleId": "C2-M3",
+            "moduleTitle": "Standard Template Library (STL)",
+            "moduleDescription": "Use vectors, lists, and maps.",
+            "topics": [
+                {
+                "topicId": "C2-M3-T1",
+                "topicTitle": "Vectors",
+                "topicContent": "Dynamic array implementation."
+                },
+                {
+                "topicId": "C2-M3-T2",
+                "topicTitle": "Maps",
+                "topicContent": "Key-value pair containers."
+                }
+            ]
+        }
+    ]
+}

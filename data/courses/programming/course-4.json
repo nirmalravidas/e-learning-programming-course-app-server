@@ -1,0 +1,48 @@
+{
+    "id": "C4",
+    "index": 3,
+    "slug": "course-4",
+    "language": "Java",
+    "courseTitle": "Learn Java Programming",
+    "courseDescription": "Dive into Java programming from basics to advanced concepts including OOP, collections, and concurrency.",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/java/banner_image.png",
+    "pricingType": "free",
+    "bookmarked": false,
+    "modules": [
+        {
+            "moduleId": "C4-M1",
+            "moduleTitle": "Introduction to Java",
+            "topics": [
+                {
+                    "topicId": "C4-M1-T1",
+                    "topicTitle": "What is Java?",
+                    "topicContent": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible."
+                },
+
+                {
+                    "topicId": "C4-M1-T2",
+                    "topicTitle": "Installing Java",
+                    "topicContent": "To start Java development, you need to install the Java Development Kit (JDK). Download it from Oracle or use OpenJDK."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M2",
+            "moduleTitle": "Core Java Concepts",
+            "topics": [
+                {
+                "topicId": "C4-M2-T1",
+                "topicTitle": "Variables and Data Types",
+                "topicContent": "Java supports various data types like int, float, char, boolean, and reference types like arrays and objects."
+                },
+
+                {
+                "topicId": "C4-M2-T2",
+                "topicTitle": "Control Statements",
+                "topicContent": "Java provides control statements like if-else, switch, for loop, while loop, and do-while loop for decision making and looping."
+                }
+            ]
+        }
+    ]
+}

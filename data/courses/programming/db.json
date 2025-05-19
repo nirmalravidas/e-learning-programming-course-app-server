@@ -9,7 +9,7 @@
       "slug": "java-programming-for-beginners",
       "courseTitle": "Java Programming for Beginners",
       "courseDescription": "Learn Java from scratch...",
-      "courseBannerImageLink" : "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/java/java-programming-for-beginner.png",
+      "courseBannerImageLink" : "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/java/banner_image.png",
       "pricingType": "Free",
       "modules": [
         {
@@ -65,7 +65,7 @@
       "courseDescription": "Learn Python from scratch...",
       "language": "Python",
       "type": "course",
-      "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+      "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/python/banner_image.png",
       "pricingType": "Free",
       "modules": [
         {
@@ -115,7 +115,7 @@
           "courseDescription": "Master C++ fundamentals including syntax, variables, and OOP concepts.",
           "language": "C++",
           "type": "course",
-          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/cpp/banner_image.png",
           "pricingType": "Free",
           "modules": [
             {
@@ -165,7 +165,7 @@
           "courseDescription": "Learn how to build the structure of web pages using HTML.",
           "language": "HTML",
           "type": "course",
-          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/html/banner_image.png",
           "pricingType": "Free",
           "modules": [
             {
@@ -215,7 +215,7 @@
           "courseDescription": "Understand JavaScript fundamentals and how it powers interactivity on the web.",
           "language": "JavaScript",
           "type": "course",
-          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
+          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javasctipt/banner_image.png",
           "pricingType": "Free",
           "modules": [
             {
@@ -255,57 +255,8 @@
               ]
             }
           ]
-        },
-        {
-          "id": "C6",
-          "index": 5,
-          "favourite": false,
-          "slug": "data-structures-in-c",
-          "courseTitle": "Data Structures in C",
-          "courseDescription": "Learn essential data structures using the C programming language.",
-          "language": "C",
-          "type": "course",
-          "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/refs/heads/main/assets/images/courses/python/python-programming-for-beginners.png",
-          "pricingType": "Free",
-          "modules": [
-            {
-              "id": "M1-C6",
-              "moduleTitle": "Introduction to Data Structures",
-              "topics": [
-                {
-                  "id": "L1-M1-C6",
-                  "title": "What are Data Structures?",
-                  "language": "c",
-                  "content": "Data structures are ways of organizing and storing data for efficient access and modification..."
-                },
-                {
-                  "id": "L2-M1-C6",
-                  "title": "Arrays in C",
-                  "language": "c",
-                  "content": "Arrays store elements of the same type. Example:\n```c\nint arr[5] = {1, 2, 3, 4, 5};\n```"
-                }
-              ]
-            },
-            {
-              "id": "M2-C6",
-              "moduleTitle": "Linked Lists and Stacks",
-              "topics": [
-                {
-                  "id": "L1-M2-C6",
-                  "title": "Singly Linked Lists",
-                  "language": "c",
-                  "content": "A linked list is a linear data structure where each element points to the next. Example:\n```c\nstruct Node {\n  int data;\n  struct Node* next;\n};\n```"
-                },
-                {
-                  "id": "L2-M2-C6",
-                  "title": "Stack using Arrays",
-                  "language": "c",
-                  "content": "A stack follows LIFO. Here's a basic implementation using arrays..."
-                }
-              ]
-            }
-          ]
         }
+        
       ]
     }
     

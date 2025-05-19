@@ -1,0 +1,67 @@
+{
+    "id": "C3",
+    "index": 2,
+    "slug": "course-3",
+    "language": "Python",
+    "courseTitle": "Learn Python Programming",
+    "courseDescription": "Beginner-friendly guide to Python programming, syntax, data types, and control flow.",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/python/banner_image.png",
+    "pricingType": "Free",
+    "bookmarked": true,
+    "modules": [
+        {
+            "moduleId": "C3-M1",
+            "moduleTitle": "Introduction to Python",
+            "moduleDescription": "Setup and basics of Python programming.",
+            "topics": [
+                {
+                    "topicId": "C3-M1-T1",
+                    "topicTitle": "What is Python?",
+                    "topicContent": "Python is a high-level, interpreted programming language known for simplicity."
+                },
+                {
+                    "topicId": "C3-M1-T2",
+                    "topicTitle": "Installing Python",
+                    "topicContent": "Download and install Python from the official website."
+                }
+            ]
+        
+        },
+
+        {
+            "moduleId": "C3-M2",
+            "moduleTitle": "Python Basics",
+            "moduleDescription": "Learn variables, data types, and basic operations.",
+            "topics": [
+                {
+                "topicId": "C3-M2-T1",
+                "topicTitle": "Variables and Data Types",
+                "topicContent": "Declare variables and understand types."
+                },
+                {
+                "topicId": "C3-M2-T2",
+                "topicTitle": "Basic Input and Output",
+                "topicContent": "Using input() and print() functions."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C3-M3",
+            "moduleTitle": "Control Flow",
+            "moduleDescription": "Use conditions and loops to control program flow.",
+            "topics": [
+                {
+                "topicId": "C3-M3-T1",
+                "topicTitle": "If Statements",
+                "topicContent": "Execute code conditionally."
+                },
+                {
+                "topicId": "C3-M3-T2",
+                "topicTitle": "For Loops",
+                "topicContent": "Repeat actions for each item in a list."
+                }
+            ]
+        }
+    ]
+}

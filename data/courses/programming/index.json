@@ -6,9 +6,9 @@
     "language": "C",
     "courseTitle": "Learn C Programming",
     "courseDescription": "Master the basics of C programming including variables, control structures, and functions.",
-    "courseBannerImageLink": "https://example.com/images/c-banner.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/c/banner_image.png",
     "pricingType": "Free",
-    "favourite": false
+    "bookmarked": false
   },
 
   {
@@ -16,11 +16,11 @@
     "index": 1,
     "slug": "cpp-course",
     "language": "C++",
-    "courseTitle": "Learn C++",
+    "courseTitle": "Learn C++ Programming",
     "courseDescription": "Comprehensive introduction to C++ covering OOP concepts, STL, and file handling.",
-    "courseBannerImageLink": "https://example.com/images/cpp-banner.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/cpp/banner_image.png",
     "pricingType": "Free",
-    "favourite": false
+    "bookmarked": false
   },
 
   {
@@ -28,11 +28,11 @@
     "index": 2,
     "slug": "python-course",
     "language": "Python",
-    "courseTitle": "Learn Python",
+    "courseTitle": "Learn Python Programming",
     "courseDescription": "Beginner-friendly guide to Python programming, syntax, data types, and control flow.",
-    "courseBannerImageLink": "https://example.com/images/python-banner.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/python/banner_image.png",
     "pricingType": "Free",
-    "favourite": true
+    "bookmarked": true
   },
 
   {
@@ -40,11 +40,11 @@
     "index": 3,
     "slug": "java-course",
     "language": "Java",
-    "courseTitle": "Learn Java",
+    "courseTitle": "Learn Java Programming",
     "courseDescription": "Start coding in Java with object-oriented principles, exception handling, and multithreading.",
-    "courseBannerImageLink": "https://example.com/images/java-banner.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/java/banner_image.png",
     "pricingType": "Free",
-    "favourite": false
+    "bookmarked": false
   },
 
   {
@@ -52,11 +52,11 @@
     "index": 4,
     "slug": "javascript-course",
     "language": "JavaScript",
-    "courseTitle": "Learn JavaScript",
+    "courseTitle": "Learn JavaScript Programming",
     "courseDescription": "Dive into JavaScript for web development with variables, functions, and DOM manipulation.",
-    "courseBannerImageLink": "https://example.com/images/javascript-banner.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javasctipt/banner_image.png",
     "pricingType": "Free",
-    "favourite": true
+    "bookmarked": true
   },
 
   {
@@ -64,11 +64,11 @@
     "index": 5,
     "slug": "typescript-course",
     "language": "TypeScript",
-    "courseTitle": "Learn TypeScript",
+    "courseTitle": "Learn TypeScript Programming",
     "courseDescription": "Learn TypeScript to add static typing to JavaScript and build scalable applications.",
-    "courseBannerImageLink": "https://example.com/images/typescript-banner.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/typescript/banner_image.png",
     "pricingType": "Free",
-    "favourite": false
+    "bookmarked": false
   },
 
   {
@@ -76,11 +76,11 @@
     "index": 6,
     "slug": "html-course",
     "language": "HTML",
-    "courseTitle": "Learn HTML",
+    "courseTitle": "Learn HTML Language",
     "courseDescription": "Understand the foundation of web development with semantic HTML5 and best practices.",
-    "courseBannerImageLink": "https://example.com/images/html-banner.png",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/html/banner_image.png",
     "pricingType": "Free",
-    "favourite": false
+    "bookmarked": false
   }
-  
+
 ]

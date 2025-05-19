@@ -1,0 +1,46 @@
+{
+    "id": "C5",
+    "index": 4,
+    "slug": "course-5",
+    "language": "JavaScript",
+    "courseTitle": "Learn JavaScript Programming",
+    "courseDescription": "Dive into JavaScript for web development with variables, functions, and DOM manipulation.",
+    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javasctipt/banner_image.png",
+    "pricingType": "Free",
+    "bookmarked": true,
+    "modules": [
+        {
+            "moduleId": "C5-M1",
+            "moduleTitle": "Getting Started with C#",
+            "topics": [
+                {
+                    "topicId": "C5-M1-T1",
+                    "topicTitle": "Introduction to C#",
+                    "topicContent": "C# is a modern, object-oriented programming language developed by Microsoft as part of the .NET framework."
+                },
+                {
+                    "topicId": "C5-M1-T2",
+                    "topicTitle": "Setting up the Environment",
+                    "topicContent": "Install Visual Studio or Visual Studio Code with the C# extension to start coding."
+                }
+            ]
+        },
+        {
+            "moduleId": "C5-M2",
+            "moduleTitle": "Core C# Concepts",
+            "topics": [
+                {
+                "topicId": "C5-M2-T1",
+                "topicTitle": "Variables and Data Types",
+                "topicContent": "Explore C# data types like int, string, bool, and complex types like arrays and classes."
+                },
+
+                {
+                "topicId": "C5-M2-T2",
+                "topicTitle": "Control Flow",
+                "topicContent": "Understand control flow with if, switch, for, while, and foreach statements."
+                }
+            ]
+        }
+    ]
+}
