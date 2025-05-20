@@ -8,7 +8,8 @@
     "courseDescription": "Master the basics of C programming including variables, control structures, and functions.",
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/c/banner_image.png",
     "pricingType": "Free",
-    "bookmarked": false
+    "bookmarked": false,
+    "totalModules": "9"
   },
 
   {
@@ -20,7 +21,8 @@
     "courseDescription": "Comprehensive introduction to C++ covering OOP concepts, STL, and file handling.",
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/cpp/banner_image.png",
     "pricingType": "Free",
-    "bookmarked": false
+    "bookmarked": false,
+    "totalModules": "13"
   },
 
   {
@@ -32,7 +34,8 @@
     "courseDescription": "Beginner-friendly guide to Python programming, syntax, data types, and control flow.",
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/python/banner_image.png",
     "pricingType": "Free",
-    "bookmarked": true
+    "bookmarked": true,
+    "totalModules": "20"
   },
 
   {
@@ -44,7 +47,8 @@
     "courseDescription": "Start coding in Java with object-oriented principles, exception handling, and multithreading.",
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/java/banner_image.png",
     "pricingType": "Free",
-    "bookmarked": false
+    "bookmarked": false,
+    "totalModules": "13"
   },
 
   {
@@ -56,7 +60,8 @@
     "courseDescription": "Dive into JavaScript for web development with variables, functions, and DOM manipulation.",
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javascript/banner_image.png",
     "pricingType": "Free",
-    "bookmarked": true
+    "bookmarked": true,
+    "totalModules": "12"
   },
 
   {
@@ -68,8 +73,8 @@
     "courseDescription": "Learn TypeScript to add static typing to JavaScript and build scalable applications.",
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/typescript/banner_image.png",
     "pricingType": "Free",
-    "bookmarked": false
-    
+    "bookmarked": false,
+    "totalModules":"12"
   }
 
 ]
