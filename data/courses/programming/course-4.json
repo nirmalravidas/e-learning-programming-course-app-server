@@ -13,31 +13,34 @@
             "moduleId": "C4-M1",
             "moduleTitle": "Java Overview",
             "topics": [
-                {
-                    "topicId": "C4-M1-T1",
-                    "topicTitle": "What is Java?",
-                    "topicContent": "**Java** is a high-level, object-oriented programming language designed to be platform-independent.\n\nIt runs on the **Java Virtual Machine (JVM)**, which enables Java code to run on any device that has the JVM installed.\n ------------- \n**Key Features:**\n- Object-Oriented\n- Platform Independent\n- Secure\n- Robust\n- Multithreaded\n ------------- \n**Example:**\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\n\nThis program prints \"Hello, World!\" to the console.\n```java\n Output: \nHello, World!```\n"
-                },
-                {
-                    "topicId": "C4-M1-T2",
-                    "topicTitle": "Features of Java",
-                    "topicContent": "**Important Features of Java:**\n\n- **Simple:** Easy to learn and use.\n- **Object-Oriented:** Everything is an object.\n- **Platform Independent:** Write once, run anywhere.\n- **Robust:** Strong memory management and exception handling.\n- **Secure:** Provides a secure environment for code execution.\n- **Multithreaded:** Supports concurrent execution of multiple threads.\n- **High Performance:** Uses Just-In-Time compiler.\n- **Distributed:** Supports networking capabilities.\n ------------- \n**Example:**\n```code\n// Multithreading Example\nclass MyThread extends Thread {\n    public void run() {\n        System.out.println(\"Thread running\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        MyThread t1 = new MyThread();\n        t1.start();\n    }\n}\n```\nThis creates and starts a new thread.\n```Thread running```\n"
-                },
-                {
-                    "topicId": "C4-M1-T3",
-                    "topicTitle": "Java Platform (JDK, JRE, JVM)",
-                    "topicContent": "**Java Platform Components:**\n\n- **JDK (Java Development Kit):** Includes tools for developing Java applications (compiler, debugger, etc.)\n- **JRE (Java Runtime Environment):** Provides libraries and JVM for running Java programs\n- **JVM (Java Virtual Machine):** Executes Java bytecode and provides platform independence\n ------------- \n**Diagram:**\nJDK -> JRE -> JVM -> Java Program\n ------------- \n**Example:**\n```code\n// Compile Java source code\njavac HelloWorld.java\n\n// Run the compiled bytecode\njava HelloWorld\n```\nThis compiles and runs a Java program."
-                },
-                {
-                    "topicId": "C4-M1-T4",
-                    "topicTitle": "Installing Java and Setup",
-                    "topicContent": "**Steps to Install Java:**\n\n1. Download the JDK from the [Oracle website](https://www.oracle.com/java/technologies/javase-downloads.html) or use OpenJDK.\n2. Install the JDK.\n3. Set environment variables:\n   - **JAVA_HOME** pointing to the JDK directory\n   - Add **JAVA_HOME/bin** to the system **PATH**\n4. Verify installation by running:\n```code\njava -version\njavac -version\n```\n ------------- \n**Example Output:**\n```code\njava version \"17.0.1\" 2021-10-19 LTS\nJava(TM) SE Runtime Environment (build 17.0.1+12-LTS-39)\nJava HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)\n```\n"
-                },
-                {
-                    "topicId": "C4-M1-T5",
-                    "topicTitle": "Your First Java Program",
-                    "topicContent": "**Writing Your First Java Program:**\n\nCreate a file called `HelloWorld.java` with the following code:\n```code\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\n ------------- \n**Compile the Program:**\n```code\njavac HelloWorld.java\n```\n ------------- \n**Run the Program:**\n```code\njava HelloWorld\n```\n ------------- \n**Output:**\n```Hello, World!```\n\nThis shows a basic Java program that prints a message to the console."
-                }
+                [
+                    {
+                        "topicId": "C4-M1-T1",
+                        "topicTitle": "What is Java?",
+                        "topicContent": "**What is Java?**\n\nJava is a popular programming language created by Sun Microsystems in 1995. It is designed to be simple, portable, and easy to use.\n\n**Key points:**\n- Java is **platform-independent**, meaning you can write Java code once and run it anywhere without changes.\n- It is an **object-oriented** language, which means it organizes software design around data, or objects, rather than functions and logic.\n- Java runs on the **Java Virtual Machine (JVM)**, which translates Java bytecode into machine code for your computer.\n\n-------------\n\n**Example:** Your first Java program looks like this:\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\n\nThis program prints the message \"Hello, World!\" on the screen.\n\n```java\nOutput:\n\nHello, World!\n```\n"
+                    },
+                    {
+                        "topicId": "C4-M1-T2",
+                        "topicTitle": "Features of Java",
+                        "topicContent": "**Features of Java**\n\nJava has many features that make it a powerful and widely-used language:\n\n- **Simple:** Java has a clean and easy-to-understand syntax.\n- **Object-Oriented:** Everything in Java is treated as an object.\n- **Platform Independent:** Thanks to the JVM, Java programs can run on different platforms like Windows, Mac, or Linux without modification.\n- **Robust:** Java provides strong memory management and exception handling, which helps reduce errors.\n- **Secure:** Java provides a secure environment to develop and run applications.\n- **Multithreaded:** Java supports multiple threads, which lets your program do many things at once.\n- **High Performance:** Java uses Just-In-Time (JIT) compiler to speed up execution.\n\n-------------\n\n**Example:** Creating a thread in Java\n```java\nclass MyThread extends Thread {\n    public void run() {\n        System.out.println(\"Thread is running\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        MyThread t = new MyThread();\n        t.start();\n    }\n}\n```\n\nThis program creates and starts a new thread.\n\n```java\nOutput:\n\nThread is running\n```\n"
+                    },
+                    {
+                        "topicId": "C4-M1-T3",
+                        "topicTitle": "Java Platform (JDK, JRE, JVM)",
+                        "topicContent": "**Understanding the Java Platform:**\n\nJava platform consists of three main components:\n\n- **JDK (Java Development Kit):** This is the full kit used by developers. It contains tools like the compiler (`javac`), debugger, and other utilities needed to write, compile, and debug Java programs.\n\n- **JRE (Java Runtime Environment):** This includes everything you need to run a Java program, such as the JVM and standard Java class libraries. It does NOT include developer tools like the compiler.\n\n- **JVM (Java Virtual Machine):** The JVM is responsible for running Java bytecode on any device or operating system. It acts as an interpreter between the Java program and your computer’s operating system.\n\n-------------\n\n**Visual Flow:**\n\n```\nJava Source Code (.java) -> Compiler (javac) -> Bytecode (.class) -> JVM -> Machine Code -> Run\n```\n\n-------------\n\n**Example:** Compiling and running a Java program\n```java\n// Compile\njavac HelloWorld.java\n\n// Run\njava HelloWorld\n```\n\nThe compiler converts your source code into bytecode, and the JVM runs it.\n"
+                    },
+                    {
+                        "topicId": "C4-M1-T4",
+                        "topicTitle": "Installing Java and Setup",
+                        "topicContent": "**How to Install Java:**\n\nFollow these simple steps to install Java on your computer:\n\n1. **Download the JDK:** Go to the official [Oracle Java SE Downloads](https://www.oracle.com/java/technologies/javase-downloads.html) page or use OpenJDK.\n2. **Install the JDK:** Run the installer and follow the instructions.\n3. **Set Environment Variables:**\n   - Set `JAVA_HOME` to point to the folder where JDK is installed.\n   - Add `JAVA_HOME/bin` to your system `PATH` to access Java commands from any directory.\n\n4. **Verify the Installation:** Open the command prompt or terminal and type:\n```java\njava -version\njavac -version\n```\nYou should see the installed Java version.\n\n-------------\n\n**Example Output:**\n```java\nOutput:\n\njava version \"17.0.1\" 2021-10-19 LTS\nJava(TM) SE Runtime Environment (build 17.0.1+12-LTS-39)\nJava HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)\n```\n"
+                    },
+                    {
+                        "topicId": "C4-M1-T5",
+                        "topicTitle": "Your First Java Program",
+                        "topicContent": "**Let's Write Your First Java Program!**\n\n1. Open a text editor and create a file named `HelloWorld.java`.\n2. Type the following code:\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\n\n3. Save the file.\n4. Open your terminal or command prompt and navigate to the folder where you saved the file.\n5. Compile the program by typing:\n```java\njavac HelloWorld.java\n```\nThis creates a file called `HelloWorld.class` (the bytecode).\n6. Run the program by typing:\n```java\njava HelloWorld\n```\n\n-------------\n\n**Output:**\n```java\nOutput:\n\nHello, World!\n```\n\nCongratulations! You have successfully written, compiled, and run your first Java program.\n"
+                    }
+]
+
             ]
         },
 
