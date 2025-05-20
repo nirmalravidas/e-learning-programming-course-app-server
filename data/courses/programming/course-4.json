@@ -13,7 +13,6 @@
             "moduleId": "C4-M1",
             "moduleTitle": "Java Overview",
             "topics": [
-                [
                     {
                         "topicId": "C4-M1-T1",
                         "topicTitle": "What is Java?",
@@ -39,8 +38,6 @@
                         "topicTitle": "Your First Java Program",
                         "topicContent": "**Let's Write Your First Java Program!**\n\n1. Open a text editor and create a file named `HelloWorld.java`.\n2. Type the following code:\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\n\n3. Save the file.\n4. Open your terminal or command prompt and navigate to the folder where you saved the file.\n5. Compile the program by typing:\n```java\njavac HelloWorld.java\n```\nThis creates a file called `HelloWorld.class` (the bytecode).\n6. Run the program by typing:\n```java\njava HelloWorld\n```\n\n-------------\n\n**Output:**\n```java\nOutput:\n\nHello, World!\n```\n\nCongratulations! You have successfully written, compiled, and run your first Java program.\n"
                     }
-]
-
             ]
         },
 
