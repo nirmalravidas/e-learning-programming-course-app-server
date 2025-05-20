@@ -11,7 +11,7 @@
     "modules": [
         {
             "moduleId": "C4-M1",
-            "moduleTitle": "Introduction to Java",
+            "moduleTitle": "Java Overview",
             "topics": [
                 {
                     "topicId": "C4-M1-T1",
@@ -29,7 +29,7 @@
 
         {
             "moduleId": "C4-M2",
-            "moduleTitle": "Core Java Concepts",
+            "moduleTitle": "Java Basics",
             "topics": [
                 {
                 "topicId": "C4-M2-T1",
@@ -43,6 +43,157 @@
                 "topicContent": "Java provides control statements like if-else, switch, for loop, while loop, and do-while loop for decision making and looping."
                 }
             ]
+        },
+
+        {
+            "moduleId": "C4-M3",
+            "moduleTitle": "Java Flow Control",
+            "topics": [
+                {   
+                    "topicId": "C4-M3-T1",
+                    "topicTitle": "Classes and Objects",
+                    "topicContent": "In Java, a class is a blueprint for creating objects. An object is an instance of a class. A class can have attributes and methods."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M4",
+            "moduleTitle": "Java Methods",
+            "topics": [
+                {
+                    "topicId": "C4-M4-T1",
+                    "topicTitle": "Arrays",
+                    "topicContent": "An array is a collection of elements of the same type. It is a fixed-sized data structure that stores a group of elements of the same type."
+                },
+                {
+                    "topicId": "C4-M4-T2",
+                    "topicTitle": "Lists",
+                    "topicContent": "A list is a collection of elements that can be dynamically resized. It is an ordered collection of elements that allows duplicate elements."
+                },
+                {
+                    "topicId": "C4-M4-T3",
+                    "topicTitle": "Maps",
+                    "topicContent": "A map is a collection of key-value pairs. It is an unordered collection of elements that allows duplicate keys."
+                },
+                {
+                    "topicId": "C4-M4-T4",
+                    "topicTitle": "Sets",
+                    "topicContent": "A set is a collection of unique elements. It is an unordered collection of elements that does not allow duplicate elements."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M5",
+            "moduleTitle": "Java Arrays",
+            "topics": [
+                {
+                    "topicId": "C4-M5-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M6",
+            "moduleTitle": "Java Strings",
+            "topics": [
+                {
+                    "topicId": "C4-M6-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M7",
+            "moduleTitle": "Java OOPs Concepts",
+            "topics": [
+                {
+                    "topicId": "C4-M7-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M8",
+            "moduleTitle": "Java Interfaces",
+            "topics": [
+                {
+                    "topicId": "C4-M8-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M9",
+            "moduleTitle": "Java Collections",
+            "topics": [
+                {
+                    "topicId": "C4-M9-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M10",
+            "moduleTitle": "Java Exception Handling",
+            "topics": [
+                {
+                    "topicId": "C4-M10-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M11",
+            "moduleTitle": "Java Multithreading",
+            "topics": [
+                {
+                    "topicId": "C4-M11-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M12",
+            "moduleTitle": "Java File Handling",
+            "topics": [
+                {
+                    "topicId": "C4-M12-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
+        },
+
+        {
+            "moduleId": "C4-M13",
+            "moduleTitle": "Java Input-Output",
+            "topics": [
+                {
+                    "topicId": "C4-M13-T1",
+                    "topicTitle": "Collections Framework",
+                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                }
+            ]
         }
+
+
+
+
     ]
 }
