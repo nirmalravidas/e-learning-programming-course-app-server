@@ -1,67 +1,1048 @@
 {
-    "id": "C3",
-    "index": 2,
-    "slug": "course-3",
-    "language": "Python",
-    "courseTitle": "Learn Python Programming",
-    "courseDescription": "Beginner-friendly guide to Python programming, syntax, data types, and control flow.",
-    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/python/banner_image.png",
-    "pricingType": "Free",
-    "bookmarked": true,
-    "modules": [
+  "id": "C3",
+  "index": 2,
+  "slug": "course-3",
+  "language": "Python",
+  "courseTitle": "Learn Python Programming",
+  "courseDescription": "Beginner-friendly guide to Python programming, syntax, data types, and control flow.",
+  "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/python/banner_image.png",
+  "pricingType": "Free",
+  "bookmarked": true,
+  "modules": [
+    {
+      "moduleId": "C3-M1",
+      "moduleTitle": "Introduction to Python",
+      "moduleDescription": "Understand what Python is, its history, key features, and where it's used. Set up your environment and write your first Python program.",
+      "topics": [
         {
-            "moduleId": "C3-M1",
-            "moduleTitle": "Introduction to Python",
-            "moduleDescription": "Setup and basics of Python programming.",
-            "topics": [
-                {
-                    "topicId": "C3-M1-T1",
-                    "topicTitle": "What is Python?",
-                    "topicContent": "Python is a high-level, interpreted programming language known for simplicity."
-                },
-                {
-                    "topicId": "C3-M1-T2",
-                    "topicTitle": "Installing Python",
-                    "topicContent": "Download and install Python from the official website."
-                }
-            ]
-        
+          "topicId": "C3-M1-T1",
+          "topicTitle": "What is Python?",
+          "topicContent": "Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms including procedural, object-oriented, and functional programming. Python is widely used in web development, automation, data analysis, artificial intelligence, and more."
         },
-
         {
-            "moduleId": "C3-M2",
-            "moduleTitle": "Python Basics",
-            "moduleDescription": "Learn variables, data types, and basic operations.",
-            "topics": [
-                {
-                "topicId": "C3-M2-T1",
-                "topicTitle": "Variables and Data Types",
-                "topicContent": "Declare variables and understand types."
-                },
-                {
-                "topicId": "C3-M2-T2",
-                "topicTitle": "Basic Input and Output",
-                "topicContent": "Using input() and print() functions."
-                }
-            ]
+          "topicId": "C3-M1-T2",
+          "topicTitle": "History of Python",
+          "topicContent": "Python was created by Guido van Rossum and released in 1991. It was designed as a successor to the ABC language, emphasizing code readability and programmer productivity. Over the years, Python has become one of the most popular languages in the world due to its ease of use and extensive libraries."
         },
-
         {
-            "moduleId": "C3-M3",
-            "moduleTitle": "Control Flow",
-            "moduleDescription": "Use conditions and loops to control program flow.",
-            "topics": [
-                {
-                "topicId": "C3-M3-T1",
-                "topicTitle": "If Statements",
-                "topicContent": "Execute code conditionally."
-                },
-                {
-                "topicId": "C3-M3-T2",
-                "topicTitle": "For Loops",
-                "topicContent": "Repeat actions for each item in a list."
-                }
-            ]
+          "topicId": "C3-M1-T3",
+          "topicTitle": "Key Features of Python",
+          "topicContent": "- Simple and easy-to-learn syntax\n- Interpreted language (no need for compilation)\n- Dynamically typed\n- Extensive standard library\n- Large community support\n- Cross-platform compatibility\n- Supports OOP and functional programming"
+        },
+        {
+          "topicId": "C3-M1-T4",
+          "topicTitle": "Installing Python",
+          "topicContent": "To install Python:\n1. Go to the official website: https://www.python.org\n2. Download the latest version for your OS.\n3. Run the installer and make sure to check 'Add Python to PATH'.\n4. Verify installation:\n```python\npython --version\n```"
+        },
+        {
+          "topicId": "C3-M1-T5",
+          "topicTitle": "Writing Your First Python Program",
+          "topicContent": "You can write Python code in any text editor or IDE like VS Code, PyCharm, or even the built-in IDLE.\n\nHere’s your first Python program:\n```python\nprint(\"Hello, Python World!\")\n```\n```python\nOutput:\nHello, Python World!\n```"
+        },
+        {
+          "topicId": "C3-M1-T6",
+          "topicTitle": "Python vs Other Languages",
+          "topicContent": "Python vs C++:\n- Python is dynamically typed; C++ is statically typed.\n- Python is interpreted; C++ is compiled.\n- Python syntax is simpler and more readable.\n- Python is slower than C++ but faster for development.\n\nPython vs Java:\n- Python has fewer lines of code for the same task.\n- Java uses explicit type declarations; Python does not.\n- Python is dynamically typed; Java is statically typed."
+        },
+        {
+          "topicId": "C3-M1-T7",
+          "topicTitle": "Python Interactive Shell (REPL)",
+          "topicContent": "Python offers an interactive shell called REPL (Read-Eval-Print Loop). You can test Python commands directly.\n\nExample:\n```python\n>>> 2 + 3\n```\n```python\nOutput:\n5\n```"
         }
-    ]
+      ]
+    },
+    {
+      "moduleId": "C3-M2",
+      "moduleTitle": "Variables and Data Types",
+      "moduleDescription": "Learn about Python variables, dynamic typing, and various data types such as integers, floats, strings, booleans, and complex numbers.",
+      "topics": [
+        {
+          "topicId": "C3-M2-T1",
+          "topicTitle": "What is a Variable in Python?",
+          "topicContent": "A variable is a named location in memory used to store data. Python does not require you to declare variables before using them or declare their type.\n\nExample:\n```python\nname = \"Alice\"\nage = 25\nprint(name, age)\n```\n```python\nOutput:\nAlice 25\n```"
+        },
+        {
+          "topicId": "C3-M2-T2",
+          "topicTitle": "Dynamic Typing in Python",
+          "topicContent": "Python uses dynamic typing, which means the type of a variable is determined at runtime and can change.\n\nExample:\n```python\nx = 10\nprint(type(x))\nx = \"Hello\"\nprint(type(x))\n```\n```python\nOutput:\n<class 'int'>\n<class 'str'>\n```"
+        },
+        {
+          "topicId": "C3-M2-T3",
+          "topicTitle": "Variable Naming Rules",
+          "topicContent": "- Names must begin with a letter (a–z, A–Z) or underscore (_)\n- Remaining characters can be letters, digits, or underscores\n- Names are case-sensitive\n- Cannot use reserved keywords like `if`, `for`, `class`, etc."
+        },
+        {
+          "topicId": "C3-M2-T4",
+          "topicTitle": "Integer and Float Data Types",
+          "topicContent": "Integers represent whole numbers, and floats represent decimal numbers.\n\nExample:\n```python\nx = 10   # Integer\ny = 3.14 # Float\nprint(x, y)\n```\n```python\nOutput:\n10 3.14\n```"
+        },
+        {
+          "topicId": "C3-M2-T5",
+          "topicTitle": "String Data Type",
+          "topicContent": "Strings are sequences of characters enclosed in single or double quotes.\n\nExample:\n```python\ngreeting = 'Hello'\nname = \"Python\"\nprint(greeting + ' ' + name)\n```\n```python\nOutput:\nHello Python\n```"
+        },
+        {
+          "topicId": "C3-M2-T6",
+          "topicTitle": "Boolean Data Type",
+          "topicContent": "Boolean represents `True` or `False` values.\n\nExample:\n```python\nis_sunny = True\nis_raining = False\nprint(is_sunny, is_raining)\n```\n```python\nOutput:\nTrue False\n```"
+        },
+        {
+          "topicId": "C3-M2-T7",
+          "topicTitle": "Complex Numbers in Python",
+          "topicContent": "Complex numbers have a real and imaginary part. Python supports complex numbers using the `j` suffix.\n\nExample:\n```python\nz = 2 + 3j\nprint(z)\nprint(type(z))\n```\n```python\nOutput:\n(2+3j)\n<class 'complex'>\n```"
+        },
+        {
+          "topicId": "C3-M2-T8",
+          "topicTitle": "Type Casting (Type Conversion)",
+          "topicContent": "Convert data from one type to another using casting functions like `int()`, `float()`, `str()`, `bool()`.\n\nExample:\n```python\nx = \"10\"\ny = int(x)\nprint(y + 5)\n```\n```python\nOutput:\n15\n```"
+        },
+        {
+          "topicId": "C3-M2-T9",
+          "topicTitle": "Getting Input from User",
+          "topicContent": "Use `input()` function to take user input. It always returns a string.\n\nExample:\n```python\nname = input(\"Enter your name: \")\nprint(\"Hello, \" + name)\n```\n```python\nOutput:\nEnter your name: John\nHello, John\n```"
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M3",
+      "moduleTitle": "Operators and Expressions",
+      "moduleDescription": "Explore arithmetic, relational, logical, assignment, membership, and identity operators. Understand how expressions are evaluated.",
+      "topics": [
+        {
+          "topicId": "C3-M3-T1",
+          "topicTitle": "Introduction to Operators",
+          "topicContent": "Operators are special symbols that perform operations on variables and values. In Python, operators are used to manipulate data and variables. Python includes a wide variety of operators such as arithmetic, relational, logical, and more."
+        },
+        {
+          "topicId": "C3-M3-T2",
+          "topicTitle": "Arithmetic Operators",
+          "topicContent": "Python supports common arithmetic operations like addition, subtraction, multiplication, division, modulus, exponentiation, and floor division.\n\n```python\nx = 10\ny = 3\nprint(x + y)  # Addition\nprint(x - y)  # Subtraction\nprint(x * y)  # Multiplication\nprint(x / y)  # Division\nprint(x % y)  # Modulus\nprint(x ** y) # Exponentiation\nprint(x // y) # Floor Division\n```\n\n```python\nOutput:\n13\n7\n30\n3.3333333333333335\n1\n1000\n3\n```"
+        },
+        {
+          "topicId": "C3-M3-T3",
+          "topicTitle": "Relational (Comparison) Operators",
+          "topicContent": "These operators compare two values and return a boolean result.\n\n```python\na = 5\nb = 10\nprint(a == b)  # Equal to\nprint(a != b)  # Not equal to\nprint(a > b)   # Greater than\nprint(a < b)   # Less than\nprint(a >= b)  # Greater than or equal to\nprint(a <= b)  # Less than or equal to\n```\n\n```python\nOutput:\nFalse\nTrue\nFalse\nTrue\nFalse\nTrue\n```"
+        },
+        {
+          "topicId": "C3-M3-T4",
+          "topicTitle": "Logical Operators",
+          "topicContent": "Logical operators are used to combine conditional statements:\n\n- `and`: Returns True if both statements are true\n- `or`: Returns True if one of the statements is true\n- `not`: Reverses the result\n\n```python\nx = 5\ny = 10\nprint(x > 2 and y > 2)\nprint(x > 2 or y < 2)\nprint(not(x > 2))\n```\n\n```python\nOutput:\nTrue\nTrue\nFalse\n```"
+        },
+        {
+          "topicId": "C3-M3-T5",
+          "topicTitle": "Assignment Operators",
+          "topicContent": "Assignment operators are used to assign values to variables:\n\n```python\na = 10\na += 5  # a = a + 5\na -= 3  # a = a - 3\na *= 2  # a = a * 2\na /= 4  # a = a / 4\nprint(a)\n```\n\n```python\nOutput:\n6.0\n```"
+        },
+        {
+          "topicId": "C3-M3-T6",
+          "topicTitle": "Membership Operators",
+          "topicContent": "These operators test for membership in a sequence like string, list, or tuple:\n\n- `in`: Returns True if a value is found\n- `not in`: Returns True if a value is not found\n\n```python\nnums = [1, 2, 3, 4]\nprint(2 in nums)\nprint(5 not in nums)\n```\n\n```python\nOutput:\nTrue\nTrue\n```"
+        },
+        {
+          "topicId": "C3-M3-T7",
+          "topicTitle": "Identity Operators",
+          "topicContent": "Identity operators compare the memory locations of two objects:\n\n- `is`: Returns True if both variables refer to the same object\n- `is not`: Returns True if they do not\n\n```python\na = [1, 2]\nb = a\nc = [1, 2]\nprint(a is b)\nprint(a is not c)\n```\n\n```python\nOutput:\nTrue\nTrue\n```"
+        },
+        {
+          "topicId": "C3-M3-T8",
+          "topicTitle": "Operator Precedence and Associativity",
+          "topicContent": "Operator precedence determines the order in which operations are performed. Associativity determines the order when two operators have the same precedence.\n\n```python\nresult = 10 + 2 * 3\nprint(result)\nresult = (10 + 2) * 3\nprint(result)\n```\n\n```python\nOutput:\n16\n36\n```\n\nMultiplication has higher precedence than addition, so it is evaluated first unless parentheses are used."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M4",
+      "moduleTitle": "Control Flow Statements",
+      "moduleDescription": "Use conditional statements (`if`, `elif`, `else`) and loops (`for`, `while`) to control the execution flow of Python programs.",
+      "topics": [
+        {
+          "topicId": "C3-M4-T1",
+          "topicTitle": "Introduction to Control Flow",
+          "topicContent": "Control flow allows you to dictate the order in which Python statements are executed. Instead of running code line by line sequentially, you can make decisions (with conditions) and repeat actions (with loops). This module introduces the building blocks for controlling program execution."
+        },
+        {
+          "topicId": "C3-M4-T2",
+          "topicTitle": "The if Statement",
+          "topicContent": "The `if` statement is used to execute a block of code only if a specified condition is `True`.\n\n```python\nx = 10\nif x > 5:\n    print(\"x is greater than 5\")\n```\n\n```python\nOutput:\nx is greater than 5\n```\n\nIndentation is critical in Python to define the code block."
+        },
+        {
+          "topicId": "C3-M4-T3",
+          "topicTitle": "The if-else Statement",
+          "topicContent": "The `if-else` statement adds an alternative path when the condition is `False`.\n\n```python\nx = 3\nif x > 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is 5 or less\")\n```\n\n```python\nOutput:\nx is 5 or less\n```"
+        },
+        {
+          "topicId": "C3-M4-T4",
+          "topicTitle": "The if-elif-else Ladder",
+          "topicContent": "`if-elif-else` allows multiple conditions to be checked sequentially.\n\n```python\nx = 7\nif x > 10:\n    print(\"x is greater than 10\")\nelif x > 5:\n    print(\"x is greater than 5 but not more than 10\")\nelse:\n    print(\"x is 5 or less\")\n```\n\n```python\nOutput:\nx is greater than 5 but not more than 10\n```"
+        },
+        {
+          "topicId": "C3-M4-T5",
+          "topicTitle": "Nested if Statements",
+          "topicContent": "You can place one `if` statement inside another to form a nested structure.\n\n```python\nx = 10\ny = 20\nif x > 5:\n    if y > 15:\n        print(\"x > 5 and y > 15\")\n```\n\n```python\nOutput:\nx > 5 and y > 15\n```"
+        },
+        {
+          "topicId": "C3-M4-T6",
+          "topicTitle": "The while Loop",
+          "topicContent": "The `while` loop continues as long as the condition is `True`.\n\n```python\nx = 1\nwhile x <= 5:\n    print(x)\n    x += 1\n```\n\n```python\nOutput:\n1\n2\n3\n4\n5\n```"
+        },
+        {
+          "topicId": "C3-M4-T7",
+          "topicTitle": "The for Loop",
+          "topicContent": "`for` loops are used to iterate over sequences like lists, tuples, strings, or ranges.\n\n```python\nfor i in range(1, 6):\n    print(i)\n```\n\n```python\nOutput:\n1\n2\n3\n4\n5\n```"
+        },
+        {
+          "topicId": "C3-M4-T8",
+          "topicTitle": "The range() Function",
+          "topicContent": "`range()` generates a sequence of numbers. You can specify a start, stop, and step value.\n\n```python\nfor i in range(0, 10, 2):\n    print(i)\n```\n\n```python\nOutput:\n0\n2\n4\n6\n8\n```"
+        },
+        {
+          "topicId": "C3-M4-T9",
+          "topicTitle": "Loop Control: break",
+          "topicContent": "`break` exits the loop immediately.\n\n```python\nfor i in range(1, 10):\n    if i == 5:\n        break\n    print(i)\n```\n\n```python\nOutput:\n1\n2\n3\n4\n```"
+        },
+        {
+          "topicId": "C3-M4-T10",
+          "topicTitle": "Loop Control: continue",
+          "topicContent": "`continue` skips the current iteration and proceeds with the next.\n\n```python\nfor i in range(1, 6):\n    if i == 3:\n        continue\n    print(i)\n```\n\n```python\nOutput:\n1\n2\n4\n5\n```"
+        },
+        {
+          "topicId": "C3-M4-T11",
+          "topicTitle": "The else Clause in Loops",
+          "topicContent": "Python allows an `else` block after a loop that executes when the loop finishes normally (not with `break`).\n\n```python\nfor i in range(5):\n    print(i)\nelse:\n    print(\"Loop finished\")\n```\n\n```python\nOutput:\n0\n1\n2\n3\n4\nLoop finished\n```"
+        },
+        {
+          "topicId": "C3-M4-T12",
+          "topicTitle": "Nested Loops",
+          "topicContent": "You can nest one loop inside another. Be cautious of performance for large loops.\n\n```python\nfor i in range(1, 4):\n    for j in range(1, 3):\n        print(f\"i = {i}, j = {j}\")\n```\n\n```python\nOutput:\ni = 1, j = 1\ni = 1, j = 2\ni = 2, j = 1\ni = 2, j = 2\ni = 3, j = 1\ni = 3, j = 2\n```"
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M5",
+      "moduleTitle": "Functions and Recursion",
+      "moduleDescription": "Create and use functions, understand parameters, return values, recursion, and default and keyword arguments.",
+      "topics": [
+        {
+          "topicId": "C3-M5-T1",
+          "topicTitle": "Introduction to Functions",
+          "topicContent": "Functions are reusable blocks of code that perform a specific task. They help organize your code, avoid repetition, and improve readability. In Python, functions are defined using the `def` keyword.\n\nExample:\n\n```python\ndef greet():\n    print(\"Hello, world!\")\n\ngreet()\n```\n\n```python\nOutput:\nHello, world!\n```\n\nFunctions can be called multiple times after their definition."
+        },
+        {
+          "topicId": "C3-M5-T2",
+          "topicTitle": "Function Parameters and Arguments",
+          "topicContent": "Functions can accept inputs called parameters. When you call a function, you pass values called arguments to these parameters.\n\nExample:\n\n```python\ndef greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")\n```\n\n```python\nOutput:\nHello, Alice!\n```\n\nParameters allow functions to be flexible and work with different inputs."
+        },
+        {
+          "topicId": "C3-M5-T3",
+          "topicTitle": "Return Values from Functions",
+          "topicContent": "Functions can return a value to the caller using the `return` statement.\n\nExample:\n\n```python\ndef add(a, b):\n    return a + b\n\nresult = add(5, 3)\nprint(result)\n```\n\n```python\nOutput:\n8\n```\n\nReturning values allows you to use function results in expressions or further processing."
+        },
+        {
+          "topicId": "C3-M5-T4",
+          "topicTitle": "Default Arguments",
+          "topicContent": "You can provide default values for function parameters. If no argument is passed for that parameter, the default is used.\n\nExample:\n\n```python\ndef greet(name = \"Guest\"):\n    print(f\"Hello, {name}!\")\n\ngreet()\ngreet(\"Bob\")\n```\n\n```python\nOutput:\nHello, Guest!\nHello, Bob!\n```"
+        },
+        {
+          "topicId": "C3-M5-T5",
+          "topicTitle": "Keyword Arguments",
+          "topicContent": "You can pass arguments to functions by explicitly naming the parameters, allowing out-of-order argument passing.\n\nExample:\n\n```python\ndef describe_pet(pet_name, animal_type = \"dog\"):\n    print(f\"I have a {animal_type} named {pet_name}.\")\n\ndescribe_pet(animal_type = \"cat\", pet_name = \"Whiskers\")\n```\n\n```python\nOutput:\nI have a cat named Whiskers.\n```"
+        },
+        {
+          "topicId": "C3-M5-T6",
+          "topicTitle": "Variable-length Arguments (*args and **kwargs)",
+          "topicContent": "Functions can accept an arbitrary number of positional (`*args`) and keyword (`**kwargs`) arguments.\n\nExample:\n\n```python\ndef print_args(*args):\n    for arg in args:\n        print(arg)\n\nprint_args(1, 2, 3)\n```\n\n```python\nOutput:\n1\n2\n3\n```\n\n```python\ndef print_kwargs(**kwargs):\n    for key, value in kwargs.items():\n        print(f\"{key}: {value}\")\n\nprint_kwargs(name=\"Alice\", age=30)\n```\n\n```python\nOutput:\nname: Alice\nage: 30\n```"
+        },
+        {
+          "topicId": "C3-M5-T7",
+          "topicTitle": "Anonymous Functions (Lambda)",
+          "topicContent": "Lambda functions are small anonymous functions defined with the `lambda` keyword. They can have any number of arguments but only one expression.\n\nExample:\n\n```python\nadd = lambda x, y: x + y\nprint(add(5, 3))\n```\n\n```python\nOutput:\n8\n```\n\nLambdas are often used for short, simple functions passed as arguments."
+        },
+        {
+          "topicId": "C3-M5-T8",
+          "topicTitle": "Recursion: Introduction and Concept",
+          "topicContent": "Recursion occurs when a function calls itself to solve a smaller instance of the same problem. It's useful for problems like factorial calculation or traversing nested structures.\n\nKey points:\n- Base case: condition to stop recursion.\n- Recursive case: function calls itself.\n\nExample:\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1  # base case\n    else:\n        return n * factorial(n - 1)  # recursive case\n\nprint(factorial(5))\n```\n\n```python\nOutput:\n120\n```"
+        },
+        {
+          "topicId": "C3-M5-T9",
+          "topicTitle": "Advantages and Cautions of Recursion",
+          "topicContent": "Recursion simplifies some problems and leads to elegant solutions. However, it can cause performance issues and stack overflow if not properly managed.\n\nTips:\n- Always define a base case.\n- Avoid excessive recursion depth.\n- Sometimes iteration is more efficient."
+        },
+        {
+          "topicId": "C3-M5-T10",
+          "topicTitle": "Practical Examples of Recursion",
+          "topicContent": "Examples include:\n\n1. Fibonacci sequence:\n\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\nprint([fibonacci(i) for i in range(10)])\n```\n\n```python\nOutput:\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n```\n\n2. Calculating the sum of a list recursively:\n\n```python\ndef recursive_sum(lst):\n    if not lst:\n        return 0\n    else:\n        return lst[0] + recursive_sum(lst[1:])\n\nprint(recursive_sum([1, 2, 3, 4, 5]))\n```\n\n```python\nOutput:\n15\n```"
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M6",
+      "moduleTitle": "Data Structures in Python",
+      "moduleDescription": "Work with Python's built-in data structures including lists, tuples, sets, and dictionaries.",
+      "topics": [
+        {
+          "topicId": "C3-M6-T1",
+          "topicTitle": "Introduction to Python Data Structures",
+          "topicContent": "Python provides several built-in data structures to store and organize data efficiently. These include lists, tuples, sets, and dictionaries. Understanding these is crucial for writing efficient and readable code."
+        },
+        {
+          "topicId": "C3-M6-T2",
+          "topicTitle": "Lists",
+          "topicContent": "Lists are ordered, mutable collections of items. They can hold items of different data types.\n\nCreating a list:\n\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\n```\n\nAccessing elements:\n\n```python\nprint(fruits[0])  # apple\n```\n\nModifying lists:\n\n```python\nfruits.append(\"orange\")  # Adds at the end\nfruits.remove(\"banana\")  # Removes item\nprint(fruits)\n```\n\nLists support slicing, concatenation, and many useful methods like `sort()`, `reverse()`, and `extend()`."
+        },
+        {
+          "topicId": "C3-M6-T3",
+          "topicTitle": "Tuples",
+          "topicContent": "Tuples are ordered, immutable collections. Once created, their content cannot be changed.\n\nCreating a tuple:\n\n```python\npoint = (10, 20)\n```\n\nAccessing elements:\n\n```python\nprint(point[1])  # 20\n```\n\nTuples are faster than lists and are used to store fixed data.\n\nUse cases include returning multiple values from a function."
+        },
+        {
+          "topicId": "C3-M6-T4",
+          "topicTitle": "Sets",
+          "topicContent": "Sets are unordered collections of unique elements.\n\nCreating a set:\n\n```python\ncolors = {\"red\", \"green\", \"blue\"}\n```\n\nAdding/removing elements:\n\n```python\ncolors.add(\"yellow\")\ncolors.discard(\"green\")\n```\n\nSets support mathematical operations like union, intersection, and difference.\n\nExample:\n\n```python\na = {1, 2, 3}\nb = {3, 4, 5}\nprint(a.union(b))        # {1, 2, 3, 4, 5}\nprint(a.intersection(b)) # {3}\n```\n\nSets are useful when you want to eliminate duplicates or perform membership tests efficiently."
+        },
+        {
+          "topicId": "C3-M6-T5",
+          "topicTitle": "Dictionaries",
+          "topicContent": "Dictionaries store key-value pairs. They are unordered (in Python 3.6+ insertion ordered), mutable, and keys must be immutable types.\n\nCreating a dictionary:\n\n```python\nperson = {\"name\": \"Alice\", \"age\": 30, \"city\": \"New York\"}\n```\n\nAccessing values:\n\n```python\nprint(person[\"name\"])  # Alice\n```\n\nAdding/modifying entries:\n\n```python\nperson[\"age\"] = 31\nperson[\"email\"] = \"alice@example.com\"\n```\n\nUseful methods:\n\n- `keys()` to get all keys\n- `values()` to get all values\n- `items()` to get key-value pairs\n\nExample iterating dictionary:\n\n```python\nfor key, value in person.items():\n    print(f\"{key}: {value}\")\n```\n\nDictionaries are powerful for representing structured data."
+        },
+        {
+          "topicId": "C3-M6-T6",
+          "topicTitle": "Comparing Data Structures",
+          "topicContent": "Each data structure has its use cases:\n\n- Lists: ordered and mutable, best for collections of items.\n- Tuples: ordered and immutable, for fixed data.\n- Sets: unordered unique items, good for membership testing and removing duplicates.\n- Dictionaries: key-value mappings, best for labeled data.\n\nChoosing the right structure optimizes performance and clarity."
+        },
+        {
+          "topicId": "C3-M6-T7",
+          "topicTitle": "Common Methods and Operations",
+          "topicContent": "Learn important methods for these data structures:\n\n- Lists: `append()`, `extend()`, `insert()`, `remove()`, `pop()`, `sort()`, `reverse()`\n- Tuples: no methods to change content, but support indexing and slicing\n- Sets: `add()`, `discard()`, `union()`, `intersection()`, `difference()`\n- Dictionaries: `get()`, `keys()`, `values()`, `items()`, `pop()`\n\nExample:\n\n```python\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list)  # [1, 2, 3, 4]\n\nmy_set = {1, 2}\nmy_set.add(3)\nprint(my_set)  # {1, 2, 3}\n\nmy_dict = {\"a\": 1, \"b\": 2}\nprint(my_dict.get(\"a\"))  # 1\n```\n\nUnderstanding these makes your data manipulations easier."
+        },
+        {
+          "topicId": "C3-M6-T8",
+          "topicTitle": "Nested Data Structures",
+          "topicContent": "Python allows nesting data structures within each other, such as lists inside dictionaries or tuples inside lists.\n\nExample:\n\n```python\nstudents = {\n    \"Alice\": [85, 90, 92],\n    \"Bob\": [78, 81, 85]\n}\n\nprint(students[\"Alice\"][1])  # 90\n```\n\nNesting enables complex data representation but requires careful indexing."
+        },
+        {
+          "topicId": "C3-M6-T9",
+          "topicTitle": "When to Use Each Data Structure",
+          "topicContent": "Summary:\n\n- Use lists when order matters and you need mutability.\n- Use tuples for fixed collections and data integrity.\n- Use sets to ensure uniqueness and perform set operations.\n- Use dictionaries to map keys to values for fast lookups.\n\nChoosing wisely improves program efficiency and readability."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M7",
+      "moduleTitle": "Strings and String Manipulation",
+      "moduleDescription": "Learn how to create, access, and manipulate strings using slicing, built-in methods, and formatting techniques.",
+      "topics": [
+        {
+          "topicId": "C3-M7-T1",
+          "topicTitle": "Introduction to Strings in Python",
+          "topicContent": "Strings in Python are sequences of characters enclosed within single quotes (' '), double quotes (\" \"), or triple quotes (''' ''' or \"\"\" \"\"\"). Strings are immutable, meaning once created, they cannot be changed. Python provides many built-in methods to work with strings efficiently."
+        },
+        {
+          "topicId": "C3-M7-T2",
+          "topicTitle": "Creating and Accessing Strings",
+          "topicContent": "You can create strings by enclosing text in quotes:\\n\\n```python\\nname = 'Alice'\\nquote = \\\"Life is beautiful\\\"\\nmultiline = '''This is a\\nmultiline string.'''\\n```\\n\\nAccess characters using indexing (0-based) and slicing:\\n\\n```python\\nprint(name[0])    # A\\nprint(name[-1])   # e\\nprint(name[1:4])  # lic\\n```\\n\\nSlicing syntax: `string[start:end:step]` extracts substring from `start` index up to but not including `end`, with optional `step`."
+        },
+        {
+          "topicId": "C3-M7-T3",
+          "topicTitle": "Common String Operations",
+          "topicContent": "Strings support concatenation, repetition, membership checks, and length calculation:\\n\\n```python\\ns1 = 'Hello'\\ns2 = 'World'\\n\\n# Concatenation\\nprint(s1 + ' ' + s2)  # Hello World\\n\\n# Repetition\\nprint(s1 * 3)         # HelloHelloHello\\n\\n# Membership\\nprint('H' in s1)      # True\\n\\n# Length\\nprint(len(s1))        # 5\\n```\\n\\nThese operations help in building and manipulating strings flexibly."
+        },
+        {
+          "topicId": "C3-M7-T4",
+          "topicTitle": "String Methods",
+          "topicContent": "Python provides many string methods to transform and inspect strings:\\n\\n- `lower()`, `upper()`, `capitalize()`, `title()` — Change case\\n- `strip()`, `lstrip()`, `rstrip()` — Remove whitespace\\n- `split()` — Split into list by delimiter\\n- `join()` — Join list elements into string\\n- `find()`, `rfind()`, `index()` — Search for substrings\\n- `replace()` — Replace substring\\n\\nExample:\\n\\n```python\\ntext = '  Hello World  '\\nprint(text.strip())              # 'Hello World'\\nprint(text.lower())              # '  hello world  '\\nprint(text.replace('World', 'Python'))  # '  Hello Python  '\\nwords = text.split()\\nprint(words)                    # ['Hello', 'World']\\nprint('-'.join(words))          # 'Hello-World'\\n```\\n\\nThese methods allow powerful string manipulation."
+        },
+        {
+          "topicId": "C3-M7-T5",
+          "topicTitle": "String Formatting",
+          "topicContent": "Formatting strings helps create readable output by embedding variables or expressions:\\n\\n- Using `%` operator (old style):\\n\\n```python\\nname = 'Alice'\\nage = 25\\nprint('My name is %s and I am %d years old.' % (name, age))\\n```\\n\\n- Using `str.format()` method:\\n\\n```python\\nprint('My name is {} and I am {} years old.'.format(name, age))\\n```\\n\\n- Using f-strings (Python 3.6+):\\n\\n```python\\nprint(f'My name is {name} and I am {age} years old.')\\n```\\n\\nF-strings are concise, readable, and support expressions inside `{}`."
+        },
+        {
+          "topicId": "C3-M7-T6",
+          "topicTitle": "Escape Characters",
+          "topicContent": "Special characters in strings use escape sequences with backslash `\\\\`:\\n\\n- `\\\\n` — Newline\\n- `\\\\t` — Tab\\n- `\\\\\\\\` — Backslash\\n- `\\\\'` — Single quote\\n- `\\\\\"` — Double quote\\n\\nExample:\\n\\n```python\\nprint('Hello\\\\nWorld')\\nprint('This is a tab:\\\\tend')\\n```\\n\\nEscape sequences allow special formatting inside strings."
+        },
+        {
+          "topicId": "C3-M7-T7",
+          "topicTitle": "Raw Strings",
+          "topicContent": "Raw strings ignore escape sequences and treat backslashes literally. Useful for file paths and regular expressions:\\n\\n```python\\npath = r'C:\\\\Users\\\\Alice\\\\Documents'\\nprint(path)  # C:\\Users\\Alice\\Documents\\n```\\n\\nWithout `r` prefix, backslashes would need doubling or escaping."
+        },
+        {
+          "topicId": "C3-M7-T8",
+          "topicTitle": "Multiline Strings",
+          "topicContent": "Triple quotes (`'''` or `\\\"\\\"\\\"`) create multiline strings:\\n\\n```python\\nmessage = '''Hello,\\nThis is a\\nmultiline string.'''\nprint(message)\\n```\\n\\nPreserves line breaks and is useful for docstrings and long text."
+        },
+        {
+          "topicId": "C3-M7-T9",
+          "topicTitle": "String Immutability",
+          "topicContent": "Strings cannot be changed after creation. Any modification creates a new string:\\n\\n```python\\ns = 'Hello'\\ns = s + ' World'\\nprint(s)  # Hello World\\n```\\n\\nThis immutability ensures strings are safe to use as dictionary keys or set elements."
+        },
+        {
+          "topicId": "C3-M7-T10",
+          "topicTitle": "Practical Examples",
+          "topicContent": "Example: Capitalizing first letter of each word:\\n\\n```python\\nsentence = 'hello world from python'\\ncapitalized = sentence.title()\\nprint(capitalized)  # Hello World From Python\\n```\\n\\nExample: Counting words in a sentence:\\n\\n```python\\ntext = 'one two three two one'\\nwords = text.split()\\nword_count = {}\\nfor word in words:\\n    word_count[word] = word_count.get(word, 0) + 1\\nprint(word_count)  # {'one': 2, 'two': 2, 'three': 1}\\n```\\n\\nUnderstanding strings deeply empowers text processing tasks."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M8",
+      "moduleTitle": "File Handling",
+      "moduleDescription": "Read from and write to files in Python. Understand file modes, file pointers, and context managers.",
+      "topics": [
+        {
+          "topicId": "C3-M8-T1",
+          "topicTitle": "Introduction to File Handling",
+          "topicContent": "File handling in Python allows you to read from and write data to files on your system. Files can be text or binary, and Python provides built-in functions to work with them efficiently."
+        },
+        {
+          "topicId": "C3-M8-T2",
+          "topicTitle": "Opening Files",
+          "topicContent": "Use the `open()` function to open a file. It requires the file path and mode ('r' for reading, 'w' for writing, 'a' for appending, etc.).\\n\\n```python\\nfile = open('example.txt', 'r')\\n```\\n\\nModes:\\n- 'r' — Read (default)\\n- 'w' — Write (creates or overwrites)\\n- 'a' — Append\\n- 'b' — Binary mode (add with other modes, e.g., 'rb')\\n- 'x' — Create new file, fails if file exists"
+        },
+        {
+          "topicId": "C3-M8-T3",
+          "topicTitle": "Reading from Files",
+          "topicContent": "Common methods to read file contents:\\n\\n- `read()` — Reads entire file content as a string\\n- `readline()` — Reads one line at a time\\n- `readlines()` — Reads all lines into a list\\n\\nExample:\\n\\n```python\\nwith open('example.txt', 'r') as file:\\n    content = file.read()\\n    print(content)\\n```\\nUsing `with` ensures the file is properly closed after use."
+        },
+        {
+          "topicId": "C3-M8-T4",
+          "topicTitle": "Writing to Files",
+          "topicContent": "Writing text to a file:\\n\\n```python\\nwith open('example.txt', 'w') as file:\\n    file.write('Hello, world!\\n')\\n    file.write('This is a new line.')\\n```\\n\\nWriting in append mode adds to the file without overwriting existing content."
+        },
+        {
+          "topicId": "C3-M8-T5",
+          "topicTitle": "File Pointers and Cursor",
+          "topicContent": "The file pointer indicates the current position in the file. It moves as you read or write. You can use `file.seek(offset, whence)` to change the position:\\n\\n- `offset` — Number of bytes to move\\n- `whence` — Reference point: 0 (start), 1 (current), 2 (end)\\n\\nExample:\\n\\n```python\\nwith open('example.txt', 'r') as file:\\n    file.seek(5)\\n    print(file.read())  # Reads from 6th byte\\n```"
+        },
+        {
+          "topicId": "C3-M8-T6",
+          "topicTitle": "Working with File Paths",
+          "topicContent": "Use the `os` and `pathlib` modules to handle file paths across different operating systems:\\n\\n```python\\nimport os\\nfrom pathlib import Path\\n\\n# Using os module\\nprint(os.path.exists('example.txt'))\\n\\n# Using pathlib\\npath = Path('example.txt')\\nprint(path.is_file())\\n```"
+        },
+        {
+          "topicId": "C3-M8-T7",
+          "topicTitle": "Context Managers for Files",
+          "topicContent": "Using `with` statement to open files is recommended because it automatically closes the file even if exceptions occur:\\n\\n```python\\nwith open('example.txt', 'r') as file:\\n    data = file.read()\\n# file is automatically closed here\\n```"
+        },
+        {
+          "topicId": "C3-M8-T8",
+          "topicTitle": "Binary File Handling",
+          "topicContent": "To read or write binary files like images or audio, open the file in binary mode (`'rb'`, `'wb'`):\\n\\n```python\\nwith open('image.jpg', 'rb') as img:\\n    data = img.read()\\n```\\nBinary mode prevents encoding transformations."
+        },
+        {
+          "topicId": "C3-M8-T9",
+          "topicTitle": "Practical Examples",
+          "topicContent": "Example: Reading a file and counting lines:\\n\\n```python\\nwith open('example.txt', 'r') as file:\\n    lines = file.readlines()\\n    print(f'Total lines: {len(lines)}')\\n```\\n\\nExample: Writing a list to a file:\\n\\n```python\\nlines = ['First line\\n', 'Second line\\n', 'Third line\\n']\\nwith open('output.txt', 'w') as file:\\n    file.writelines(lines)\\n```"
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M9",
+      "moduleTitle": "Exception Handling",
+      "moduleDescription": "Handle errors gracefully using try-except blocks, `finally`, and raise statements.",
+      "topics": [
+        {
+          "topicId": "C3-M9-T1",
+          "topicTitle": "Introduction to Exception Handling",
+          "topicContent": "Exceptions are errors detected during execution that disrupt the normal flow of a program. Python provides mechanisms to handle exceptions gracefully to avoid program crashes."
+        },
+        {
+          "topicId": "C3-M9-T2",
+          "topicTitle": "Using try and except Blocks",
+          "topicContent": "The `try` block lets you test a block of code for errors. The `except` block lets you handle the error if one occurs.\\n\\nExample:\\n\\n```python\\ntry:\\n    x = 1 / 0  # This raises ZeroDivisionError\\nexcept ZeroDivisionError:\\n    print('Cannot divide by zero!')\\n```"
+        },
+        {
+          "topicId": "C3-M9-T3",
+          "topicTitle": "Catching Multiple Exceptions",
+          "topicContent": "You can handle different exceptions separately or together:\\n\\n```python\\ntry:\\n    value = int(input('Enter a number: '))\\n    result = 10 / value\\nexcept ValueError:\\n    print('Invalid input: not a number.')\\nexcept ZeroDivisionError:\\n    print('Cannot divide by zero.')\\n```"
+        },
+        {
+          "topicId": "C3-M9-T4",
+          "topicTitle": "The else Clause",
+          "topicContent": "The `else` block runs if no exceptions occur in the `try` block:\\n\\n```python\\ntry:\\n    print('Trying...')\\nexcept Exception:\\n    print('Error occurred')\\nelse:\\n    print('No errors!')\\n```"
+        },
+        {
+          "topicId": "C3-M9-T5",
+          "topicTitle": "The finally Clause",
+          "topicContent": "The `finally` block always runs, regardless of whether an exception occurred or not, often used for cleanup actions:\\n\\n```python\\ntry:\\n    file = open('test.txt', 'r')\\nexcept FileNotFoundError:\\n    print('File not found')\\nfinally:\\n    print('Execution completed')\\n```"
+        },
+        {
+          "topicId": "C3-M9-T6",
+          "topicTitle": "Raising Exceptions",
+          "topicContent": "You can raise exceptions manually with the `raise` statement:\\n\\n```python\\ndef check_age(age):\\n    if age < 18:\\n        raise ValueError('Age must be at least 18')\\n\\ntry:\\n    check_age(16)\\nexcept ValueError as e:\\n    print(e)\\n```"
+        },
+        {
+          "topicId": "C3-M9-T7",
+          "topicTitle": "Custom Exception Classes",
+          "topicContent": "You can create your own exception classes by inheriting from `Exception`:\\n\\n```python\\nclass MyError(Exception):\\n    pass\\n\\ntry:\\n    raise MyError('Custom error occurred')\\nexcept MyError as e:\\n    print(e)\\n```"
+        },
+        {
+          "topicId": "C3-M9-T8",
+          "topicTitle": "Best Practices in Exception Handling",
+          "topicContent": "Avoid catching generic exceptions unless necessary. Handle specific exceptions to prevent hiding bugs. Keep `try` blocks minimal to the code that might raise exceptions."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M10",
+      "moduleTitle": "Object-Oriented Programming in Python",
+      "moduleDescription": "Dive into classes, objects, inheritance, encapsulation, polymorphism, and magic methods in Python.",
+      "topics": [
+        {
+          "topicId": "C3-M10-T1",
+          "topicTitle": "Introduction to Object-Oriented Programming (OOP)",
+          "topicContent": "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of 'objects', which can contain data in the form of fields (attributes) and code in the form of procedures (methods). Python supports OOP to help organize code efficiently."
+        },
+        {
+          "topicId": "C3-M10-T2",
+          "topicTitle": "Classes and Objects",
+          "topicContent": "A class is a blueprint for creating objects. An object is an instance of a class.\\n\\nExample:\\n```python\\nclass Dog:\\n    def __init__(self, name, age):\\n        self.name = name\\n        self.age = age\\n    def bark(self):\\n        print(f'{self.name} says Woof!')\\n\\ndog1 = Dog('Buddy', 3)\\ndog1.bark()  # Output: Buddy says Woof!\\n```"
+        },
+        {
+          "topicId": "C3-M10-T3",
+          "topicTitle": "Attributes and Methods",
+          "topicContent": "Attributes store object data, while methods define behaviors. Attributes are accessed using `self`, and methods can operate on these attributes."
+        },
+        {
+          "topicId": "C3-M10-T4",
+          "topicTitle": "The __init__ Method",
+          "topicContent": "The `__init__` method is a special method called a constructor. It initializes an object's attributes when an instance is created."
+        },
+        {
+          "topicId": "C3-M10-T5",
+          "topicTitle": "Instance vs Class Variables",
+          "topicContent": "Instance variables belong to each object, while class variables are shared among all instances of a class."
+        },
+        {
+          "topicId": "C3-M10-T6",
+          "topicTitle": "Encapsulation and Access Modifiers",
+          "topicContent": "Encapsulation hides internal details of a class. In Python, prefixing attribute names with a single underscore `_` indicates 'protected', and with double underscores `__` indicates 'private' attributes."
+        },
+        {
+          "topicId": "C3-M10-T7",
+          "topicTitle": "Inheritance",
+          "topicContent": "Inheritance allows a class (child) to inherit attributes and methods from another class (parent), promoting code reuse.\\n\\nExample:\\n```python\\nclass Animal:\\n    def speak(self):\\n        print('Animal speaks')\\n\\nclass Dog(Animal):\\n    def speak(self):\\n        print('Woof!')\\n\\ndog = Dog()\\ndog.speak()  # Output: Woof!\\n```"
+        },
+        {
+          "topicId": "C3-M10-T8",
+          "topicTitle": "Polymorphism",
+          "topicContent": "Polymorphism allows methods to have different implementations based on the object calling them, often through method overriding."
+        },
+        {
+          "topicId": "C3-M10-T9",
+          "topicTitle": "Magic Methods (Dunder Methods)",
+          "topicContent": "Magic methods like `__str__`, `__repr__`, `__len__`, and `__add__` allow customization of object behavior with built-in Python operations.\\n\\nExample:\\n```python\\nclass Book:\\n    def __init__(self, title, author):\\n        self.title = title\\n        self.author = author\\n    def __str__(self):\\n        return f'{self.title} by {self.author}'\\n\\nbook = Book('1984', 'George Orwell')\\nprint(book)  # Output: 1984 by George Orwell\\n```"
+        },
+        {
+          "topicId": "C3-M10-T10",
+          "topicTitle": "Composition vs Inheritance",
+          "topicContent": "Composition involves building classes that contain objects of other classes, offering an alternative to inheritance and promoting flexible code design."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M11",
+      "moduleTitle": "Modules and Packages",
+      "moduleDescription": "Organize code into modules and packages. Learn how to import and reuse code effectively.",
+      "topics": [
+        {
+          "topicId": "C3-M11-T1",
+          "topicTitle": "Introduction to Modules",
+          "topicContent": "Modules in Python are files containing Python code such as functions, classes, and variables. They help you organize your code logically by grouping related functionality together. Modules allow you to reuse code across multiple programs, improving maintainability and reducing redundancy. Every Python file (.py) can be considered a module."
+        },
+        {
+          "topicId": "C3-M11-T2",
+          "topicTitle": "Creating and Using Modules",
+          "topicContent": "You can create your own modules simply by writing Python code in a file with a .py extension. For example, if you create a file called 'mymodule.py' containing useful functions, you can import and use these functions in other Python scripts. Importing modules is done using the `import` statement.\\n\\nExample:\\n```python\\n# mymodule.py\\ndef greet(name):\\n    return f'Hello, {name}!'\\n\\n# main.py\\nimport mymodule\\nprint(mymodule.greet('Alice'))  # Output: Hello, Alice!\\n```\\nThis allows you to keep your code modular and organized."
+        },
+        {
+          "topicId": "C3-M11-T3",
+          "topicTitle": "The import Statement and Its Variants",
+          "topicContent": "Python offers different ways to import code from modules: 1) `import module` imports the entire module and you access its members with `module.member`. 2) `from module import function` imports only specific functions or classes directly, so you can use them without module prefix. 3) `import module as alias` allows you to give a module a shorter or alternative name to avoid conflicts or simplify code.\\n\\nExample:\\n```python\\nimport math\\nprint(math.sqrt(16))  # Using full module name\\nfrom math import sqrt\\nprint(sqrt(25))       # Direct import\\nimport math as m\\nprint(m.sqrt(36))      # Using alias\\n```"
+        },
+        {
+          "topicId": "C3-M11-T4",
+          "topicTitle": "Standard Library Modules",
+          "topicContent": "Python comes with a rich standard library containing many useful modules for various tasks. For example, the `math` module provides mathematical functions, `os` for operating system operations, `sys` for system-specific parameters, `random` for generating random numbers, and `datetime` for date and time manipulation. These modules save you from reinventing the wheel and allow you to build powerful programs easily."
+        },
+        {
+          "topicId": "C3-M11-T5",
+          "topicTitle": "Introduction to Packages",
+          "topicContent": "Packages are a way to organize related modules into directories. A package is simply a folder containing multiple Python modules and a special file called `__init__.py`. The `__init__.py` file can be empty but signals to Python that the directory should be treated as a package. This allows you to group and structure large projects effectively."
+        },
+        {
+          "topicId": "C3-M11-T6",
+          "topicTitle": "Creating and Using Packages",
+          "topicContent": "To create a package, you create a folder and add an `__init__.py` file inside it. Then you place your modules inside this folder. You can import modules from the package using dot notation.\\n\\nExample folder structure:\\n```\nmypackage/\\n    __init__.py\\n    module1.py\\n    module2.py\\n```\\nImporting module1:\\n```python\\nfrom mypackage import module1\\nmodule1.some_function()\\n```\\nPackages help keep your codebase organized especially when working on larger projects."
+        },
+        {
+          "topicId": "C3-M11-T7",
+          "topicTitle": "Relative and Absolute Imports",
+          "topicContent": "In packages, you can import modules using absolute or relative imports. Absolute imports specify the full path starting from the project root (e.g., `from mypackage.module1 import func`). Relative imports use dots to specify location relative to the current module: one dot (`.`) means current package, two dots (`..`) means parent package.\\n\\nExample of relative import inside a package:\\n```python\\nfrom .module2 import another_function  # Import from sibling module\\nfrom ..subpackage import module3       # Import from parent package\\n```\\nUse relative imports carefully to avoid import errors."
+        },
+        {
+          "topicId": "C3-M11-T8",
+          "topicTitle": "Using `__init__.py`",
+          "topicContent": "The `__init__.py` file initializes a Python package. It can be empty or contain initialization code to be executed when the package is imported. It can also define which modules the package exports by setting the `__all__` variable. This allows you to control what is accessible when someone imports your package."
+        },
+        {
+          "topicId": "C3-M11-T9",
+          "topicTitle": "Best Practices for Modules and Packages",
+          "topicContent": "When designing modules and packages, keep the following best practices in mind: 1) Keep modules focused on a single responsibility to improve readability. 2) Use descriptive and consistent naming conventions. 3) Avoid circular imports, which cause import errors. 4) Document your modules and packages using docstrings to help users understand your code. 5) Organize code hierarchically in packages to manage complexity in large projects."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M12",
+      "moduleTitle": "Working with Libraries",
+      "moduleDescription": "Use Python's standard library and explore third-party libraries such as `math`, `random`, `datetime`, and `requests`.",
+      "topics": [
+        {
+          "topicId": "C3-M12-T1",
+          "topicTitle": "Python Standard Library Overview",
+          "topicContent": "Python's standard library is a collection of modules and packages included with Python that provide ready-to-use functionality for common programming tasks. This extensive library includes modules for math operations, file handling, data serialization, networking, and much more. Using the standard library helps you avoid reinventing the wheel and speeds up development."
+        },
+        {
+          "topicId": "C3-M12-T2",
+          "topicTitle": "Using the math Module",
+          "topicContent": "The `math` module provides mathematical functions like square root, trigonometric functions, logarithms, factorial, and constants such as pi and e. It is widely used in numerical computations.\\n\\nExample:\\n```python\\nimport math\\nprint(math.sqrt(16))      # Output: 4.0\\nprint(math.factorial(5))  # Output: 120\\nprint(math.pi)            # Output: 3.141592653589793\\n```"
+        },
+        {
+          "topicId": "C3-M12-T3",
+          "topicTitle": "Using the random Module",
+          "topicContent": "The `random` module helps generate pseudo-random numbers and perform random operations like selecting random items or shuffling sequences. This module is useful in simulations, games, and randomized algorithms.\\n\\nExample:\\n```python\\nimport random\\nprint(random.randint(1, 10))    # Random integer between 1 and 10\\nprint(random.choice(['apple', 'banana', 'cherry']))  # Randomly select an item\\n```"
+        },
+        {
+          "topicId": "C3-M12-T4",
+          "topicTitle": "Using the datetime Module",
+          "topicContent": "The `datetime` module provides classes for manipulating dates and times. You can create date/time objects, calculate time differences, format dates, and more. Handling dates and times is essential in applications like scheduling, logging, and timestamps.\\n\\nExample:\\n```python\\nfrom datetime import datetime, timedelta\\nnow = datetime.now()\\nprint(now)  # Current date and time\\nfuture = now + timedelta(days=5)\\nprint(future)  # Date 5 days from now\\n```"
+        },
+        {
+          "topicId": "C3-M12-T5",
+          "topicTitle": "Installing and Using Third-Party Libraries",
+          "topicContent": "Python's ecosystem includes a vast number of third-party libraries that extend its capabilities. These libraries can be installed using `pip`, Python's package manager. Before using a third-party library, you need to install it via the command line:\\n\\n```bash\\npip install requests\\n```\\nAfter installation, you can import and use the library in your programs. Third-party libraries save development time and add powerful features."
+        },
+        {
+          "topicId": "C3-M12-T6",
+          "topicTitle": "Using the requests Library for HTTP",
+          "topicContent": "The `requests` library simplifies making HTTP requests in Python, making it easy to interact with web APIs, download content, and handle HTTP methods like GET and POST. It abstracts away the complexity of handling connections and headers.\\n\\nExample:\\n```python\\nimport requests\\nresponse = requests.get('https://api.github.com')\\nprint(response.status_code)  # HTTP status code\\nprint(response.json())       # Parse JSON response\\n```"
+        },
+        {
+          "topicId": "C3-M12-T7",
+          "topicTitle": "Exploring Other Useful Libraries",
+          "topicContent": "Apart from `requests`, there are many other popular libraries like `numpy` for numerical computations, `pandas` for data analysis, `matplotlib` for plotting, and `beautifulsoup4` for web scraping. Exploring and using these libraries will greatly enhance your Python programming skills."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M13",
+      "moduleTitle": "Comprehensions and Lambda Functions",
+      "moduleDescription": "Use list, dictionary, and set comprehensions for concise data structure creation. Understand anonymous functions with `lambda`.",
+      "topics": [
+        {
+          "topicId": "C3-M13-T1",
+          "topicTitle": "Introduction to Comprehensions",
+          "topicContent": "Comprehensions in Python provide a concise way to create lists, dictionaries, and sets. They allow you to generate these data structures using a single line of code with a readable syntax. Comprehensions are often more efficient and easier to understand than using loops for the same purpose."
+        },
+        {
+          "topicId": "C3-M13-T2",
+          "topicTitle": "List Comprehensions",
+          "topicContent": "List comprehensions create new lists by applying an expression to each item in an iterable. They can also include conditional logic to filter items.\\n\\nExample:\\n```python\\nsquares = [x**2 for x in range(10)]\\nprint(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]\\neven_squares = [x**2 for x in range(10) if x % 2 == 0]\\nprint(even_squares)  # Output: [0, 4, 16, 36, 64]\\n```"
+        },
+        {
+          "topicId": "C3-M13-T3",
+          "topicTitle": "Dictionary Comprehensions",
+          "topicContent": "Dictionary comprehensions allow you to create dictionaries by specifying key-value pairs using a comprehension syntax. This is useful when you want to transform or filter data into a dictionary format.\\n\\nExample:\\n```python\\nsquares_dict = {x: x**2 for x in range(5)}\\nprint(squares_dict)  # Output: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}\\n```"
+        },
+        {
+          "topicId": "C3-M13-T4",
+          "topicTitle": "Set Comprehensions",
+          "topicContent": "Set comprehensions work similarly to list comprehensions but create a set instead of a list. Sets automatically remove duplicate elements, making them useful for creating collections of unique items.\\n\\nExample:\\n```python\\nsquares_set = {x**2 for x in range(10)}\\nprint(squares_set)  # Output: {0, 1, 64, 4, 36, 9, 16, 49, 81, 25}\\n```"
+        },
+        {
+          "topicId": "C3-M13-T5",
+          "topicTitle": "Introduction to Lambda Functions",
+          "topicContent": "Lambda functions are anonymous, small, and inline functions defined using the `lambda` keyword. They are useful for short operations or when passing a function as an argument. Lambda functions can have any number of arguments but only one expression.\\n\\nExample:\\n```python\\nsquare = lambda x: x**2\\nprint(square(5))  # Output: 25\\n```"
+        },
+        {
+          "topicId": "C3-M13-T6",
+          "topicTitle": "Using Lambda Functions with map(), filter(), and reduce()",
+          "topicContent": "`map()`, `filter()`, and `reduce()` are higher-order functions often used with lambda functions to perform operations on iterables.\\n- `map()` applies a function to every item in an iterable.\\n- `filter()` filters items based on a condition.\\n- `reduce()` applies a rolling computation to pairs of items (from `functools` module).\\n\\nExample:\\n```python\\nfrom functools import reduce\\nnums = [1, 2, 3, 4, 5]\\nsquared = list(map(lambda x: x**2, nums))\\nprint(squared)  # Output: [1, 4, 9, 16, 25]\\neven_nums = list(filter(lambda x: x % 2 == 0, nums))\\nprint(even_nums)  # Output: [2, 4]\\nsum_all = reduce(lambda x, y: x + y, nums)\\nprint(sum_all)  # Output: 15\\n```"
+        },
+        {
+          "topicId": "C3-M13-T7",
+          "topicTitle": "Advantages and Best Practices",
+          "topicContent": "Comprehensions and lambda functions provide a compact and expressive way to write Python code. However, overusing them or writing overly complex expressions can hurt readability. It's best to use them when they make code simpler and more readable, and prefer regular functions for complex logic."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M14",
+      "moduleTitle": "Decorators and Generators",
+      "moduleDescription": "Enhance functions with decorators and create iterators using generators and `yield`.",
+      "topics": [
+        {
+          "topicId": "C3-M14-T1",
+          "topicTitle": "Introduction to Decorators",
+          "topicContent": "Decorators are a powerful feature in Python that allow you to modify or enhance the behavior of functions or methods without changing their actual code. They are functions that take another function as an argument, add some functionality, and return a new function. This helps in keeping code modular and reusable."
+        },
+        {
+          "topicId": "C3-M14-T2",
+          "topicTitle": "Creating and Using Basic Decorators",
+          "topicContent": "A basic decorator is a function that wraps another function, executing code before and/or after the wrapped function runs.\\n\\nExample:\\n```python\\ndef my_decorator(func):\\n    def wrapper():\\n        print('Before function call')\\n        func()\\n        print('After function call')\\n    return wrapper\\n\\n@my_decorator\\ndef say_hello():\\n    print('Hello!')\\n\\nsay_hello()\\n```\\nOutput:\\n```python\nBefore function call\nHello!\nAfter function call\n```"
+        },
+        {
+          "topicId": "C3-M14-T3",
+          "topicTitle": "Decorators with Arguments",
+          "topicContent": "Decorators can also be created to accept arguments. This involves adding another layer of nested functions.\\n\\nExample:\\n```python\\ndef repeat(num_times):\\n    def decorator_repeat(func):\\n        def wrapper(*args, **kwargs):\\n            for _ in range(num_times):\\n                func(*args, **kwargs)\\n        return wrapper\\n    return decorator_repeat\\n\\n@repeat(3)\\ndef greet(name):\\n    print(f'Hello {name}')\\n\\ngreet('Alice')\\n```\\nOutput:\\n```python\nHello Alice\nHello Alice\nHello Alice\n```"
+        },
+        {
+          "topicId": "C3-M14-T4",
+          "topicTitle": "Practical Uses of Decorators",
+          "topicContent": "Decorators are widely used for logging, access control, memoization, timing functions, and more. For example, a decorator can check user authentication before allowing access to a function or cache results to improve performance."
+        },
+        {
+          "topicId": "C3-M14-T5",
+          "topicTitle": "Introduction to Generators",
+          "topicContent": "Generators are a type of iterable like lists or tuples but generate values on the fly, yielding one value at a time. They use the `yield` keyword instead of `return`. Generators are memory efficient and useful for working with large datasets or streams."
+        },
+        {
+          "topicId": "C3-M14-T6",
+          "topicTitle": "Creating and Using Generators",
+          "topicContent": "A generator function contains one or more `yield` statements. Each time `yield` is called, the function's state is saved, and the yielded value is returned to the caller. When next called, the function resumes after the last `yield`.\\n\\nExample:\\n```python\\ndef count_up_to(max):\\n    count = 1\\n    while count <= max:\\n        yield count\\n        count += 1\\n\\ncounter = count_up_to(5)\\nfor num in counter:\\n    print(num)\\n```\\nOutput:\\n```python\n1\n2\n3\n4\n5\n```"
+        },
+        {
+          "topicId": "C3-M14-T7",
+          "topicTitle": "Generator Expressions",
+          "topicContent": "Generator expressions provide a concise way to create generators similar to list comprehensions but with parentheses instead of square brackets. They are more memory efficient because they generate items on demand.\\n\\nExample:\\n```python\\nsquares = (x**2 for x in range(10))\\nfor square in squares:\\n    print(square)\\n```"
+        },
+        {
+          "topicId": "C3-M14-T8",
+          "topicTitle": "Benefits and Use Cases of Generators",
+          "topicContent": "Generators are ideal for processing large data streams, reading files line by line, or implementing pipelines where you don’t want to store entire datasets in memory. They can improve performance and reduce memory consumption in your programs."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M15",
+      "moduleTitle": "Regular Expressions",
+      "moduleDescription": "Perform pattern matching and text processing with Python's `re` module.",
+      "topics": [
+        {
+          "topicId": "C3-M15-T1",
+          "topicTitle": "Introduction to Regular Expressions",
+          "topicContent": "Regular expressions (regex) are powerful tools for matching patterns in text. They allow you to search, match, and manipulate strings based on specific patterns rather than fixed substrings. Python provides the `re` module to work with regular expressions."
+        },
+        {
+          "topicId": "C3-M15-T2",
+          "topicTitle": "Basic Regex Syntax and Patterns",
+          "topicContent": "Regular expressions use special characters to define search patterns. Some common elements include:\\n- `.` matches any single character except newline\\n- `^` matches the start of a string\\n- `$` matches the end of a string\\n- `*` matches zero or more repetitions of the preceding pattern\\n- `+` matches one or more repetitions\\n- `?` makes the preceding token optional\\n- `[]` defines a character class\\n- `\\` is used to escape special characters\\n\\nExample:\\n```python\\nimport re\\npattern = r'^a...s$'  # matches strings that start with 'a' and end with 's' with any 3 chars in between\\nresult = re.match(pattern, 'abyss')\\nif result:\\n    print('Match found')\\nelse:\\n    print('No match')\\n```\\nOutput:\\n```python\nMatch found\n```"
+        },
+        {
+          "topicId": "C3-M15-T3",
+          "topicTitle": "Regex Functions in Python",
+          "topicContent": "Python's `re` module provides functions to work with regex patterns:\\n- `re.match()` checks for a match only at the beginning of the string\\n- `re.search()` searches for the first occurrence of the pattern anywhere in the string\\n- `re.findall()` returns a list of all matches in the string\\n- `re.finditer()` returns an iterator yielding match objects\\n- `re.sub()` replaces matched substrings with a specified string\\n\\nExample of `re.findall()`:\\n```python\\nimport re\\ntext = 'The rain in Spain falls mainly in the plain.'\\nwords = re.findall(r'ain', text)\\nprint(words)\\n```\\nOutput:\\n```python\n['ain', 'ain', 'ain', 'ain']\n```"
+        },
+        {
+          "topicId": "C3-M15-T4",
+          "topicTitle": "Using Character Classes and Sets",
+          "topicContent": "Character classes let you specify a set of characters to match.\\n- `[abc]` matches any of 'a', 'b', or 'c'\\n- `[a-z]` matches any lowercase letter\\n- `[^abc]` matches any character except 'a', 'b', or 'c'\\n- `\\d` matches any digit (equivalent to `[0-9]`)\\n- `\\w` matches any alphanumeric character or underscore\\n- `\\s` matches any whitespace character\\n\\nExample:\\n```python\\nimport re\\npattern = r'\\d+'  # matches one or more digits\\nmatches = re.findall(pattern, 'There are 12 apples and 34 oranges.')\\nprint(matches)\\n```\\nOutput:\\n```python\n['12', '34']\n```"
+        },
+        {
+          "topicId": "C3-M15-T5",
+          "topicTitle": "Quantifiers and Grouping",
+          "topicContent": "Quantifiers specify how many times a character or group should repeat:\\n- `*` zero or more times\\n- `+` one or more times\\n- `?` zero or one time (optional)\\n- `{n}` exactly n times\\n- `{n,}` n or more times\\n- `{n,m}` between n and m times\\nGrouping with parentheses `( )` allows you to capture parts of the match for reuse or extraction.\\n\\nExample:\\n```python\\nimport re\\ntext = 'abc abc abc'\\npattern = r'(abc){2}'  # matches two consecutive 'abc'\\nmatches = re.findall(pattern, text)\\nprint(matches)\\n```\\nOutput:\\n```python\n['abc']\n```"
+        },
+        {
+          "topicId": "C3-M15-T6",
+          "topicTitle": "Using Match Objects",
+          "topicContent": "When you use `re.search()` or `re.match()`, Python returns a match object that contains details about the match. You can use methods like:\\n- `.group()` to get the matched string\\n- `.start()` and `.end()` to get the start and end indices\\n- `.span()` to get a tuple of (start, end)\\n\\nExample:\\n```python\\nimport re\\npattern = r'\\d+'\\nmatch = re.search(pattern, 'My number is 1234.')\\nif match:\\n    print('Matched:', match.group())\\n    print('Start:', match.start())\\n    print('End:', match.end())\\n```\\nOutput:\\n```python\nMatched: 1234\nStart: 13\nEnd: 17\n```"
+        },
+        {
+          "topicId": "C3-M15-T7",
+          "topicTitle": "Substitution and Splitting Strings",
+          "topicContent": "You can replace parts of strings matching a regex using `re.sub()`. You can also split strings based on regex patterns using `re.split()`.\\n\\nExample of substitution:\\n```python\\nimport re\\ntext = 'Hello 123, this is 456.'\\nnew_text = re.sub(r'\\d+', '#', text)  # replaces digits with '#'\nprint(new_text)\\n```\\nOutput:\\n```python\nHello #, this is #.\n```\\n\\nExample of splitting:\\n```python\\nimport re\\ntext = 'apple, banana; orange|grape'\\nsplit_list = re.split(r'[;,|]', text)\\nprint(split_list)\\n```\\nOutput:\\n```python\n['apple', ' banana', ' orange', 'grape']\n```"
+        },
+        {
+          "topicId": "C3-M15-T8",
+          "topicTitle": "Flags and Advanced Features",
+          "topicContent": "Regex flags modify the behavior of pattern matching:\\n- `re.IGNORECASE` (or `re.I`) ignores case\\n- `re.MULTILINE` (or `re.M`) makes `^` and `$` match start and end of each line\\n- `re.DOTALL` (or `re.S`) makes `.` match newline characters\\n\\nYou can also use non-capturing groups `(?:...)`, lookahead `(?=...)` and lookbehind `(?<=...)` assertions for advanced pattern matching."
+        },
+        {
+          "topicId": "C3-M15-T9",
+          "topicTitle": "Practical Examples and Use Cases",
+          "topicContent": "Regular expressions are widely used in validating input (emails, phone numbers), extracting data from logs, parsing files, and text processing. Mastering regex helps you write concise and efficient string processing code."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M16",
+      "moduleTitle": "Working with JSON and CSV",
+      "moduleDescription": "Parse and handle structured data using Python's built-in modules for JSON and CSV formats.",
+      "topics": [
+        {
+          "topicId": "C3-M16-T1",
+          "topicTitle": "Introduction to File Handling",
+          "topicContent": "File handling in Python is the process of creating, opening, reading, writing, and closing files on your computer’s storage. Files store data persistently, meaning the data remains available even after the program ends. This is crucial for saving user data, logs, configuration, or any information that needs to be accessed later. Python provides a simple and powerful built-in interface to work with files, supporting both text and binary formats."
+        },
+        {
+          "topicId": "C3-M16-T2",
+          "topicTitle": "Opening and Closing Files",
+          "topicContent": "To interact with a file, you first need to open it using the `open()` function. This function takes two main arguments: the filename (as a string) and the mode, which defines the operation you want to perform on the file (e.g., 'r' for reading, 'w' for writing, 'a' for appending). For example, `open('file.txt', 'r')` opens a file for reading. It’s essential to close the file after operations to free up system resources, using the `.close()` method. However, manually closing can be error-prone if an exception occurs, so using the `with` statement is the preferred way as it automatically closes the file after the block of code finishes."
+        },
+        {
+          "topicId": "C3-M16-T3",
+          "topicTitle": "Reading from Files",
+          "topicContent": "Python provides several methods to read file content. The `.read()` method reads the entire content of the file as a single string, which is useful for small files. `.readline()` reads one line at a time, allowing you to process files line-by-line, which is memory efficient for large files. `.readlines()` reads all lines and returns them as a list of strings, useful if you need random access to lines. Reading files is essential for applications like data processing, configuration loading, or content analysis."
+        },
+        {
+          "topicId": "C3-M16-T4",
+          "topicTitle": "Writing to Files",
+          "topicContent": "Writing to files is done using `.write()` or `.writelines()` methods. When a file is opened in write mode ('w'), if the file already exists, it is truncated (emptied) before writing new data. Append mode ('a') adds new data to the end of the file without removing existing content, making it ideal for logs or incremental data storage. You can write strings or lists of strings (with `.writelines()`), but it’s important to include newline characters (`\\n`) manually when writing lines."
+        },
+        {
+          "topicId": "C3-M16-T5",
+          "topicTitle": "Working with Binary Files",
+          "topicContent": "In addition to text files, Python supports binary files using modes like 'rb' (read binary) and 'wb' (write binary). Binary files store data in bytes rather than text, used for images, videos, executable files, and other non-text data. Reading and writing binary files involves handling byte objects, which allows precise control over file contents, essential for media processing, serialization, or custom file formats."
+        },
+        {
+          "topicId": "C3-M16-T6",
+          "topicTitle": "File Methods and Operations",
+          "topicContent": "Python files support several useful methods for advanced file manipulation. The `.tell()` method returns the current position of the file cursor (pointer), which is useful to keep track of where you are in the file. The `.seek(offset, whence)` method moves the cursor to a new position, where `offset` is the number of bytes to move, and `whence` defines the reference point (start, current, or end of file). `.truncate(size)` can resize the file to a specific length, often used to cut off unwanted data. These methods allow you to perform random access and modification of files beyond simple reading and writing."
+        },
+        {
+          "topicId": "C3-M16-T7",
+          "topicTitle": "Using the with Statement for File Handling",
+          "topicContent": "The `with` statement simplifies file handling by automatically managing file opening and closing. When you use `with open(filename, mode) as file:`, the file is guaranteed to close after the block completes, even if exceptions occur inside the block. This makes your code cleaner, more readable, and safer. It’s considered best practice for all file operations in Python."
+        },
+        {
+          "topicId": "C3-M16-T8",
+          "topicTitle": "Exception Handling with Files",
+          "topicContent": "Working with files can raise errors such as `FileNotFoundError` if the file doesn’t exist, or `IOError` for other input/output issues. To prevent your program from crashing, use `try-except` blocks to catch these exceptions and handle them gracefully — for example, by showing user-friendly messages or attempting alternative actions. Proper error handling improves the robustness and user experience of your applications."
+        },
+        {
+          "topicId": "C3-M16-T9",
+          "topicTitle": "Practical Examples of File Handling",
+          "topicContent": "File handling is widely used in real-world applications: reading and writing configuration files for programs, logging user actions or errors to log files, processing CSV and text data for analysis, saving user-generated content, and generating reports or summaries. Mastering file operations opens doors to building applications that persist and manipulate data effectively."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M17",
+      "moduleTitle": "Virtual Environments and pip",
+      "moduleDescription": "Manage project dependencies using virtual environments and `pip` for installing packages.",
+      "topics": [
+        {
+          "topicId": "C3-M17-T1",
+          "topicTitle": "Introduction to Virtual Environments",
+          "topicContent": "Virtual environments in Python allow you to create isolated spaces for your projects, where each environment can have its own dependencies and Python version. This isolation prevents conflicts between packages required by different projects and keeps your global Python environment clean. Virtual environments are especially useful in development, testing, and deployment stages."
+        },
+        {
+          "topicId": "C3-M17-T2",
+          "topicTitle": "Creating a Virtual Environment using venv",
+          "topicContent": "Python provides a built-in module called `venv` to create virtual environments. To create one, you run `python -m venv myenv` where 'myenv' is the folder name for your environment. This command sets up a directory structure containing the Python interpreter and a separate folder for installed packages. Activating the environment differs by operating system: on Windows, use `myenv\\Scripts\\activate`, and on macOS/Linux, use `source myenv/bin/activate`."
+        },
+        {
+          "topicId": "C3-M17-T3",
+          "topicTitle": "Activating and Deactivating Virtual Environments",
+          "topicContent": "Once a virtual environment is created, you activate it to switch your shell session into the isolated environment. Activation ensures that any Python commands or package installations affect only the virtual environment. To deactivate and return to the system’s default Python environment, simply run the `deactivate` command. Proper use of activation and deactivation prevents accidental package installation or usage in the wrong environment."
+        },
+        {
+          "topicId": "C3-M17-T4",
+          "topicTitle": "Installing Packages with pip inside Virtual Environments",
+          "topicContent": "The `pip` tool is the Python package installer used to add external libraries and frameworks to your project. When a virtual environment is active, running `pip install package_name` installs the package only within that environment. This approach ensures that your project uses specific package versions without affecting other projects or the global Python setup."
+        },
+        {
+          "topicId": "C3-M17-T5",
+          "topicTitle": "Freezing Dependencies with requirements.txt",
+          "topicContent": "To share your project or deploy it elsewhere, it’s important to document the exact package versions used. The `pip freeze > requirements.txt` command generates a text file listing all installed packages and their versions. Others can then recreate the environment by running `pip install -r requirements.txt`. Managing dependencies with requirements files ensures consistency and reduces 'works on my machine' problems."
+        },
+        {
+          "topicId": "C3-M17-T6",
+          "topicTitle": "Upgrading and Uninstalling Packages",
+          "topicContent": "Within virtual environments, you can upgrade packages using `pip install --upgrade package_name` to get the latest features or security patches. Similarly, if a package is no longer needed, you can uninstall it using `pip uninstall package_name`. Managing package versions carefully prevents dependency conflicts and keeps your environment lean."
+        },
+        {
+          "topicId": "C3-M17-T7",
+          "topicTitle": "Using Virtual Environments in IDEs",
+          "topicContent": "Modern integrated development environments (IDEs) like VS Code, PyCharm, and others support virtual environments. You can configure your project to use a specific virtual environment interpreter, allowing features like code completion, linting, and debugging to work seamlessly with your isolated setup. This integration boosts productivity and reduces setup errors."
+        },
+        {
+          "topicId": "C3-M17-T8",
+          "topicTitle": "Common Issues and Best Practices",
+          "topicContent": "Sometimes virtual environments might behave unexpectedly, such as activation scripts not running correctly or path conflicts. Common fixes include checking environment variables, ensuring correct Python versions, and reinstalling virtual environments. Best practices include creating a new environment per project, regularly updating packages, and committing `requirements.txt` files to version control."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M18",
+      "moduleTitle": "Python for Web Scraping",
+      "moduleDescription": "Extract data from websites using libraries like `requests`, `BeautifulSoup`, and `lxml`.",
+      "topics": [
+        {
+          "topicId": "C3-M18-T1",
+          "topicTitle": "Introduction to Web Scraping",
+          "topicContent": "Web scraping is the process of automatically extracting data from websites. It is widely used for data collection, price monitoring, market research, and more. Python provides powerful libraries to help you scrape data efficiently and ethically, respecting website terms of use and robots.txt rules."
+        },
+        {
+          "topicId": "C3-M18-T2",
+          "topicTitle": "Making HTTP Requests with Requests Library",
+          "topicContent": "The `requests` library allows you to send HTTP requests to websites and receive responses. You can fetch HTML pages, interact with APIs, and handle cookies and sessions. Basic usage involves sending a GET request to a URL and checking the response status. Example:\n\n```python\nimport requests\nresponse = requests.get('https://example.com')\nprint(response.status_code)\nprint(response.text[:500])\n```\nThis retrieves the webpage content which you can then parse."
+        },
+        {
+          "topicId": "C3-M18-T3",
+          "topicTitle": "Parsing HTML with BeautifulSoup",
+          "topicContent": "BeautifulSoup is a Python library for parsing HTML and XML documents. It creates a parse tree that you can traverse to extract specific elements like tags, attributes, and text. You start by creating a BeautifulSoup object with the HTML content. Then, use methods like `find()`, `find_all()`, and CSS selectors to navigate and extract data.\n\nExample:\n\n```python\nfrom bs4 import BeautifulSoup\nhtml = '<html><body><h1>Title</h1></body></html>'\nsoup = BeautifulSoup(html, 'html.parser')\ntitle = soup.find('h1').text\nprint(title)  # Output: Title\n```\n"
+        },
+        {
+          "topicId": "C3-M18-T4",
+          "topicTitle": "Navigating the Parse Tree",
+          "topicContent": "BeautifulSoup allows you to navigate the HTML parse tree easily. You can move up, down, and sideways in the tree using properties like `.parent`, `.children`, `.next_sibling`, and `.previous_sibling`. This helps you find related data points and context in complex web pages."
+        },
+        {
+          "topicId": "C3-M18-T5",
+          "topicTitle": "Using CSS Selectors and Attributes",
+          "topicContent": "BeautifulSoup supports CSS selectors with the `select()` method, allowing powerful queries to extract elements by class, id, or attributes. You can also access tag attributes using dictionary-like syntax to get things like links (`href`), image sources (`src`), and more."
+        },
+        {
+          "topicId": "C3-M18-T6",
+          "topicTitle": "Handling Pagination and Multiple Pages",
+          "topicContent": "Many websites display data across multiple pages. To scrape all data, you need to automate pagination by finding the next page link, sending requests iteratively, and aggregating data. This involves identifying pagination elements in HTML and looping through URLs."
+        },
+        {
+          "topicId": "C3-M18-T7",
+          "topicTitle": "Working with Dynamic Content and JavaScript",
+          "topicContent": "Some websites load content dynamically with JavaScript, which `requests` and `BeautifulSoup` alone cannot handle. For such cases, libraries like `Selenium` or `Playwright` simulate a real browser to render JavaScript and allow scraping of dynamic content."
+        },
+        {
+          "topicId": "C3-M18-T8",
+          "topicTitle": "Saving Scraped Data",
+          "topicContent": "After extracting data, you often need to store it in structured formats like CSV, JSON, or databases. Python's `csv` and `json` modules make it easy to write data files. For larger projects, consider using SQLite or other databases."
+        },
+        {
+          "topicId": "C3-M18-T9",
+          "topicTitle": "Respecting Legal and Ethical Guidelines",
+          "topicContent": "Always respect website terms of service and robots.txt files. Avoid excessive scraping that may overload servers. Use polite scraping techniques such as adding delays (`time.sleep()`), identifying your user agent, and limiting request frequency."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M19",
+      "moduleTitle": "Python for Data Analysis (Pandas & NumPy)",
+      "moduleDescription": "Use powerful libraries like `pandas` and `NumPy` for data manipulation and analysis.",
+      "topics": [
+        {
+          "topicId": "C3-M19-T1",
+          "topicTitle": "Introduction to Data Analysis with Python",
+          "topicContent": "Data analysis is the process of inspecting, cleaning, transforming, and modeling data to discover useful information, draw conclusions, and support decision-making. Python offers powerful libraries such as Pandas and NumPy that simplify these tasks and make data analysis efficient and accessible."
+        },
+        {
+          "topicId": "C3-M19-T2",
+          "topicTitle": "Getting Started with NumPy",
+          "topicContent": "NumPy (Numerical Python) is a foundational library for scientific computing. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. Learn to create arrays, perform element-wise operations, and use built-in mathematical functions.\n\nExample:\n\n```python\nimport numpy as np\narr = np.array([1, 2, 3, 4])\nprint(arr * 2)  # Output: [2 4 6 8]\n```\n"
+        },
+        {
+          "topicId": "C3-M19-T3",
+          "topicTitle": "NumPy Array Operations and Broadcasting",
+          "topicContent": "Understand advanced array operations such as slicing, indexing, reshaping, and broadcasting, which allows operations on arrays of different shapes. These techniques are essential for efficient numerical computations."
+        },
+        {
+          "topicId": "C3-M19-T4",
+          "topicTitle": "Introduction to Pandas",
+          "topicContent": "Pandas is a powerful data manipulation and analysis library built on top of NumPy. It provides two primary data structures: Series (one-dimensional labeled arrays) and DataFrame (two-dimensional labeled tables). Learn to create, index, and manipulate these data structures."
+        },
+        {
+          "topicId": "C3-M19-T5",
+          "topicTitle": "Loading and Inspecting Data with Pandas",
+          "topicContent": "Learn to load data from various file formats such as CSV, Excel, and JSON into Pandas DataFrames. Explore methods to inspect data using functions like `head()`, `info()`, `describe()`, and identify missing or duplicate values."
+        },
+        {
+          "topicId": "C3-M19-T6",
+          "topicTitle": "Data Cleaning and Preparation",
+          "topicContent": "Data often contains inconsistencies or missing values. Learn techniques for cleaning data including handling missing data with `fillna()` or `dropna()`, replacing values, filtering rows, and transforming columns."
+        },
+        {
+          "topicId": "C3-M19-T7",
+          "topicTitle": "Data Selection and Filtering",
+          "topicContent": "Master selecting subsets of data using label-based indexing with `loc[]`, position-based indexing with `iloc[]`, conditional filtering, and boolean indexing for efficient data querying."
+        },
+        {
+          "topicId": "C3-M19-T8",
+          "topicTitle": "Grouping and Aggregating Data",
+          "topicContent": "Learn to group data by one or more columns and perform aggregate functions like sum, mean, count, and more with the `groupby()` method to derive meaningful insights."
+        },
+        {
+          "topicId": "C3-M19-T9",
+          "topicTitle": "Merging, Joining, and Concatenating DataFrames",
+          "topicContent": "Combine multiple datasets using Pandas’ powerful merging, joining, and concatenation functions to prepare data for comprehensive analysis."
+        },
+        {
+          "topicId": "C3-M19-T10",
+          "topicTitle": "Handling Time Series Data",
+          "topicContent": "Explore time series functionalities in Pandas such as date-time indexing, resampling, and rolling window operations for analyzing temporal data."
+        },
+        {
+          "topicId": "C3-M19-T11",
+          "topicTitle": "Data Visualization with Pandas and Matplotlib",
+          "topicContent": "Visualize data distributions and relationships using built-in plotting functions in Pandas, powered by Matplotlib. Create line plots, histograms, bar charts, and scatter plots to better understand your data."
+        }
+      ]
+    },
+    {
+      "moduleId": "C3-M20",
+      "moduleTitle": "Python for Automation and Scripting",
+      "moduleDescription": "Automate repetitive tasks and write efficient scripts using Python.",
+      "topics": [
+        {
+          "topicId": "C3-M20-T1",
+          "topicTitle": "Introduction to Automation and Scripting with Python",
+          "topicContent": "Automation involves writing scripts to perform repetitive tasks automatically, saving time and reducing human error. Python is an excellent language for automation due to its simplicity and powerful libraries. This topic introduces the concept of scripting and automation, common use cases, and how Python fits in."
+        },
+        {
+          "topicId": "C3-M20-T2",
+          "topicTitle": "Writing Your First Automation Script",
+          "topicContent": "Learn how to write a simple Python script that automates a basic task, such as renaming multiple files in a directory. Understand how to use modules like `os` and `sys` to interact with the file system.\n\nExample:\n\n```python\nimport os\n\nfor filename in os.listdir('.'): \n    if filename.endswith('.txt'):\n        new_name = filename.replace('.txt', '.text')\n        os.rename(filename, new_name)\n        print(f'Renamed {filename} to {new_name}')\n```\n"
+        },
+        {
+          "topicId": "C3-M20-T3",
+          "topicTitle": "Working with Files and Directories",
+          "topicContent": "Dive deeper into file and directory manipulation using modules like `os` and `shutil`. Learn to copy, move, delete files and folders, check for their existence, and handle file permissions."
+        },
+        {
+          "topicId": "C3-M20-T4",
+          "topicTitle": "Automating Web Tasks with Selenium",
+          "topicContent": "Automate interactions with web browsers using Selenium. Learn to open web pages, fill forms, click buttons, and scrape content dynamically.\n\nExample:\n\n```python\nfrom selenium import webdriver\nfrom selenium.webdriver.common.by import By\n\nbrowser = webdriver.Chrome()\nbrowser.get('https://www.example.com')\nsearch_box = browser.find_element(By.NAME, 'q')\nsearch_box.send_keys('Python automation')\nsearch_box.submit()\n```\n"
+        },
+        {
+          "topicId": "C3-M20-T5",
+          "topicTitle": "Scheduling Tasks with `schedule` and `time` Modules",
+          "topicContent": "Learn to run Python scripts automatically at scheduled intervals using the `schedule` library and the built-in `time` module. Create scripts that execute daily or hourly without manual intervention."
+        },
+        {
+          "topicId": "C3-M20-T6",
+          "topicTitle": "Working with CSV, Excel, and PDF Files for Automation",
+          "topicContent": "Automate reading and writing CSV and Excel files using Pandas and `openpyxl`. Extract text from PDFs using libraries such as `PyPDF2` to automate document processing tasks."
+        },
+        {
+          "topicId": "C3-M20-T7",
+          "topicTitle": "Automating Email Sending with smtplib and email Modules",
+          "topicContent": "Write scripts to send automated emails with attachments using Python’s `smtplib` and `email` libraries. Learn to configure SMTP servers and handle MIME types for attachments."
+        },
+        {
+          "topicId": "C3-M20-T8",
+          "topicTitle": "Interacting with APIs for Automation",
+          "topicContent": "Use the `requests` library to interact with web APIs, automate data retrieval, and post data to services programmatically. Handle JSON data and authentication."
+        },
+        {
+          "topicId": "C3-M20-T9",
+          "topicTitle": "Automating Desktop Applications with PyAutoGUI",
+          "topicContent": "Control keyboard and mouse actions to automate GUI tasks using PyAutoGUI. Learn to automate clicks, typing, screenshots, and simple GUI workflows."
+        },
+        {
+          "topicId": "C3-M20-T10",
+          "topicTitle": "Best Practices for Writing Automation Scripts",
+          "topicContent": "Understand how to write clean, reusable, and maintainable automation scripts. Topics include logging, error handling, modular scripting, and documenting your code."
+        }
+      ]
+    }
+  ]
 }

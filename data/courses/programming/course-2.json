@@ -1,64 +1,429 @@
 {
-    "id": "C2",
-    "index": 1,
-    "slug": "course-2",
-    "language": "C++ Programming",
-    "courseTitle": "Learn C++ Programming: From Basics to Advanced",
-    "courseDescription": "Comprehensive introduction to C++ covering OOP concepts, STL, and file handling.",
-    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/cpp/banner_image.png",
-    "pricingType": "Free",
-    "bookmarked": false,
-    "modules": [
+  "id": "C2",
+  "index": 1,
+  "slug": "course-2",
+  "language": "C++ Programming",
+  "courseTitle": "Learn C++ Programming: From Basics to Advanced",
+  "courseDescription": "Comprehensive introduction to C++ covering OOP concepts, STL, and file handling.",
+  "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/cpp/banner_image.png",
+  "pricingType": "Free",
+  "bookmarked": false,
+  "modules": [
+    {
+      "moduleId": "C2-M1",
+      "moduleTitle": "Introduction to C++",
+      "moduleDescription": "Get started with C++ by understanding its history, features, and how it differs from C. Learn the structure of a C++ program.",
+      "topics": [
         {
-            "moduleId": "C2-M1",
-            "moduleTitle": "Getting Started with C++",
-            "moduleDescription": "Setup and introduction to C++ programming.",
-            "topics": [
-                {
-                "topicId": "C2-M1-T1",
-                "topicTitle": "Introduction to C++",
-                "topicContent": "C++ is an extension of C with object-oriented features."
-                },
-                {
-                "topicId": "C2-M1-T2",
-                "topicTitle": "Your First C++ Program",
-                "topicContent": "Writing a simple Hello World program in C++."
-                }
-            ]
+          "topicId": "C2-M1-T1",
+          "topicTitle": "What is C++?",
+          "topicContent": "C++ is a general-purpose programming language developed by Bjarne Stroustrup as an extension of the C language. It introduces object-oriented features such as classes and objects, which make code easier to organize and maintain.\n\nC++ is widely used for developing operating systems, games, real-time systems, compilers, and large-scale applications. It combines the performance of C with high-level programming features.\n\nKey Features:\n- Supports both procedural and object-oriented programming (multi-paradigm)\n- Fast and efficient\n- Strongly typed\n- Rich standard library\n- Platform-independent"
         },
         {
-            "moduleId": "C2-M2",
-            "moduleTitle": "Object-Oriented Programming",
-            "moduleDescription": "Learn classes, objects, inheritance, and polymorphism.",
-            "topics": [
-                {
-                "topicId": "C2-M2-T1",
-                "topicTitle": "Classes and Objects",
-                "topicContent": "Understanding the blueprint of objects."
-                },
-                {
-                "topicId": "C2-M2-T2",
-                "topicTitle": "Inheritance",
-                "topicContent": "Derive new classes from existing ones."
-                }
-            ]
+          "topicId": "C2-M1-T2",
+          "topicTitle": "History and Evolution of C++",
+          "topicContent": "C++ was developed by Bjarne Stroustrup at Bell Labs starting in 1979. It was originally called 'C with Classes' as it extended the C language by adding object-oriented features. In 1983, it was renamed to C++.\n\nThe name 'C++' signifies the increment operator in C, symbolizing the evolution of C into a more powerful language.\n\nOver the years, C++ has undergone several updates:\n- **C++98**: The first standardized version.\n- **C++03**: A bug-fix release to C++98.\n- **C++11**: Introduced smart pointers, auto keyword, lambda expressions.\n- **C++14, C++17, C++20**: Brought further enhancements and modern features like ranges, modules, and coroutines.\n\nC++ remains one of the most popular and widely used languages in the world for systems programming, game development, real-time simulations, and high-performance applications."
         },
         {
-            "moduleId": "C2-M3",
-            "moduleTitle": "Standard Template Library (STL)",
-            "moduleDescription": "Use vectors, lists, and maps.",
-            "topics": [
-                {
-                "topicId": "C2-M3-T1",
-                "topicTitle": "Vectors",
-                "topicContent": "Dynamic array implementation."
-                },
-                {
-                "topicId": "C2-M3-T2",
-                "topicTitle": "Maps",
-                "topicContent": "Key-value pair containers."
-                }
-            ]
+          "topicId": "C2-M1-T3",
+          "topicTitle": "Features of C++",
+          "topicContent": "C++ is a powerful and flexible programming language that supports multiple programming paradigms. Here are some of its most important features:\n\n1. **Object-Oriented Programming (OOP)**: Supports encapsulation, inheritance, and polymorphism.\n2. **Rich Library Support**: Comes with the Standard Template Library (STL) which provides useful data structures and algorithms.\n3. **Low-Level Manipulation**: Allows working close to the hardware, like C.\n4. **Function Overloading**: Functions can be defined with the same name but different parameters.\n5. **Operator Overloading**: Custom behavior for operators like +, -, etc.\n6. **Templates**: Enables generic programming through function and class templates.\n7. **Exception Handling**: Allows writing safe code that handles runtime errors using try-catch blocks.\n8. **Multiple Paradigms**: Supports procedural, object-oriented, and generic programming.\n9. **Platform Independent but Compiler Dependent**: Code can run on different systems but needs to be compiled for each.\n10. **Fast and Efficient**: Offers high performance due to its compiled nature and low-level access.\n\nThese features make C++ ideal for applications requiring speed, reliability, and scalability."
+        },
+        {
+          "topicId": "C2-M1-T4",
+          "topicTitle": "Structure of a C++ Program",
+          "topicContent": "A basic C++ program consists of several key components. Understanding its structure helps in writing correct and efficient programs.\n\n### Components of a C++ Program:\n1. **Preprocessor Directives**: These start with `#` and include files or define macros.\n2. **Namespace Declaration**: Usually `using namespace std;` to avoid prefixing standard functions with `std::`.\n3. **main() Function**: The entry point of the program where execution begins.\n4. **Statements and Expressions**: Instructions that perform actions.\n5. **Comments**: Single-line (`//`) or multi-line (`/* */`) explanations for readability.\n\n### Example:\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nHello, World!\n```\n\n### Explanation:\n- `#include <iostream>` includes the input/output stream.\n- `using namespace std;` lets us use `cout` without `std::cout`.\n- `main()` is the main function where execution starts.\n- `cout <<` prints output to the console.\n- `return 0;` signifies successful program termination.\n\nThis structure remains the foundation for writing all C++ programs."
+        },
+        {
+          "topicId": "C2-M1-T5",
+          "topicTitle": "Compiling and Running a C++ Program",
+          "topicContent": "To execute a C++ program, you must first compile it into machine-readable code using a compiler. Then you can run the compiled code.\n\n### Steps to Compile and Run:\n1. **Write your code** in a file with a `.cpp` extension.\n2. **Compile** the code using a compiler like `g++`.\n3. **Run** the resulting executable file.\n\n### Command Line Example (Using g++):\n```c\ng++ hello.cpp -o hello\n./hello\n```\n\n### Explanation:\n- `g++ hello.cpp -o hello`: Compiles `hello.cpp` and creates an executable named `hello`.\n- `./hello`: Runs the executable.\n\n### Full Example Code:\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Welcome to C++ Programming!\" << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nWelcome to C++ Programming!\n```\n\n### Common Compilation Errors:\n- **Missing semicolon**: Each statement must end with a semicolon (`;`).\n- **Unmatched braces**: Every opening `{` must have a matching closing `}`.\n- **Spelling mistakes**: Misspelling keywords like `main`, `include`, or `cout` can cause errors.\n\nMake sure your system has `g++` or any standard C++ compiler installed to follow along."
         }
-    ]
+      ]
+    },
+    {
+      "moduleId": "C2-M2",
+      "moduleTitle": "Variables, Data Types and Operators",
+      "moduleDescription": "Learn about different data types, variables, constants, and the various operators used in C++ programming.",
+      "topics": [
+        {
+          "topicId": "C2-M2-T1",
+          "topicTitle": "Introduction to Variables",
+          "topicContent": "Variables are containers used to store data that can be used and manipulated throughout a C++ program. Each variable must be declared with a specific data type that defines what kind of data it can hold, such as integers, floating-point numbers, or characters.\n\nTo declare a variable in C++, you write the type followed by the name:\n\n```c\nint age;\nfloat height;\nchar grade;\n```\n\nYou can also initialize a variable at the time of declaration:\n\n```c\nint age = 20;\nfloat height = 5.9;\nchar grade = 'A';\n```\n\nYou can declare multiple variables of the same type in a single line:\n\n```c\nint a = 1, b = 2, c = 3;\n```\n\nHere's a full example:\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int age = 25;\n    float weight = 65.5;\n    char grade = 'B';\n\n    cout << \"Age: \" << age << endl;\n    cout << \"Weight: \" << weight << endl;\n    cout << \"Grade: \" << grade << endl;\n\n    return 0;\n}\n```\n\n```c\n//Output:\n\nAge: 25  \nWeight: 65.5  \nGrade: B\n```"
+        },
+        {
+          "topicId": "C2-M2-T2",
+          "topicTitle": "Basic Data Types in C++",
+          "topicContent": "C++ provides several basic data types that are used to define variables. These data types determine the type and size of data the variable can hold. The most commonly used basic data types include:\n\n1. **int** – used to store integers (whole numbers).\n2. **float** – used to store floating-point numbers (decimal values).\n3. **double** – used to store large floating-point numbers with more precision.\n4. **char** – used to store single characters.\n5. **bool** – used to store boolean values (true or false).\n\nExample:\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int age = 30;\n    float height = 5.7f;\n    double distance = 1290.456;\n    char grade = 'A';\n    bool isPassed = true;\n\n    cout << \"Age: \" << age << endl;\n    cout << \"Height: \" << height << endl;\n    cout << \"Distance: \" << distance << endl;\n    cout << \"Grade: \" << grade << endl;\n    cout << \"Passed: \" << isPassed << endl;\n\n    return 0;\n}\n```\n\n```c\n//Output:\n\nAge: 30\nHeight: 5.7\nDistance: 1290.46\nGrade: A\nPassed: 1\n```\n\n> Note: In the output, `true` is represented by `1` and `false` is represented by `0`."
+        },
+        {
+          "topicId": "C2-M2-T3",
+          "topicTitle": "Constants in C++",
+          "topicContent": "Constants are fixed values that do not change during the execution of a program. In C++, you can define constants using the `const` keyword or `#define` preprocessor directive.\n\n### 1. Using `const` Keyword:\nThe `const` keyword is used to declare a constant variable whose value cannot be modified after initialization.\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    const int MAX_USERS = 100;\n    cout << \"Maximum users allowed: \" << MAX_USERS << endl;\n    // MAX_USERS = 200; // This will cause an error\n    return 0;\n}\n```\n\n```c\n//Output:\n\nMaximum users allowed: 100\n```\n\n### 2. Using `#define`:\nThe `#define` directive defines a macro constant. It is replaced by its value during preprocessing.\n\n```c\n#include <iostream>\n#define PI 3.14159\nusing namespace std;\n\nint main() {\n    double radius = 5.0;\n    double area = PI * radius * radius;\n    cout << \"Area of circle: \" << area << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nArea of circle: 78.5397\n```\n\n> Tip: Prefer using `const` over `#define` for type safety and better scoping."
+        },
+        {
+          "topicId": "C2-M2-T4",
+          "topicTitle": "Input and Output in C++",
+          "topicContent": "C++ uses streams to perform input and output operations. The most commonly used streams are `cin` for input and `cout` for output, both defined in the `<iostream>` header.\n\n### 1. `cout` – Standard Output Stream:\nThe `cout` object is used to print output to the console.\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nHello, World!\n```\n\n- `<<` is called the insertion operator.\n- `endl` is used to insert a newline character.\n\n### 2. `cin` – Standard Input Stream:\nThe `cin` object is used to take input from the user.\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int age;\n    cout << \"Enter your age: \";\n    cin >> age;\n    cout << \"You are \" << age << \" years old.\" << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nEnter your age: 20\nYou are 20 years old.\n```\n\n- `>>` is called the extraction operator.\n- You can use `cin` to take multiple inputs at once.\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int x, y;\n    cout << \"Enter two numbers: \";\n    cin >> x >> y;\n    cout << \"Sum: \" << x + y << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nEnter two numbers: 5 10\nSum: 15\n```\n\n> Note: Always include `using namespace std;` or prefix `std::` to use `cin` and `cout`."
+        },
+        {
+          "topicId": "C2-M2-T5",
+          "topicTitle": "Constants and Literals",
+          "topicContent": "Constants are fixed values that do not change during the execution of a program. In C++, you can declare constants using the `const` keyword or the `#define` preprocessor directive.\n\n### 1. Declaring Constants with `const`:\nUse `const` to declare variables whose values cannot be changed.\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    const float PI = 3.14;\n    cout << \"The value of PI is: \" << PI << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nThe value of PI is: 3.14\n```\n\n### 2. Using `#define` to Declare Constants:\nAnother way to define constants is with the `#define` directive.\n\n```c\n#include <iostream>\n#define MAX 100\nusing namespace std;\n\nint main() {\n    cout << \"The maximum limit is: \" << MAX << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nThe maximum limit is: 100\n```\n\n### 3. Types of Literals:\nLiterals are values that are used directly in the code.\n\n- **Integer literals**: 1, -23, 100\n- **Floating-point literals**: 3.14, -0.99\n- **Character literals**: 'a', 'Z'\n- **String literals**: \"Hello\", \"C++\"\n- **Boolean literals**: `true`, `false`\n\nExample:\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Number: \" << 10 << endl;\n    cout << \"Character: \" << 'A' << endl;\n    cout << \"Boolean: \" << true << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nNumber: 10\nCharacter: A\nBoolean: 1\n```\n\n> Note: In C++, `true` is internally represented as 1, and `false` as 0."
+        },
+        {
+          "topicId": "C2-M2-T6",
+          "topicTitle": "Type Conversion and Typecasting",
+          "topicContent": "Sometimes, you need to convert a value from one data type to another. C++ allows both implicit and explicit type conversions.\n\n### 1. Implicit Type Conversion (Type Promotion):\nC++ automatically converts one data type to another when needed. For example, if you add an integer and a float, the integer is promoted to float.\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 10;\n    float b = 5.5;\n    float result = a + b;  // 'a' is implicitly converted to float\n    cout << \"Result: \" << result << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\nResult: 15.5\n```\n\n### 2. Explicit Type Conversion (Typecasting):\nYou can manually convert one type to another using typecasting.\n\n```c\n#include <iostream>\nusing namespace std;\n\nint main() {\n    float a = 9.78;\n    int b = (int) a;  // Explicit typecasting from float to int\n    cout << \"a = \" << a << endl;\n    cout << \"b = \" << b << endl;\n    return 0;\n}\n```\n\n```c\n//Output:\n\na = 9.78\nb = 9\n```\n\n### 3. C++ Style Typecasting:\nC++ also provides four typecasting operators:\n- `static_cast<Type>(expression)`\n- `dynamic_cast<Type>(expression)` (mainly for polymorphism)\n- `const_cast<Type>(expression)`\n- `reinterpret_cast<Type>(expression)`\n\nExample of `static_cast`:\n\n```c\nint a = 10;\nfloat b = static_cast<float>(a);\n```\n\n### Summary:\n- Use implicit conversion when safe and simple.\n- Use explicit typecasting to avoid unexpected results or data loss.\n- Prefer C++ style casts (`static_cast`) for better readability and safety."
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M3",
+      "moduleTitle": "Control Flow Statements",
+      "moduleDescription": "Understand how to control the flow of a program using if-else, switch-case, and different types of loops like for, while, and do-while.",
+      "topics": [
+        {
+          "topicId": "C2-M3-T1",
+          "topicTitle": "if Statement",
+          "topicContent": "The if statement is used to execute a block of code only if a specified condition is true. It helps you make decisions in your program.\n\nExample:\n\n```c\nint num = 10;\nif (num > 0) {\n    std::cout << \"Number is positive\" << std::endl;\n}\n```\n\nOutput:\n\n```c\nOutput: \nNumber is positive\n```\n"
+        },
+        {
+          "topicId": "C2-M3-T2",
+          "topicTitle": "if-else Statement",
+          "topicContent": "The if-else statement lets you choose between two paths: one if the condition is true, and another if it is false.\n\nExample:\n\n```c\nint num = -5;\nif (num > 0) {\n    std::cout << \"Number is positive\" << std::endl;\n} else {\n    std::cout << \"Number is not positive\" << std::endl;\n}\n```\n\nOutput:\n\n```c\nOutput: \nNumber is not positive\n```\n"
+        },
+        {
+          "topicId": "C2-M3-T3",
+          "topicTitle": "if-else if-else Ladder",
+          "topicContent": "Use if-else if-else ladder when you have multiple conditions to check in sequence.\n\nExample:\n\n```c\nint num = 0;\nif (num > 0) {\n    std::cout << \"Positive\" << std::endl;\n} else if (num < 0) {\n    std::cout << \"Negative\" << std::endl;\n} else {\n    std::cout << \"Zero\" << std::endl;\n}\n```\n\nOutput:\n\n```c\nOutput: \nZero\n```\n"
+        },
+        {
+          "topicId": "C2-M3-T4",
+          "topicTitle": "switch Statement",
+          "topicContent": "The switch statement is an alternative to if-else for multiple discrete values. It makes code cleaner and easier to read.\n\nExample:\n\n```c\nchar grade = 'B';\nswitch (grade) {\n    case 'A':\n        std::cout << \"Excellent\" << std::endl;\n        break;\n    case 'B':\n        std::cout << \"Good\" << std::endl;\n        break;\n    case 'C':\n        std::cout << \"Average\" << std::endl;\n        break;\n    default:\n        std::cout << \"Invalid grade\" << std::endl;\n}\n```\n\nOutput:\n\n```c\nOutput: \nGood\n```\n"
+        },
+        {
+          "topicId": "C2-M3-T5",
+          "topicTitle": "for Loop",
+          "topicContent": "The for loop lets you repeat a block of code a fixed number of times.\n\nExample:\n\n```c\nfor (int i = 1; i <= 5; i++) {\n    std::cout << i << \" \";\n}\n```\n\nOutput:\n\n```c\nOutput: \n1 2 3 4 5 \n```\n"
+        },
+        {
+          "topicId": "C2-M3-T6",
+          "topicTitle": "while Loop",
+          "topicContent": "The while loop repeats a block of code while a condition is true.\n\nExample:\n\n```c\nint i = 1;\nwhile (i <= 5) {\n    std::cout << i << \" \";\n    i++;\n}\n```\n\nOutput:\n\n```c\nOutput: \n1 2 3 4 5 \n```\n"
+        },
+        {
+          "topicId": "C2-M3-T7",
+          "topicTitle": "do-while Loop",
+          "topicContent": "The do-while loop is similar to while but executes the loop body at least once before checking the condition.\n\nExample:\n\n```c\nint i = 1;\ndo {\n    std::cout << i << \" \";\n    i++;\n} while (i <= 5);\n```\n\nOutput:\n\n```c\nOutput: \n1 2 3 4 5 \n```\n"
+        },
+        {
+          "topicId": "C2-M3-T8",
+          "topicTitle": "break and continue Statements",
+          "topicContent": "The break statement exits the loop immediately, while continue skips the current iteration and moves to the next one.\n\nExample (break):\n\n```c\nfor (int i = 1; i <= 5; i++) {\n    if (i == 3) {\n        break;\n    }\n    std::cout << i << \" \";\n}\n```\n\nOutput:\n\n```c\nOutput: \n1 2 \n```\n\nExample (continue):\n\n```c\nfor (int i = 1; i <= 5; i++) {\n    if (i == 3) {\n        continue;\n    }\n    std::cout << i << \" \";\n}\n```\n\nOutput:\n\n```c\nOutput: \n1 2 4 5 \n```\n"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M4",
+      "moduleTitle": "Functions in C++",
+      "moduleDescription": "Explore function declaration, definition, calling, recursion, function overloading, and default arguments.",
+      "topics": [
+        {
+          "topicId": "C2-M4-T1",
+          "topicTitle": "Function Declaration and Definition",
+          "topicContent": "Functions help organize code into reusable blocks. A function declaration tells the compiler about a function's name, return type, and parameters, while the definition provides the actual body.\n\nExample:\n\n```c\n// Function declaration\nint add(int, int);\n\n// Function definition\nint add(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int result = add(5, 3);\n    std::cout << \"Sum: \" << result << std::endl;\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nSum: 8\n```\n"
+        },
+        {
+          "topicId": "C2-M4-T2",
+          "topicTitle": "Function Calling",
+          "topicContent": "Calling a function means executing the code inside the function body. Functions can be called multiple times with different arguments.\n\nExample:\n\n```c\nint multiply(int x, int y) {\n    return x * y;\n}\n\nint main() {\n    std::cout << multiply(2, 3) << std::endl;\n    std::cout << multiply(4, 5) << std::endl;\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \n6\n20\n```\n"
+        },
+        {
+          "topicId": "C2-M4-T3",
+          "topicTitle": "Function Parameters and Arguments",
+          "topicContent": "Parameters are variables listed in the function definition; arguments are the actual values passed during the call.\n\nExample:\n\n```c\nvoid greet(std::string name) {\n    std::cout << \"Hello, \" << name << \"!\" << std::endl;\n}\n\nint main() {\n    greet(\"Alice\");\n    greet(\"Bob\");\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nHello, Alice!\nHello, Bob!\n```\n"
+        },
+        {
+          "topicId": "C2-M4-T4",
+          "topicTitle": "Return Types",
+          "topicContent": "Functions can return values of any data type. If no value is returned, the return type should be void.\n\nExample:\n\n```c\nint square(int num) {\n    return num * num;\n}\n\nvoid printMessage() {\n    std::cout << \"This function returns nothing.\" << std::endl;\n}\n\nint main() {\n    std::cout << square(4) << std::endl;\n    printMessage();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \n16\nThis function returns nothing.\n```\n"
+        },
+        {
+          "topicId": "C2-M4-T5",
+          "topicTitle": "Function Overloading",
+          "topicContent": "Function overloading lets you create multiple functions with the same name but different parameter lists.\n\nExample:\n\n```c\nint add(int a, int b) {\n    return a + b;\n}\n\ndouble add(double a, double b) {\n    return a + b;\n}\n\nint main() {\n    std::cout << add(2, 3) << std::endl;\n    std::cout << add(2.5, 3.5) << std::endl;\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \n5\n6\n```\n"
+        },
+        {
+          "topicId": "C2-M4-T6",
+          "topicTitle": "Default Arguments",
+          "topicContent": "You can assign default values to function parameters, which are used if no argument is provided.\n\nExample:\n\n```c\nvoid display(int a, int b = 10) {\n    std::cout << \"a: \" << a << \", b: \" << b << std::endl;\n}\n\nint main() {\n    display(5);\n    display(5, 20);\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \na: 5, b: 10\na: 5, b: 20\n```\n"
+        },
+        {
+          "topicId": "C2-M4-T7",
+          "topicTitle": "Recursion",
+          "topicContent": "Recursion is when a function calls itself to solve smaller instances of the same problem.\n\nExample: Calculating factorial\n\n```c\nint factorial(int n) {\n    if (n <= 1) return 1;\n    else return n * factorial(n - 1);\n}\n\nint main() {\n    std::cout << factorial(5) << std::endl;\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \n120\n```\n"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M5",
+      "moduleTitle": "Arrays and Strings",
+      "moduleDescription": "Learn about single and multi-dimensional arrays, string handling, and common array and string operations.",
+      "topics": [
+        {
+          "topicId": "C2-M5-T1",
+          "topicTitle": "Introduction to Arrays",
+          "topicContent": "An array is a collection of elements of the same type stored in contiguous memory locations. Arrays help store multiple values using a single variable.\n\nExample:\n\n```c\nint numbers[5] = {1, 2, 3, 4, 5};\n\nfor(int i = 0; i < 5; i++) {\n    std::cout << numbers[i] << \" \";\n}\n```\n\nOutput:\n\n```c\nOutput: \n1 2 3 4 5 \n```\n"
+        },
+        {
+          "topicId": "C2-M5-T2",
+          "topicTitle": "Accessing and Modifying Array Elements",
+          "topicContent": "You can access elements by their index (starting at 0) and modify them by assigning new values.\n\nExample:\n\n```c\nint arr[3] = {10, 20, 30};\narr[1] = 50;\n\nfor(int i = 0; i < 3; i++) {\n    std::cout << arr[i] << \" \";\n}\n```\n\nOutput:\n\n```c\nOutput: \n10 50 30 \n```\n"
+        },
+        {
+          "topicId": "C2-M5-T3",
+          "topicTitle": "Multidimensional Arrays",
+          "topicContent": "Arrays can have more than one dimension, like 2D arrays which are like tables or matrices.\n\nExample:\n\n```c\nint matrix[2][3] = {\n    {1, 2, 3},\n    {4, 5, 6}\n};\n\nfor(int i = 0; i < 2; i++) {\n    for(int j = 0; j < 3; j++) {\n        std::cout << matrix[i][j] << \" \";\n    }\n    std::cout << std::endl;\n}\n```\n\nOutput:\n\n```c\nOutput: \n1 2 3 \n4 5 6 \n```\n"
+        },
+        {
+          "topicId": "C2-M5-T4",
+          "topicTitle": "Introduction to Strings",
+          "topicContent": "Strings in C++ are arrays of characters ending with a null character '\\0'. The standard `string` class makes string handling easier.\n\nExample using char array:\n\n```c\nchar name[] = \"Alice\";\nstd::cout << name << std::endl;\n```\n\nExample using std::string:\n\n```c\nstd::string name = \"Alice\";\nstd::cout << name << std::endl;\n```\n\nOutput:\n\n```c\nOutput: \nAlice\nAlice\n```\n"
+        },
+        {
+          "topicId": "C2-M5-T5",
+          "topicTitle": "String Operations",
+          "topicContent": "Common string operations include concatenation, length calculation, and comparison.\n\nExample:\n\n```c\nstd::string s1 = \"Hello, \";\nstd::string s2 = \"World!\";\n\nstd::string s3 = s1 + s2;\nstd::cout << s3 << std::endl;\nstd::cout << \"Length: \" << s3.length() << std::endl;\n\nif(s1 == s2) {\n    std::cout << \"Strings are equal\" << std::endl;\n} else {\n    std::cout << \"Strings are not equal\" << std::endl;\n}\n```\n\nOutput:\n\n```c\nOutput: \nHello, World!\nLength: 13\nStrings are not equal\n```\n"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M6",
+      "moduleTitle": "Pointers and References",
+      "moduleDescription": "Understand pointers, pointer arithmetic, references, and their applications in functions and arrays.",
+      "topics": [
+        {
+          "topicId": "C2-M6-T1",
+          "topicTitle": "Introduction to Pointers",
+          "topicContent": "A pointer is a variable that stores the memory address of another variable. Pointers are powerful because they allow direct memory access and manipulation.\n\nExample:\n\n```c\nint a = 10;\nint* ptr = &a;  // ptr stores the address of a\n\nstd::cout << \"Value of a: \" << a << std::endl;\nstd::cout << \"Address of a: \" << ptr << std::endl;\nstd::cout << \"Value via pointer: \" << *ptr << std::endl;\n```\n\nOutput:\n\n```c\nOutput: \nValue of a: 10\nAddress of a: 0x7ffee3b7d6ac\nValue via pointer: 10\n```\n"
+        },
+        {
+          "topicId": "C2-M6-T2",
+          "topicTitle": "Pointer Arithmetic",
+          "topicContent": "You can perform arithmetic operations on pointers such as increment and decrement which moves the pointer to next or previous memory location based on data type size.\n\nExample:\n\n```c\nint arr[3] = {10, 20, 30};\nint* p = arr;\n\nstd::cout << *p << std::endl;   // 10\np++;\nstd::cout << *p << std::endl;   // 20\n```\n\nOutput:\n\n```c\nOutput: \n10\n20\n```\n"
+        },
+        {
+          "topicId": "C2-M6-T3",
+          "topicTitle": "References in C++",
+          "topicContent": "A reference is an alias for another variable. It must be initialized when declared and cannot be changed to refer to another variable.\n\nExample:\n\n```c\nint x = 5;\nint& ref = x;\n\nref = 10;\nstd::cout << \"x: \" << x << std::endl;\n```\n\nOutput:\n\n```c\nOutput: \nx: 10\n```\n"
+        },
+        {
+          "topicId": "C2-M6-T4",
+          "topicTitle": "Pointers and Arrays",
+          "topicContent": "Arrays and pointers are closely related. The name of an array acts like a pointer to the first element.\n\nExample:\n\n```c\nint arr[3] = {1, 2, 3};\nint* p = arr;\n\nfor (int i = 0; i < 3; i++) {\n    std::cout << *(p + i) << \" \";\n}\n```\n\nOutput:\n\n```c\nOutput: \n1 2 3 \n```\n"
+        },
+        {
+          "topicId": "C2-M6-T5",
+          "topicTitle": "Pointers to Functions",
+          "topicContent": "Pointers can also point to functions, enabling dynamic function calls.\n\nExample:\n\n```c\nvoid greet() {\n    std::cout << \"Hello from function pointer!\" << std::endl;\n}\n\nint main() {\n    void (*funcPtr)() = greet;\n    funcPtr();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nHello from function pointer!\n```\n"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M7",
+      "moduleTitle": "Object-Oriented Programming (OOP) Basics",
+      "moduleDescription": "Grasp the fundamentals of classes and objects, constructors, and data encapsulation in C++.",
+      "topics": [
+        {
+          "topicId": "C2-M7-T1",
+          "topicTitle": "Introduction to OOP Concepts",
+          "topicContent": "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which contain data and methods. The key concepts are:\n\n- **Class:** Blueprint for creating objects.\n- **Object:** Instance of a class.\n- **Encapsulation:** Bundling data and methods.\n- **Abstraction:** Hiding complex implementation details.\n\nOOP helps in organizing code for better maintainability and reuse."
+        },
+        {
+          "topicId": "C2-M7-T2",
+          "topicTitle": "Defining Classes and Creating Objects",
+          "topicContent": "A class is defined using the `class` keyword. Objects are created from classes.\n\nExample:\n\n```c\nclass Car {\npublic:\n    string brand;\n    int year;\n\n    void display() {\n        std::cout << brand << \" - \" << year << std::endl;\n    }\n};\n\nint main() {\n    Car car1;\n    car1.brand = \"Toyota\";\n    car1.year = 2020;\n    car1.display();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nToyota - 2020\n```\n"
+        },
+        {
+          "topicId": "C2-M7-T3",
+          "topicTitle": "Constructors and Destructors",
+          "topicContent": "Constructors initialize objects automatically when created. Destructors clean up before object is destroyed.\n\nExample:\n\n```c\nclass Car {\npublic:\n    string brand;\n    int year;\n\n    // Constructor\n    Car(string b, int y) {\n        brand = b;\n        year = y;\n    }\n\n    // Destructor\n    ~Car() {\n        std::cout << brand << \" object destroyed\" << std::endl;\n    }\n\n    void display() {\n        std::cout << brand << \" - \" << year << std::endl;\n    }\n};\n\nint main() {\n    Car car1(\"Honda\", 2018);\n    car1.display();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nHonda - 2018\nHonda object destroyed\n```\n"
+        },
+        {
+          "topicId": "C2-M7-T4",
+          "topicTitle": "Encapsulation and Access Modifiers",
+          "topicContent": "Encapsulation hides the internal details of a class. Access modifiers control visibility:\n\n- `public`: accessible anywhere\n- `private`: accessible only inside the class\n- `protected`: accessible in derived classes\n\nExample:\n\n```c\nclass Person {\nprivate:\n    int age;\npublic:\n    void setAge(int a) {\n        if (a >= 0) age = a;\n    }\n    int getAge() {\n        return age;\n    }\n};\n\nint main() {\n    Person p;\n    p.setAge(25);\n    std::cout << p.getAge() << std::endl;\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \n25\n```\n"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M8",
+      "moduleTitle": "Inheritance in C++",
+      "moduleDescription": "Understand the concept of inheritance, types of inheritance, and how base and derived classes interact.",
+      "topics": [
+        {
+          "topicId": "C2-M8-T1",
+          "topicTitle": "Introduction to Inheritance",
+          "topicContent": "Inheritance allows a new class (derived class) to acquire properties and behaviors (data members and member functions) of an existing class (base class). It helps to reuse code and establish relationships.\n\nExample:\n\n```c\nclass Animal {\npublic:\n    void eat() {\n        std::cout << \"Eating...\" << std::endl;\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void bark() {\n        std::cout << \"Barking...\" << std::endl;\n    }\n};\n\nint main() {\n    Dog d;\n    d.eat();  // inherited from Animal\n    d.bark();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nEating...\nBarking...\n```\n"
+        },
+        {
+          "topicId": "C2-M8-T2",
+          "topicTitle": "Types of Inheritance",
+          "topicContent": "C++ supports several types of inheritance:\n\n- **Single Inheritance:** Derived class inherits from one base class.\n- **Multiple Inheritance:** Derived class inherits from multiple base classes.\n- **Multilevel Inheritance:** Inheritance occurs at multiple levels.\n- **Hierarchical Inheritance:** Multiple derived classes from one base class.\n- **Hybrid Inheritance:** Combination of two or more types.\n\nExample of Multiple Inheritance:\n\n```c\nclass A {\npublic:\n    void funcA() {\n        std::cout << \"Function A\" << std::endl;\n    }\n};\n\nclass B {\npublic:\n    void funcB() {\n        std::cout << \"Function B\" << std::endl;\n    }\n};\n\nclass C : public A, public B {\n};\n\nint main() {\n    C obj;\n    obj.funcA();\n    obj.funcB();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nFunction A\nFunction B\n```\n"
+        },
+        {
+          "topicId": "C2-M8-T3",
+          "topicTitle": "Base and Derived Classes",
+          "topicContent": "The base class is the parent class, and the derived class inherits from it.\n\nExample:\n\n```c\nclass Base {\npublic:\n    int baseVar;\n    void show() {\n        std::cout << \"Base variable: \" << baseVar << std::endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    int derivedVar;\n    void display() {\n        std::cout << \"Derived variable: \" << derivedVar << std::endl;\n    }\n};\n\nint main() {\n    Derived obj;\n    obj.baseVar = 10;\n    obj.derivedVar = 20;\n    obj.show();\n    obj.display();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nBase variable: 10\nDerived variable: 20\n```\n"
+        },
+        {
+          "topicId": "C2-M8-T4",
+          "topicTitle": "Access Control in Inheritance",
+          "topicContent": "Inheritance can be specified as public, protected, or private, affecting the accessibility of base class members in derived class.\n\n- **Public inheritance:** public and protected members of base class keep their access.\n- **Protected inheritance:** public and protected members become protected.\n- **Private inheritance:** public and protected members become private.\n\nExample:\n\n```c\nclass Base {\npublic:\n    int x;\nprotected:\n    int y;\nprivate:\n    int z;\n};\n\nclass Derived : public Base {\npublic:\n    void access() {\n        x = 1; // OK\n        y = 2; // OK\n        // z = 3; // Error: private member\n    }\n};\n```\n\nNo output here as it's about access control."
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M9",
+      "moduleTitle": "Polymorphism and Abstraction",
+      "moduleDescription": "Learn about function overriding, virtual functions, abstract classes, and runtime polymorphism.",
+      "topics": [
+        {
+          "topicId": "C2-M9-T1",
+          "topicTitle": "Introduction to Polymorphism",
+          "topicContent": "Polymorphism means 'many forms'. It allows functions or objects to behave differently based on the context. In C++, polymorphism is mainly of two types: compile-time and runtime polymorphism.\n\n- **Compile-time Polymorphism:** Achieved using function overloading and operator overloading.\n- **Runtime Polymorphism:** Achieved using inheritance and virtual functions.\n\nExample of function overloading:\n\n```c\nclass Print {\npublic:\n    void show(int i) {\n        std::cout << \"Integer: \" << i << std::endl;\n    }\n    void show(double d) {\n        std::cout << \"Double: \" << d << std::endl;\n    }\n};\n\nint main() {\n    Print p;\n    p.show(5);\n    p.show(3.14);\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nInteger: 5\nDouble: 3.14\n```\n"
+        },
+        {
+          "topicId": "C2-M9-T2",
+          "topicTitle": "Virtual Functions and Runtime Polymorphism",
+          "topicContent": "Virtual functions allow derived classes to override methods of the base class, enabling runtime polymorphism.\n\nExample:\n\n```c\nclass Base {\npublic:\n    virtual void show() {\n        std::cout << \"Base class show()\" << std::endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override {\n        std::cout << \"Derived class show()\" << std::endl;\n    }\n};\n\nint main() {\n    Base* ptr;\n    Derived d;\n    ptr = &d;\n    ptr->show();  // calls Derived's show()\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nDerived class show()\n```\n"
+        },
+        {
+          "topicId": "C2-M9-T3",
+          "topicTitle": "Abstract Classes and Pure Virtual Functions",
+          "topicContent": "An abstract class cannot be instantiated and contains at least one pure virtual function. Pure virtual functions are declared by assigning 0.\n\nExample:\n\n```c\nclass Shape {\npublic:\n    virtual void draw() = 0;  // pure virtual function\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override {\n        std::cout << \"Drawing Circle\" << std::endl;\n    }\n};\n\nint main() {\n    Circle c;\n    c.draw();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nDrawing Circle\n```\n"
+        },
+        {
+          "topicId": "C2-M9-T4",
+          "topicTitle": "Function Overriding",
+          "topicContent": "Function overriding occurs when a derived class has a function with the same name and signature as a base class function.\n\nExample:\n\n```c\nclass Base {\npublic:\n    void display() {\n        std::cout << \"Base display()\" << std::endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() {\n        std::cout << \"Derived display()\" << std::endl;\n    }\n};\n\nint main() {\n    Derived d;\n    d.display();  // calls Derived's display()\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nDerived display()\n```\n"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M10",
+      "moduleTitle": "Operator Overloading and Friend Functions",
+      "moduleDescription": "Discover how to overload operators and use friend functions to access private members of a class.",
+      "topics": [
+        {
+          "topicId": "C2-M10-T1",
+          "topicTitle": "Introduction to Operator Overloading",
+          "topicContent": "Operator overloading allows you to redefine the way operators work for user-defined types (classes). This helps make your objects behave more like built-in types.\n\nExample: Overloading the '+' operator to add two complex numbers.\n\n```c\nclass Complex {\npublic:\n    float real, imag;\n    Complex(float r = 0, float i = 0) : real(r), imag(i) {}\n\n    Complex operator + (const Complex &obj) {\n        Complex temp;\n        temp.real = real + obj.real;\n        temp.imag = imag + obj.imag;\n        return temp;\n    }\n\n    void display() {\n        std::cout << real << \" + i\" << imag << std::endl;\n    }\n};\n\nint main() {\n    Complex c1(3.0, 2.5), c2(1.5, 4.5);\n    Complex c3 = c1 + c2;\n    c3.display();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \n4.5 + i7\n```\n"
+        },
+        {
+          "topicId": "C2-M10-T2",
+          "topicTitle": "Overloading Unary Operators",
+          "topicContent": "You can also overload unary operators like increment (++) or decrement (--).\n\nExample: Overloading the prefix increment operator for a class.\n\n```c\nclass Counter {\n    int count;\npublic:\n    Counter() : count(0) {}\n    void display() {\n        std::cout << \"Count: \" << count << std::endl;\n    }\n    Counter operator++() { // prefix increment\n        ++count;\n        return *this;\n    }\n};\n\nint main() {\n    Counter c;\n    ++c;\n    c.display();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nCount: 1\n```\n"
+        },
+        {
+          "topicId": "C2-M10-T3",
+          "topicTitle": "Friend Functions",
+          "topicContent": "Friend functions can access private and protected members of a class even though they are not members of the class.\n\nExample:\n\n```c\nclass Box {\nprivate:\n    int length;\npublic:\n    Box() : length(0) {}\n    friend void printLength(Box box);\n};\n\nvoid printLength(Box box) {\n    std::cout << \"Length: \" << box.length << std::endl;\n}\n\nint main() {\n    Box b;\n    printLength(b);\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nLength: 0\n```\n"
+        },
+        {
+          "topicId": "C2-M10-T4",
+          "topicTitle": "Friend Classes",
+          "topicContent": "A friend class can access the private and protected members of another class.\n\nExample:\n\n```c\nclass ClassB; // Forward declaration\n\nclass ClassA {\nprivate:\n    int a;\npublic:\n    ClassA() : a(10) {}\n    friend class ClassB; // Declare ClassB as friend\n};\n\nclass ClassB {\npublic:\n    void show(ClassA &obj) {\n        std::cout << \"Value of a: \" << obj.a << std::endl;\n    }\n};\n\nint main() {\n    ClassA objA;\n    ClassB objB;\n    objB.show(objA);\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nValue of a: 10\n```\n"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M11",
+      "moduleTitle": "Templates and Exception Handling",
+      "moduleDescription": "Learn how to use function and class templates for generic programming and handle runtime errors with exceptions.",
+      "topics": [
+        {
+          "topicId": "C2-M11-T1",
+          "topicTitle": "Introduction to Templates",
+          "topicContent": "Templates allow you to write generic and reusable code. Instead of writing the same function or class for different data types, you write a template that works with any data type.\n\nExample: Function template for finding the maximum of two values.\n\n```c\ntemplate <typename T>\nT getMax(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << getMax<int>(3, 7) << std::endl; // Output: 7\n    std::cout << getMax<double>(3.5, 2.5) << std::endl; // Output: 3.5\n    std::cout << getMax<char>('g', 'e') << std::endl; // Output: g\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \n7\n3.5\ng\n```\n"
+        },
+        {
+          "topicId": "C2-M11-T2",
+          "topicTitle": "Class Templates",
+          "topicContent": "Class templates let you define a blueprint for classes that can operate with any data type.\n\nExample: Template class for a simple Pair.\n\n```c\ntemplate <class T1, class T2>\nclass Pair {\npublic:\n    T1 first;\n    T2 second;\n    Pair(T1 a, T2 b) : first(a), second(b) {}\n    void display() {\n        std::cout << \"First: \" << first << \", Second: \" << second << std::endl;\n    }\n};\n\nint main() {\n    Pair<int, double> p1(5, 6.7);\n    Pair<std::string, int> p2(\"Age\", 30);\n    p1.display();\n    p2.display();\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nFirst: 5, Second: 6.7\nFirst: Age, Second: 30\n```\n"
+        },
+        {
+          "topicId": "C2-M11-T3",
+          "topicTitle": "Basics of Exception Handling",
+          "topicContent": "Exception handling lets you handle errors or exceptional cases without crashing your program.\n\nYou use try, catch, and throw keywords.\n\nExample:\n\n```c\nint division(int a, int b) {\n    if (b == 0)\n        throw \"Division by zero error!\";\n    return a / b;\n}\n\nint main() {\n    try {\n        std::cout << division(10, 0) << std::endl;\n    } catch (const char* msg) {\n        std::cerr << \"Exception caught: \" << msg << std::endl;\n    }\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nException caught: Division by zero error!\n```\n"
+        },
+        {
+          "topicId": "C2-M11-T4",
+          "topicTitle": "Multiple Catch Blocks and Exception Propagation",
+          "topicContent": "You can have multiple catch blocks to handle different exception types.\n\nExceptions can propagate up the call stack if not caught.\n\nExample:\n\n```c\nvoid func() {\n    throw 20;\n}\n\nint main() {\n    try {\n        func();\n    } catch (int e) {\n        std::cout << \"Exception caught with value: \" << e << std::endl;\n    }\n    return 0;\n}\n```\n\nOutput:\n\n```c\nOutput: \nException caught with value: 20\n```\n"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M12",
+      "moduleTitle": "File Handling in C++",
+      "moduleDescription": "Understand file input/output operations using file streams, and how to read from and write to files.",
+      "topics": [
+        {
+          "topicId": "C2-M12-T1",
+          "topicTitle": "Introduction to File Handling",
+          "topicContent": "File handling allows a program to read from and write to files, so data can be stored permanently.\n\nC++ provides classes like ifstream, ofstream, and fstream for file operations.\n\nExample: Writing text to a file.\n\n```c\n#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ofstream outfile(\"example.txt\"); // Open file for writing\n    if (outfile.is_open()) {\n        outfile << \"Hello, File Handling in C++!\" << endl;\n        outfile.close(); // Close the file\n        cout << \"Data written to file successfully.\" << endl;\n    } else {\n        cout << \"Unable to open file.\" << endl;\n    }\n    return 0;\n}\n```\n\n```c\nOutput: \nData written to file successfully.\n```"
+        },
+        {
+          "topicId": "C2-M12-T2",
+          "topicTitle": "Reading from Files",
+          "topicContent": "To read data from files, we use ifstream.\n\nExample: Reading text from a file.\n\n```c\n#include <fstream>\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    ifstream infile(\"example.txt\"); // Open file for reading\n    string line;\n    if (infile.is_open()) {\n        while (getline(infile, line)) {\n            cout << line << endl; // Print each line\n        }\n        infile.close(); // Close file\n    } else {\n        cout << \"Unable to open file.\" << endl;\n    }\n    return 0;\n}\n```\n\n```c\nOutput: \nHello, File Handling in C++!\n```"
+        },
+        {
+          "topicId": "C2-M12-T3",
+          "topicTitle": "File Modes and Opening Files",
+          "topicContent": "Files can be opened in different modes:\n- ios::in : read mode\n- ios::out : write mode\n- ios::app : append mode\n- ios::binary : binary mode\n\nExample: Opening a file in append mode to add data without overwriting.\n\n```c\n#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ofstream outfile(\"example.txt\", ios::app);\n    if (outfile.is_open()) {\n        outfile << \"\\nAppending new line.\" << endl;\n        outfile.close();\n        cout << \"Data appended successfully.\" << endl;\n    } else {\n        cout << \"Unable to open file.\" << endl;\n    }\n    return 0;\n}\n```\n\n```c\nOutput: \nData appended successfully.\n```"
+        },
+        {
+          "topicId": "C2-M12-T4",
+          "topicTitle": "Binary File Handling",
+          "topicContent": "Besides text files, C++ supports binary files for storing data in binary format, which is faster and more compact.\n\nExample: Writing and reading binary data.\n\n```c\n#include <fstream>\n#include <iostream>\nusing namespace std;\n\nstruct Person {\n    char name[20];\n    int age;\n};\n\nint main() {\n    Person p1 = {\"Alice\", 25};\n    // Write to binary file\n    ofstream outfile(\"person.dat\", ios::binary);\n    outfile.write((char*)&p1, sizeof(p1));\n    outfile.close();\n\n    // Read from binary file\n    Person p2;\n    ifstream infile(\"person.dat\", ios::binary);\n    infile.read((char*)&p2, sizeof(p2));\n    infile.close();\n\n    cout << \"Name: \" << p2.name << \", Age: \" << p2.age << endl;\n    return 0;\n}\n```\n\n```c\nOutput: \nName: Alice, Age: 25\n```"
+        }
+      ]
+    },
+    {
+      "moduleId": "C2-M13",
+      "moduleTitle": "Standard Template Library (STL)",
+      "moduleDescription": "Explore STL components like vectors, lists, maps, and algorithms for effective data handling.",
+      "topics": [
+        {
+          "topicId": "C2-M13-T1",
+          "topicTitle": "Introduction to STL",
+          "topicContent": "The Standard Template Library (STL) is a powerful C++ library that provides common data structures and algorithms.\n\nIt includes containers like vector, list, map, and algorithms to manipulate these containers efficiently.\n\nUsing STL saves time and makes code cleaner and easier to maintain.\n\nExample: Using a vector to store integers.\n\n```c\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    vector<int> numbers = {10, 20, 30, 40};\n    for (int num : numbers) {\n        cout << num << \" \";\n    }\n    cout << endl;\n    return 0;\n}\n```\n\n```c\nOutput: \n10 20 30 40 \n```"
+        },
+        {
+          "topicId": "C2-M13-T2",
+          "topicTitle": "Vectors",
+          "topicContent": "Vectors are dynamic arrays that can resize automatically.\n\nThey allow fast random access and easy insertion/removal at the end.\n\nCommon operations:\n- push_back(): add element at end\n- size(): get number of elements\n- at(): access element safely\n\nExample:\n\n```c\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    vector<int> v;\n    v.push_back(5);\n    v.push_back(10);\n    v.push_back(15);\n\n    cout << \"Vector elements: \";\n    for (int i = 0; i < v.size(); i++) {\n        cout << v[i] << \" \";\n    }\n    cout << endl;\n    return 0;\n}\n```\n\n```c\nOutput: \nVector elements: 5 10 15 \n```"
+        },
+        {
+          "topicId": "C2-M13-T3",
+          "topicTitle": "Lists",
+          "topicContent": "Lists are doubly linked lists, allowing efficient insertion and deletion anywhere.\n\nUnlike vectors, they do not provide fast random access.\n\nExample:\n\n```c\n#include <iostream>\n#include <list>\nusing namespace std;\n\nint main() {\n    list<int> mylist = {10, 20, 30};\n    mylist.push_front(5);  // Insert at beginning\n    mylist.push_back(40);  // Insert at end\n\n    cout << \"List elements: \";\n    for (int val : mylist) {\n        cout << val << \" \";\n    }\n    cout << endl;\n    return 0;\n}\n```\n\n```c\nOutput: \nList elements: 5 10 20 30 40 \n```"
+        },
+        {
+          "topicId": "C2-M13-T4",
+          "topicTitle": "Maps",
+          "topicContent": "Maps are associative containers that store key-value pairs.\n\nThey automatically sort keys and allow fast retrieval of values by key.\n\nExample:\n\n```c\n#include <iostream>\n#include <map>\nusing namespace std;\n\nint main() {\n    map<string, int> ageMap;\n    ageMap[\"Alice\"] = 25;\n    ageMap[\"Bob\"] = 30;\n\n    cout << \"Alice's age: \" << ageMap[\"Alice\"] << endl;\n    cout << \"Bob's age: \" << ageMap[\"Bob\"] << endl;\n    return 0;\n}\n```\n\n```c\nOutput: \nAlice's age: 25\nBob's age: 30\n```"
+        },
+        {
+          "topicId": "C2-M13-T5",
+          "topicTitle": "Common STL Algorithms",
+          "topicContent": "STL provides many algorithms to operate on containers, such as sort, find, count, and reverse.\n\nExample: Sorting a vector and finding an element.\n\n```c\n#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    vector<int> v = {30, 10, 50, 20, 40};\n    sort(v.begin(), v.end());  // Sort ascending\n\n    cout << \"Sorted vector: \";\n    for (int n : v) {\n        cout << n << \" \";\n    }\n    cout << endl;\n\n    auto it = find(v.begin(), v.end(), 20);\n    if (it != v.end()) {\n        cout << \"Element 20 found at index \" << (it - v.begin()) << endl;\n    } else {\n        cout << \"Element not found.\" << endl;\n    }\n\n    return 0;\n}\n```\n\n```c\nOutput: \nSorted vector: 10 20 30 40 50 \nElement 20 found at index 1\n```"
+        }
+      ]
+    }
+  ]
 }
