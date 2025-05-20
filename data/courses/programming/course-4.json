@@ -46,15 +46,29 @@
             "moduleTitle": "Java Basics",
             "topics": [
                 {
-                "topicId": "C4-M2-T1",
-                "topicTitle": "Variables and Data Types",
-                "topicContent": "Java supports various data types like int, float, char, boolean, and reference types like arrays and objects."
+                    "topicId": "C4-M2-T1",
+                    "topicTitle": "Variables and Data Types",
+                    "topicContent": "**Variables and Data Types in Java**\n\nVariables are used to store data in a program. Each variable has a data type that tells the compiler what kind of data it will hold.\n\n**Common data types:**\n- `int` — stores integers (whole numbers) like 1, 100, -50\n- `double` — stores decimal numbers like 3.14, -0.001\n- `char` — stores a single character like 'A', 'z'\n- `boolean` — stores true or false\n- `String` — stores a sequence of characters (text)\n\n**Declaring variables:**\n```java\nint age = 25;\ndouble price = 19.99;\nchar grade = 'A';\nboolean isJavaFun = true;\nString name = \"Nirmal\";\n```\n\n**Using variables:**\n```java\nSystem.out.println(\"Age: \" + age);\n```\n\n-------------\n\nExample program:\n```java\npublic class VariablesDemo {\n    public static void main(String[] args) {\n        int number = 10;\n        double pi = 3.14159;\n        char letter = 'J';\n        boolean isRaining = false;\n        String greeting = \"Hello Java\";\n\n        System.out.println(\"Number: \" + number);\n        System.out.println(\"Pi: \" + pi);\n        System.out.println(\"Letter: \" + letter);\n        System.out.println(\"Is it raining? \" + isRaining);\n        System.out.println(greeting);\n    }\n}\n```\n\n```java/n\n// Output:\nNumber: 10\nPi: 3.14159\nLetter: J\nIs it raining? false\nHello Java\n```\n"
                 },
-
                 {
-                "topicId": "C4-M2-T2",
-                "topicTitle": "Control Statements",
-                "topicContent": "Java provides control statements like if-else, switch, for loop, while loop, and do-while loop for decision making and looping."
+                    "topicId": "C4-M2-T2",
+                    "topicTitle": "Operators in Java",
+                    "topicContent": "**Operators in Java**\n\nOperators are special symbols that perform operations on variables and values.\n\n**Types of operators:**\n- Arithmetic: `+`, `-`, `*`, `/`, `%` (modulus)\n- Assignment: `=`, `+=`, `-=`, `*=`, `/=`\n- Comparison: `==`, `!=`, `>`, `<`, `>=`, `<=`\n- Logical: `&&` (and), `||` (or), `!` (not)\n\n**Example:**\n```java\nint a = 10;\nint b = 3;\nint sum = a + b;\nint product = a * b;\nboolean isEqual = (a == b);\nboolean isGreater = (a > b) && (b > 0);\n```\n\n-------------\n\nExample program:\n```java\npublic class OperatorsDemo {\n    public static void main(String[] args) {\n        int x = 15;\n        int y = 4;\n\n        System.out.println(\"x + y = \" + (x + y));\n        System.out.println(\"x - y = \" + (x - y));\n        System.out.println(\"x * y = \" + (x * y));\n        System.out.println(\"x / y = \" + (x / y));\n        System.out.println(\"x % y = \" + (x % y));\n\n        System.out.println(\"x == y: \" + (x == y));\n        System.out.println(\"x != y: \" + (x != y));\n        System.out.println(\"x > y && y > 0: \" + ((x > y) && (y > 0)));\n    }\n}\n```\n\n```java/n\n// Output:\nx + y = 19\nx - y = 11\nx * y = 60\nx / y = 3\nx % y = 3\nx == y: false\nx != y: true\nx > y && y > 0: true\n```\n"
+                },
+                {
+                    "topicId": "C4-M2-T3",
+                    "topicTitle": "Control Flow: if, else, switch",
+                    "topicContent": "**Control Flow Statements**\n\nControl flow statements help decide which code blocks run depending on conditions.\n\n- **if-else statement:** Executes code when a condition is true or false.\n- **switch statement:** Selects one of many code blocks to execute based on a variable’s value.\n\n**Syntax:**\n```java\nif (condition) {\n    // code if true\n} else {\n    // code if false\n}\n```\n\n```java\nswitch(expression) {\n    case value1:\n        // code\n        break;\n    case value2:\n        // code\n        break;\n    default:\n        // code\n}\n```\n\n-------------\n\nExample program:\n```java\npublic class ControlFlowDemo {\n    public static void main(String[] args) {\n        int score = 85;\n\n        if (score >= 90) {\n            System.out.println(\"Grade: A\");\n        } else if (score >= 75) {\n            System.out.println(\"Grade: B\");\n        } else {\n            System.out.println(\"Grade: C or below\");\n        }\n\n        int day = 3;\n        switch(day) {\n            case 1: System.out.println(\"Monday\"); break;\n            case 2: System.out.println(\"Tuesday\"); break;\n            case 3: System.out.println(\"Wednesday\"); break;\n            default: System.out.println(\"Other day\");\n        }\n    }\n}\n```\n\n```java/n\n// Output:\nGrade: B\nWednesday\n```\n"
+                },
+                {
+                    "topicId": "C4-M2-T4",
+                    "topicTitle": "Loops: for, while, do-while",
+                    "topicContent": "**Loops in Java**\n\nLoops allow us to repeat a block of code multiple times.\n\n**Types of loops:**\n- `for` loop: repeats code a specific number of times.\n- `while` loop: repeats code while a condition is true.\n- `do-while` loop: similar to while, but runs at least once.\n\n**Syntax:**\n```java\nfor (initialization; condition; update) {\n    // code\n}\n```\n```java\nwhile (condition) {\n    // code\n}\n```\n```java\ndo {\n    // code\n} while (condition);\n```\n\n-------------\n\nExample program:\n```java\npublic class LoopsDemo {\n    public static void main(String[] args) {\n        System.out.println(\"For loop:\");\n        for (int i = 1; i <= 5; i++) {\n            System.out.println(i);\n        }\n\n        System.out.println(\"While loop:\");\n        int j = 1;\n        while (j <= 5) {\n            System.out.println(j);\n            j++;\n        }\n\n        System.out.println(\"Do-While loop:\");\n        int k = 1;\n        do {\n            System.out.println(k);\n            k++;\n        } while (k <= 5);\n    }\n}\n```\n\n```java/n\n// Output:\nFor loop:\n1\n2\n3\n4\n5\nWhile loop:\n1\n2\n3\n4\n5\nDo-While loop:\n1\n2\n3\n4\n5\n```\n"
+                },
+                {
+                    "topicId": "C4-M2-T5",
+                    "topicTitle": "Type Casting and Type Promotion",
+                    "topicContent": "**Type Casting and Type Promotion**\n\nJava sometimes automatically converts one data type to another. This is called **type promotion**.\n\nYou can also manually convert a type, called **type casting**.\n\n- **Type Promotion:** Smaller types like `byte`, `short`, `char` get promoted to `int` when used in expressions.\n- **Type Casting:** You explicitly convert from one type to another.\n\n**Example:**\n```java\nint i = 100;\ndouble d = i; // Automatic promotion from int to double\n\ndouble pi = 3.14;\nint x = (int) pi; // Manual casting from double to int\nSystem.out.println(x); // prints 3\n```\n\n-------------\n\nExample program:\n```java\npublic class CastingDemo {\n    public static void main(String[] args) {\n        byte b = 10;\n        int i = b; // promotion\n\n        double d = 9.78;\n        int castInt = (int) d; // casting\n\n        System.out.println(\"Byte value: \" + b);\n        System.out.println(\"Promoted to int: \" + i);\n        System.out.println(\"Double value: \" + d);\n        System.out.println(\"Casted to int: \" + castInt);\n    }\n}\n```\n\n```java/n\n// Output:\nByte value: 10\nPromoted to int: 10\nDouble value: 9.78\nCasted to int: 9\n```\n"
                 }
             ]
         },
@@ -63,10 +77,25 @@
             "moduleId": "C4-M3",
             "moduleTitle": "Java Flow Control",
             "topics": [
-                {   
+                {
                     "topicId": "C4-M3-T1",
-                    "topicTitle": "Classes and Objects",
-                    "topicContent": "In Java, a class is a blueprint for creating objects. An object is an instance of a class. A class can have attributes and methods."
+                    "topicTitle": "Decision Making Statements",
+                    "topicContent": "**Decision Making Statements**\n\nThese statements let your program make decisions based on conditions.\n\nYou use `if`, `else if`, `else` and `switch` to control the flow.\n\n**if statement:** Executes code if condition is true.\n\n**else if:** Checks another condition if the first is false.\n\n**else:** Runs code if all previous conditions are false.\n\nExample:\n```java\nint age = 20;\nif (age >= 18) {\n    System.out.println(\"You are an adult.\");\n} else {\n    System.out.println(\"You are a minor.\");\n}\n```\n\n-------------\n\nExample program:\n```java\npublic class DecisionDemo {\n    public static void main(String[] args) {\n        int temperature = 30;\n        if (temperature > 35) {\n            System.out.println(\"It's very hot outside.\");\n        } else if (temperature > 20) {\n            System.out.println(\"It's warm outside.\");\n        } else {\n            System.out.println(\"It's cold outside.\");\n        }\n    }\n}\n```\n\n```java/n\n// Output:\nIt's warm outside.\n```\n"
+                },
+                {
+                    "topicId": "C4-M3-T2",
+                    "topicTitle": "Loop Control Statements",
+                    "topicContent": "**Loop Control Statements**\n\nThese statements help control loops by managing how many times loops run or when they stop.\n\nMain loop control statements:\n- `break`: exits the loop immediately.\n- `continue`: skips current iteration and goes to next.\n\nExample:\n```java\nfor (int i = 1; i <= 5; i++) {\n    if (i == 3) {\n        break; // exits loop when i is 3\n    }\n    System.out.println(i);\n}\n```\n\n-------------\n\nExample program:\n```java\npublic class LoopControlDemo {\n    public static void main(String[] args) {\n        System.out.println(\"Using break:\");\n        for (int i = 1; i <= 5; i++) {\n            if (i == 3) {\n                break;\n            }\n            System.out.println(i);\n        }\n\n        System.out.println(\"Using continue:\");\n        for (int i = 1; i <= 5; i++) {\n            if (i == 3) {\n                continue; // skips printing 3\n            }\n            System.out.println(i);\n        }\n    }\n}\n```\n\n```java/n\n// Output:\nUsing break:\n1\n2\nUsing continue:\n1\n2\n4\n5\n```\n"
+                },
+                {
+                    "topicId": "C4-M3-T3",
+                    "topicTitle": "Break and Continue",
+                    "topicContent": "**Break and Continue Statements**\n\n- `break` stops the whole loop immediately.\n- `continue` skips the current loop iteration and moves to the next one.\n\nThey are useful for controlling loops more precisely.\n\nExample:\n```java\nint i = 0;\nwhile (i < 5) {\n    i++;\n    if (i == 3) {\n        continue; // skip when i is 3\n    }\n    System.out.println(i);\n}\n```\n\n-------------\n\nExample program:\n```java\npublic class BreakContinueDemo {\n    public static void main(String[] args) {\n        System.out.println(\"Loop with break:\");\n        for (int i = 1; i <= 5; i++) {\n            if (i == 4) {\n                break; // stop loop when i is 4\n            }\n            System.out.println(i);\n        }\n\n        System.out.println(\"Loop with continue:\");\n        for (int i = 1; i <= 5; i++) {\n            if (i == 4) {\n                continue; // skip printing 4\n            }\n            System.out.println(i);\n        }\n    }\n}\n```\n\n```java/n\n// Output:\nLoop with break:\n1\n2\n3\nLoop with continue:\n1\n2\n3\n5\n```\n"
+                },
+                {
+                    "topicId": "C4-M3-T4",
+                    "topicTitle": "Nested Control Structures",
+                    "topicContent": "**Nested Control Structures**\n\nYou can put control statements inside other control statements. This is called nesting.\n\nExample of nested `if` inside `for` loop:\n\n```java\nfor (int i = 1; i <= 3; i++) {\n    if (i % 2 == 0) {\n        System.out.println(i + \" is even.\");\n    } else {\n        System.out.println(i + \" is odd.\");\n    }\n}\n```\n\n-------------\n\nExample program:\n```java\npublic class NestedControlDemo {\n    public static void main(String[] args) {\n        int[][] numbers = {\n            {1, 2, 3},\n            {4, 5, 6}\n        };\n\n        for (int i = 0; i < numbers.length; i++) {\n            for (int j = 0; j < numbers[i].length; j++) {\n                if (numbers[i][j] % 2 == 0) {\n                    System.out.println(numbers[i][j] + \" is even.\");\n                } else {\n                    System.out.println(numbers[i][j] + \" is odd.\");\n                }\n            }\n        }\n    }\n}\n```\n\n```java/n\n// Output:\n1 is odd.\n2 is even.\n3 is odd.\n4 is even.\n5 is odd.\n6 is even.\n```\n"
                 }
             ]
         },
@@ -77,25 +106,31 @@
             "topics": [
                 {
                     "topicId": "C4-M4-T1",
-                    "topicTitle": "Arrays",
-                    "topicContent": "An array is a collection of elements of the same type. It is a fixed-sized data structure that stores a group of elements of the same type."
+                    "topicTitle": "Defining and Calling Methods",
+                    "topicContent": "**Defining and Calling Methods**\n\nA method is a block of code that performs a task. You define it once and call it whenever needed.\n\n**Syntax:**\n```java\nreturnType methodName(parameters) {\n    // method body\n}\n```\n\nTo call a method:\n```java\nmethodName(arguments);\n```\n\n-------------\n\nExample:\n```java\npublic class MyClass {\n    // Method definition\n    static void sayHello() {\n        System.out.println(\"Hello, Java!\");\n    }\n\n    public static void main(String[] args) {\n        // Method call\n        sayHello();\n    }\n}\n```\n\n```java/n\n// Output:\nHello, Java!\n```\n"
                 },
                 {
                     "topicId": "C4-M4-T2",
-                    "topicTitle": "Lists",
-                    "topicContent": "A list is a collection of elements that can be dynamically resized. It is an ordered collection of elements that allows duplicate elements."
+                    "topicTitle": "Method Parameters and Return Types",
+                    "topicContent": "**Method Parameters and Return Types**\n\nParameters let you pass values into methods. Return type tells what type of value a method gives back.\n\n**Example with parameters and return type:**\n```java\npublic class MathOps {\n    static int add(int a, int b) {\n        return a + b;\n    }\n\n    public static void main(String[] args) {\n        int result = add(10, 5);\n        System.out.println(\"Sum: \" + result);\n    }\n}\n```\n\n```java/n\n// Output:\nSum: 15\n```\n"
                 },
                 {
                     "topicId": "C4-M4-T3",
-                    "topicTitle": "Maps",
-                    "topicContent": "A map is a collection of key-value pairs. It is an unordered collection of elements that allows duplicate keys."
+                    "topicTitle": "Method Overloading",
+                    "topicContent": "**Method Overloading**\n\nMethod overloading means defining multiple methods with the same name but different parameters.\n\nJava chooses the right one based on the arguments you pass.\n\n-------------\n\nExample:\n```java\npublic class OverloadDemo {\n    static void greet() {\n        System.out.println(\"Hello!\");\n    }\n\n    static void greet(String name) {\n        System.out.println(\"Hello, \" + name);\n    }\n\n    public static void main(String[] args) {\n        greet();\n        greet(\"Nirmal\");\n    }\n}\n```\n\n```java/n\n// Output:\nHello!\nHello, Nirmal\n```\n"
                 },
                 {
                     "topicId": "C4-M4-T4",
-                    "topicTitle": "Sets",
-                    "topicContent": "A set is a collection of unique elements. It is an unordered collection of elements that does not allow duplicate elements."
+                    "topicTitle": "Recursion in Java",
+                    "topicContent": "**Recursion in Java**\n\nRecursion is when a method calls itself to solve a smaller part of the problem.\n\nCommon use: factorial, Fibonacci, etc.\n\n-------------\n\nExample:\n```java\npublic class RecursionDemo {\n    static int factorial(int n) {\n        if (n == 1)\n            return 1;\n        return n * factorial(n - 1);\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Factorial of 5: \" + factorial(5));\n    }\n}\n```\n\n```java/n\n// Output:\nFactorial of 5: 120\n```\n"
+                },
+                {
+                    "topicId": "C4-M4-T5",
+                    "topicTitle": "Pass by Value in Java",
+                    "topicContent": "**Pass by Value in Java**\n\nIn Java, **all arguments are passed by value**, which means a copy of the variable is passed to the method.\n\nIf you change it inside the method, it doesn’t affect the original.\n\n-------------\n\nExample:\n```java\npublic class PassByValue {\n    static void changeValue(int num) {\n        num = 50;\n    }\n\n    public static void main(String[] args) {\n        int x = 10;\n        changeValue(x);\n        System.out.println(\"Value of x: \" + x);\n    }\n}\n```\n\n```java/n\n// Output:\nValue of x: 10\n```\n"
                 }
             ]
+
         },
 
         {
@@ -104,10 +139,31 @@
             "topics": [
                 {
                     "topicId": "C4-M5-T1",
-                    "topicTitle": "Collections Framework",
-                    "topicContent": "The Java Collections Framework provides a set of interfaces and classes for storing, organizing, and manipulating collections of objects."
+                    "topicTitle": "Introduction to Arrays",
+                    "topicContent": "**Introduction to Arrays**\n\nAn array is a container object that holds a fixed number of elements of the same type.\n\n**Syntax:**\n```java\nint[] numbers = new int[5];\n```\n\nYou can also directly assign values:\n```java\nint[] numbers = {1, 2, 3, 4, 5};\n```\n\n-------------\n\nExample:\n```java\npublic class ArrayIntro {\n    public static void main(String[] args) {\n        int[] nums = {10, 20, 30};\n        System.out.println(\"First Element: \" + nums[0]);\n    }\n}\n```\n\n```java/n\n// Output:\nFirst Element: 10\n```\n"
+                },
+                {
+                    "topicId": "C4-M5-T2",
+                    "topicTitle": "Single and Multi-dimensional Arrays",
+                    "topicContent": "**Single and Multi-dimensional Arrays**\n\n- **Single-dimensional array**: A simple list.\n- **Multi-dimensional array**: Like a table (2D, 3D, etc.).\n\n**2D Array Example:**\n```java\nint[][] matrix = {\n    {1, 2},\n    {3, 4}\n};\n```\n\n-------------\n\nExample:\n```java\npublic class MultiArray {\n    public static void main(String[] args) {\n        int[][] arr = {\n            {1, 2},\n            {3, 4}\n        };\n        System.out.println(\"Element at [1][0]: \" + arr[1][0]);\n    }\n}\n```\n\n```java/n\n// Output:\nElement at [1][0]: 3\n```\n"
+                },
+                {
+                    "topicId": "C4-M5-T3",
+                    "topicTitle": "Array Iteration and Sorting",
+                    "topicContent": "**Array Iteration and Sorting**\n\nTo iterate over an array, you can use a loop. To sort, use `Arrays.sort()`.\n\n-------------\n\nExample:\n```java\nimport java.util.Arrays;\n\npublic class ArraySort {\n    public static void main(String[] args) {\n        int[] nums = {5, 3, 1, 4, 2};\n        Arrays.sort(nums);\n        for (int n : nums) {\n            System.out.print(n + \" \");\n        }\n    }\n}\n```\n\n```java/n\n// Output:\n1 2 3 4 5 \n```\n"
+                },
+                {
+                    "topicId": "C4-M5-T4",
+                    "topicTitle": "Common Array Algorithms",
+                    "topicContent": "**Common Array Algorithms**\n\nSome common operations:\n- Find max/min\n- Calculate sum/average\n- Search element\n\n-------------\n\nExample - Find Maximum:\n```java\npublic class MaxElement {\n    public static void main(String[] args) {\n        int[] arr = {10, 25, 8, 15};\n        int max = arr[0];\n\n        for (int n : arr) {\n            if (n > max) max = n;\n        }\n\n        System.out.println(\"Max value: \" + max);\n    }\n}\n```\n\n```java/n\n// Output:\nMax value: 25\n```\n"
+                },
+                {
+                    "topicId": "C4-M5-T5",
+                    "topicTitle": "Arrays Utility Methods",
+                    "topicContent": "**Arrays Utility Methods**\n\nJava’s `Arrays` class provides many helpful methods:\n\n- `sort(array)` — Sorts array\n- `fill(array, value)` — Fills with value\n- `copyOf()` — Copies an array\n- `equals(a, b)` — Compares arrays\n\n-------------\n\nExample:\n```java\nimport java.util.Arrays;\n\npublic class ArrayUtils {\n    public static void main(String[] args) {\n        int[] a = {1, 2, 3};\n        int[] b = Arrays.copyOf(a, 3);\n        System.out.println(Arrays.equals(a, b));\n    }\n}\n```\n\n```java/n\n// Output:\ntrue\n```\n"
                 }
             ]
+
         },
 
         {
