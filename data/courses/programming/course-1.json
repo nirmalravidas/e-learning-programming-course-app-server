@@ -11,56 +11,322 @@
     "modules": [
         {
             "moduleId": "C1-M1",
-            "moduleTitle": "Introduction to C",
-            "moduleDescription": "Learn the history, setup, and basics of C programming.",
+            "moduleTitle": "Introduction to C Programming",
+            "moduleDescription": "Get started with C programming by understanding its history, features, and structure. This module lays the foundation for writing your first C program.",
             "topics": [
                 {
-                "topicId": "C1-M1-T1",
-                "topicTitle": "What is C?",
-                "topicContent": "C is a powerful general-purpose programming language developed in the early 1970s."
+                    "topicId": "C1-M1-T1",
+                    "topicTitle": "What is C Programming?",
+                    "topicContent": "**C programming** is a powerful, general-purpose programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It is widely used for developing system applications, operating systems, and embedded systems.\n\n**Key Characteristics:**\n- Procedural language\n- Efficient and fast\n- Low-level access to memory\n- Portable across platforms\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}\n```\n```c\nOutput:\n\nHello, World!\n```"
                 },
                 {
-                "topicId": "C1-M1-T2",
-                "topicTitle": "Setting up Development Environment",
-                "topicContent": "Install GCC compiler and an IDE or use a command-line compiler."
+                    "topicId": "C1-M1-T2",
+                    "topicTitle": "History and Importance of C",
+                    "topicContent": "**C** was developed in 1972 as an evolution of the B language. It became the foundation for many later languages like C++, Java, and even Python (which is implemented in C).\n\n**Why C is important:**\n- Base of modern programming\n- Used in OS development (Linux, Windows)\n- Embedded systems and firmware\n- Teaches low-level memory management\n\n-------------\n**Sample Historical Hello World Code:**\n```c\n#include <stdio.h>\n\nint main() {\n    printf(\"C has been powerful since 1972!\\n\");\n    return 0;\n}\n```\n```c\nOutput:\n\nC has been powerful since 1972!\n```"
+                },
+                {
+                    "topicId": "C1-M1-T3",
+                    "topicTitle": "Features of C",
+                    "topicContent": "C programming language has several unique features that make it popular:\n\n**Main Features:**\n- **Simple Syntax:** Easy to learn.\n- **Portable:** Write once, run anywhere.\n- **Efficient:** Closer to assembly.\n- **Modular:** Use of functions for modularity.\n- **Rich Library:** Built-in functions.\n\n-------------\n**Code Example:**\n```c\n#include <stdio.h>\n\nvoid greet() {\n    printf(\"Welcome to C programming!\\n\");\n}\n\nint main() {\n    greet();\n    return 0;\n}\n```\n```c\nOutput:\n\nWelcome to C programming!\n```"
+                },
+                {
+                    "topicId": "C1-M1-T4",
+                    "topicTitle": "Structure of a C Program",
+                    "topicContent": "A basic C program consists of:\n- **Preprocessor Directives**\n- **main() Function**\n- **Statements and Expressions**\n\n**Structure:**\n```c\n#include <stdio.h> // Header file\n\nint main() {\n    // Code goes here\n    return 0;\n}\n```\n\n**Explanation:**\n- `#include <stdio.h>`: Includes standard input/output functions.\n- `main()`: Entry point of program.\n- `return 0;`: Ends the program.\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    printf(\"Understanding structure!\\n\");\n    return 0;\n}\n```\n```c\nOutput:\n\nUnderstanding structure!\n```"
+                },
+                {
+                    "topicId": "C1-M1-T5",
+                    "topicTitle": "Writing Your First C Program",
+                    "topicContent": "Let’s write your first C program step-by-step.\n\n**Steps:**\n1. Open a code editor or IDE.\n2. Create a `.c` file (e.g., `first.c`).\n3. Write the code:\n\n```c\n#include <stdio.h>\n\nint main() {\n    printf(\"My first C program!\\n\");\n    return 0;\n}\n```\n\n4. Compile using GCC:\n```bash\ngcc first.c -o first\n```\n5. Run it:\n```bash\n./first\n```\n\n-------------\n**Expected Output:**\n```c\nOutput:\n\nMy first C program!\n```"
                 }
             ]
+
         },
 
         {
             "moduleId": "C1-M2",
-            "moduleTitle": "Basics of C Programming",
-            "moduleDescription": "Understand variables, data types, input/output, and operators.",
+            "moduleTitle": "Variables and Data Types",
+            "moduleDescription": "Learn how to declare and use variables in C. Understand different data types, constants, and the importance of format specifiers.",
             "topics": [
                 {
-                "topicId": "C1-M2-T1",
-                "topicTitle": "Variables and Data Types",
-                "topicContent": "Learn about int, float, char, and how to declare variables."
+                    "topicId": "C1-M2-T1",
+                    "topicTitle": "Variables in C",
+                    "topicContent": "**Variables** are used to store data in a program. Each variable has a **name**, a **data type**, and a **value**.\n\n**Declaration:**\n```c\nint age;\nfloat price;\nchar grade;\n```\n\n**Initialization:**\n```c\nint age = 25;\nfloat price = 99.99;\nchar grade = 'A';\n```\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    int age = 20;\n    printf(\"Age is %d\\n\", age);\n    return 0;\n}\n```\n```c\nOutput:\n\nAge is 20\n```"
                 },
                 {
-                "topicId": "C1-M2-T2",
-                "topicTitle": "Input and Output",
-                "topicContent": "Using printf() and scanf() to interact with users."
+                    "topicId": "C1-M2-T2",
+                    "topicTitle": "Data Types in C",
+                    "topicContent": "C supports several **basic data types**:\n- `int`: integer numbers\n- `float`: decimal numbers\n- `double`: double precision decimals\n- `char`: single character\n\n**Example:**\n```c\nint count = 10;\nfloat price = 5.75;\nchar letter = 'B';\n```\n\n-------------\n**Example Code:**\n```c\n#include <stdio.h>\n\nint main() {\n    int count = 5;\n    float pi = 3.14;\n    char letter = 'C';\n    printf(\"Count: %d, Pi: %.2f, Letter: %c\\n\", count, pi, letter);\n    return 0;\n}\n```\n```c\nOutput:\n\nCount: 5, Pi: 3.14, Letter: C\n```"
+                },
+                {
+                    "topicId": "C1-M2-T3",
+                    "topicTitle": "Constants in C",
+                    "topicContent": "Constants are fixed values that cannot be changed during program execution.\n\n**Using `const` keyword:**\n```c\nconst int DAYS_IN_WEEK = 7;\n```\n\n**Using `#define` directive:**\n```c\n#define PI 3.14159\n```\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\n#define MAX 100\n\nint main() {\n    const int DAYS = 7;\n    printf(\"Max = %d, Days = %d\\n\", MAX, DAYS);\n    return 0;\n}\n```\n```c\nOutput:\n\nMax = 100, Days = 7\n```"
+                },
+                {
+                    "topicId": "C1-M2-T4",
+                    "topicTitle": "Format Specifiers",
+                    "topicContent": "Format specifiers tell `printf` how to display variables.\n\n**Common Specifiers:**\n- `%d` or `%i`: integer\n- `%f`: float\n- `%lf`: double\n- `%c`: char\n- `%s`: string\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    int age = 30;\n    float price = 9.99;\n    char grade = 'A';\n    printf(\"Age: %d, Price: %.2f, Grade: %c\\n\", age, price, grade);\n    return 0;\n}\n```\n```c\nOutput:\n\nAge: 30, Price: 9.99, Grade: A\n```"
+                },
+                {
+                    "topicId": "C1-M2-T5",
+                    "topicTitle": "Variable Naming Rules",
+                    "topicContent": "When naming variables:\n- Must start with a letter or underscore (_)\n- Can contain letters, digits, and underscores\n- Case sensitive (`age` ≠ `Age`)\n- Cannot use reserved keywords\n\n-------------\n**Examples:**\n```c\nint age;\nfloat _price;\nchar grade1;\n```\n\n**Invalid:**\n```c\nint 1age; // starts with digit\nint return; // keyword\n```\n\n-------------\n**Example Code:**\n```c\n#include <stdio.h>\n\nint main() {\n    int age = 25;\n    int Age = 30; // different variable\n    printf(\"age = %d, Age = %d\\n\", age, Age);\n    return 0;\n}\n```\n```c\nOutput:\n\nage = 25, Age = 30\n```"
                 }
             ]
+
         },
 
         {
             "moduleId": "C1-M3",
-            "moduleTitle": "Control Flow",
-            "moduleDescription": "Learn how to control the flow of your program using conditions and loops.",
-            "topics": [
+            "moduleTitle": "Operators and Expressions",
+            "moduleDescription": "Explore various operators in C including arithmetic, relational, logical, bitwise, and assignment operators. Understand how expressions are evaluated.",
+            "topics":[
                 {
-                "topicId": "C1-M3-T1",
-                "topicTitle": "If-Else Statements",
-                "topicContent": "Execute code blocks based on conditions."
+                    "topicId": "C1-M3-T1",
+                    "topicTitle": "Arithmetic Operators",
+                    "topicContent": "Arithmetic operators perform mathematical calculations.\n\nCommon operators:\n- `+` Addition\n- `-` Subtraction\n- `*` Multiplication\n- `/` Division\n- `%` Modulus (remainder)\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    int a = 10, b = 3;\n    printf(\"a + b = %d\\n\", a + b);\n    printf(\"a - b = %d\\n\", a - b);\n    printf(\"a * b = %d\\n\", a * b);\n    printf(\"a / b = %d\\n\", a / b);\n    printf(\"a %% b = %d\\n\", a % b);\n    return 0;\n}\n```\n```c\nOutput:\n\na + b = 13\n a - b = 7\n a * b = 30\n a / b = 3\n a % b = 1\n```"
                 },
                 {
-                "topicId": "C1-M3-T2",
-                "topicTitle": "Loops: For and While",
-                "topicContent": "Perform repetitive tasks using loops."
+                    "topicId": "C1-M3-T2",
+                    "topicTitle": "Relational Operators",
+                    "topicContent": "Relational operators compare two values and return 1 (true) or 0 (false).\n\nOperators:\n- `==` Equal to\n- `!=` Not equal to\n- `>` Greater than\n- `<` Less than\n- `>=` Greater than or equal to\n- `<=` Less than or equal to\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    int x = 5, y = 10;\n    printf(\"x == y: %d\\n\", x == y);\n    printf(\"x != y: %d\\n\", x != y);\n    printf(\"x > y: %d\\n\", x > y);\n    printf(\"x < y: %d\\n\", x < y);\n    return 0;\n}\n```\n```c\nOutput:\n\nx == y: 0\nx != y: 1\nx > y: 0\nx < y: 1\n```"
+                },
+                {
+                    "topicId": "C1-M3-T3",
+                    "topicTitle": "Logical Operators",
+                    "topicContent": "Logical operators combine multiple conditions:\n\nOperators:\n- `&&` Logical AND (true if both true)\n- `||` Logical OR (true if any true)\n- `!` Logical NOT (negates condition)\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    int a = 5, b = 10;\n    printf(\"(a < b) && (a > 0): %d\\n\", (a < b) && (a > 0));\n    printf(\"(a > b) || (a > 0): %d\\n\", (a > b) || (a > 0));\n    printf(\"!(a == b): %d\\n\", !(a == b));\n    return 0;\n}\n```\n```c\nOutput:\n\n(a < b) && (a > 0): 1\n(a > b) || (a > 0): 1\n!(a == b): 1\n```"
+                },
+                {
+                    "topicId": "C1-M3-T4",
+                    "topicTitle": "Bitwise Operators",
+                    "topicContent": "Bitwise operators perform operations on bits of integers.\n\nOperators:\n- `&` AND\n- `|` OR\n- `^` XOR\n- `~` NOT\n- `<<` Left shift\n- `>>` Right shift\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    unsigned int a = 5;  // 0101\n    unsigned int b = 9;  // 1001\n    printf(\"a & b = %d\\n\", a & b); // 0001 = 1\n    printf(\"a | b = %d\\n\", a | b); // 1101 = 13\n    printf(\"a ^ b = %d\\n\", a ^ b); // 1100 = 12\n    printf(\"~a = %d\\n\", ~a);\n    printf(\"b << 1 = %d\\n\", b << 1); // 10010 = 18\n    printf(\"b >> 1 = %d\\n\", b >> 1); // 0100 = 4\n    return 0;\n}\n```\n```c\nOutput:\n\na & b = 1\n a | b = 13\n a ^ b = 12\n ~a = -6\n b << 1 = 18\n b >> 1 = 4\n```"
+                },
+                {
+                    "topicId": "C1-M3-T5",
+                    "topicTitle": "Assignment Operators",
+                    "topicContent": "Assignment operators assign values to variables, often combined with arithmetic.\n\nCommon operators:\n- `=` simple assignment\n- `+=` add and assign\n- `-=` subtract and assign\n- `*=` multiply and assign\n- `/=` divide and assign\n- `%=` modulus and assign\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    int x = 10;\n    x += 5;  // x = x + 5\n    printf(\"x = %d\\n\", x);\n    x *= 2;  // x = x * 2\n    printf(\"x = %d\\n\", x);\n    return 0;\n}\n```\n```c\nOutput:\n\nx = 15\nx = 30\n```"
+                },
+                {
+                    "topicId": "C1-M3-T6",
+                    "topicTitle": "Operator Precedence and Associativity",
+                    "topicContent": "Operator precedence determines the order in which operators are evaluated.\n\nExample:\n```c\nint result = 10 + 5 * 2; // Multiplication before addition\n```\nEquivalent to:\n```c\nint result = 10 + (5 * 2);\n```\n\nAssociativity defines how operators of the same precedence are grouped (left to right or right to left).\n\n-------------\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    int a = 10 + 20 / 5;\n    printf(\"Result: %d\\n\", a);\n    return 0;\n}\n```\n```c\nOutput:\n\nResult: 14\n```"
                 }
             ]
+
+        },
+        {
+            "moduleId": "C1-M4",
+            "moduleTitle": "Control Flow Statements",
+            "moduleDescription": "Control the logic of your program using decision-making constructs like if-else, switch, and loops like for, while, and do-while.",
+            "topics": [
+                {
+                    "topicId": "C1-M4-T1",
+                    "topicTitle": "if Statement",
+                    "topicContent": "The `if` statement lets you execute a block of code only if a condition is true.\n\nSyntax:\n```c\nif (condition) {\n    // code to execute if condition is true\n}\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int number = 10;\n    if (number > 0) {\n        printf(\"Number is positive\\n\");\n    }\n    return 0;\n}\n```\n```c\nOutput:\n\nNumber is positive\n```"
+                },
+                {
+                    "topicId": "C1-M4-T2",
+                    "topicTitle": "if-else Statement",
+                    "topicContent": "The `if-else` statement executes one block of code if a condition is true, and another block if it is false.\n\nSyntax:\n```c\nif (condition) {\n    // code if true\n} else {\n    // code if false\n}\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int number = -5;\n    if (number >= 0) {\n        printf(\"Number is non-negative\\n\");\n    } else {\n        printf(\"Number is negative\\n\");\n    }\n    return 0;\n}\n```\n```c\nOutput:\n\nNumber is negative\n```"
+                },
+                {
+                    "topicId": "C1-M4-T3",
+                    "topicTitle": "else if Ladder",
+                    "topicContent": "Use `else if` to check multiple conditions sequentially.\n\nSyntax:\n```c\nif (condition1) {\n    // code\n} else if (condition2) {\n    // code\n} else {\n    // code\n}\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int marks = 75;\n    if (marks >= 90) {\n        printf(\"Grade A\\n\");\n    } else if (marks >= 75) {\n        printf(\"Grade B\\n\");\n    } else {\n        printf(\"Grade C\\n\");\n    }\n    return 0;\n}\n```\n```c\nOutput:\n\nGrade B\n```"
+                },
+                {
+                    "topicId": "C1-M4-T4",
+                    "topicTitle": "switch Statement",
+                    "topicContent": "The `switch` statement allows multi-way branching based on the value of an expression.\n\nSyntax:\n```c\nswitch (expression) {\n    case value1:\n        // code\n        break;\n    case value2:\n        // code\n        break;\n    default:\n        // code if none match\n}\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int day = 3;\n    switch(day) {\n        case 1: printf(\"Monday\\n\"); break;\n        case 2: printf(\"Tuesday\\n\"); break;\n        case 3: printf(\"Wednesday\\n\"); break;\n        default: printf(\"Invalid day\\n\");\n    }\n    return 0;\n}\n```\n```c\nOutput:\n\nWednesday\n```"
+                },
+                {
+                    "topicId": "C1-M4-T5",
+                    "topicTitle": "for Loop",
+                    "topicContent": "The `for` loop repeats a block of code a known number of times.\n\nSyntax:\n```c\nfor (initialization; condition; increment) {\n    // code\n}\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    for (int i = 1; i <= 5; i++) {\n        printf(\"%d \\n\", i);\n    }\n    return 0;\n}\n```\n```c\nOutput:\n\n1 \n2 \n3 \n4 \n5 \n```"
+                },
+                {
+                    "topicId": "C1-M4-T6",
+                    "topicTitle": "while Loop",
+                    "topicContent": "The `while` loop repeats code while a condition remains true.\n\nSyntax:\n```c\nwhile (condition) {\n    // code\n}\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int i = 1;\n    while (i <= 5) {\n        printf(\"%d \\n\", i);\n        i++;\n    }\n    return 0;\n}\n```\n```c\nOutput:\n\n1 \n2 \n3 \n4 \n5 \n```"
+                },
+                {
+                    "topicId": "C1-M4-T7",
+                    "topicTitle": "do-while Loop",
+                    "topicContent": "The `do-while` loop executes the code block at least once, then repeats while the condition is true.\n\nSyntax:\n```c\ndo {\n    // code\n} while (condition);\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int i = 1;\n    do {\n        printf(\"%d \\n\", i);\n        i++;\n    } while (i <= 5);\n    return 0;\n}\n```\n```c\nOutput:\n\n1 \n2 \n3 \n4 \n5 \n```"
+                }
+            ]
+
+        },
+        {
+            "moduleId": "C1-M5",
+            "moduleTitle": "Functions in C",
+            "moduleDescription": "Modularize your code with functions. Learn how to define, declare, call functions, and understand function arguments, return types, and recursion.",
+            "topics":[
+                {
+                    "topicId": "C1-M5-T1",
+                    "topicTitle": "What is a Function?",
+                    "topicContent": "Functions are reusable blocks of code designed to perform a specific task. They help break down a program into smaller, manageable pieces.\n\nSyntax of a function:\n```c\nreturn_type function_name(parameters) {\n    // body of the function\n}\n```\n\nExample:\n```c\n#include <stdio.h>\n\nvoid greet() {\n    printf(\"Hello, World!\\n\");\n}\n\nint main() {\n    greet(); // calling the function\n    return 0;\n}\n```\n```c\nOutput:\n\nHello, World!\n```"
+                },
+                {
+                    "topicId": "C1-M5-T2",
+                    "topicTitle": "Function Declaration and Definition",
+                    "topicContent": "A function declaration (or prototype) tells the compiler about a function's name, return type, and parameters before its actual definition.\n\nExample:\n```c\nvoid greet(); // function declaration\n\nint main() {\n    greet();\n    return 0;\n}\n\nvoid greet() { // function definition\n    printf(\"Hello from greet function\\n\");\n}\n```\n```c\nOutput:\n\nHello from greet function\n```"
+                },
+                {
+                    "topicId": "C1-M5-T3",
+                    "topicTitle": "Function Parameters and Arguments",
+                    "topicContent": "Functions can accept inputs called parameters. When calling a function, you pass arguments to these parameters.\n\nExample:\n```c\n#include <stdio.h>\n\nvoid greetUser(char name[]) {\n    printf(\"Hello, %s!\\n\", name);\n}\n\nint main() {\n    greetUser(\"Alice\");\n    return 0;\n}\n```\n```c\nOutput:\n\nHello, Alice!\n```"
+                },
+                {
+                    "topicId": "C1-M5-T4",
+                    "topicTitle": "Return Statement",
+                    "topicContent": "Functions can return a value to the caller using the `return` statement.\n\nExample:\n```c\n#include <stdio.h>\n\nint add(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int result = add(5, 3);\n    printf(\"Sum is %d\\n\", result);\n    return 0;\n}\n```\n```c\nOutput:\n\nSum is 8\n```"
+                },
+                {
+                    "topicId": "C1-M5-T5",
+                    "topicTitle": "Recursion",
+                    "topicContent": "A function that calls itself is called recursive. It's useful for tasks that can be broken into similar subtasks.\n\nExample (Factorial calculation):\n```c\n#include <stdio.h>\n\nint factorial(int n) {\n    if (n == 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nint main() {\n    int num = 5;\n    printf(\"Factorial of %d is %d\\n\", num, factorial(num));\n    return 0;\n}\n```\n```c\nOutput:\n\nFactorial of 5 is 120\n```"
+                }
+            ]
+
+        },
+        {
+            "moduleId": "C1-M6",
+            "moduleTitle": "Arrays and Strings",
+            "moduleDescription": "Work with arrays and strings to manage collections of data efficiently. Learn about one-dimensional, multi-dimensional arrays, and string manipulation.",
+            "topics": [
+                {
+                    "topicId": "C1-M6-T1",
+                    "topicTitle": "Introduction to Arrays",
+                    "topicContent": "Arrays are collections of elements of the same data type stored in contiguous memory locations. They help store multiple values using a single variable.\n\nSyntax:\n```c\nint arr[5]; // declares an array of 5 integers\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int numbers[3] = {10, 20, 30};\n    printf(\"First element: %d\\n\", numbers[0]);\n    return 0;\n}\n```\n```c\nOutput:\n\nFirst element: 10\n```"
+                },
+                {
+                    "topicId": "C1-M6-T2",
+                    "topicTitle": "Accessing and Modifying Array Elements",
+                    "topicContent": "You access array elements using their index (starting from 0). You can also modify the elements by assigning new values.\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int arr[3] = {1, 2, 3};\n    arr[1] = 10; // modifying the second element\n    printf(\"Modified element: %d\\n\", arr[1]);\n    return 0;\n}\n```\n```c\nOutput:\n\nModified element: 10\n```"
+                },
+                {
+                    "topicId": "C1-M6-T3",
+                    "topicTitle": "Multi-dimensional Arrays",
+                    "topicContent": "Arrays can have more than one dimension. The most common is the 2D array (like a matrix).\n\nSyntax:\n```c\nint matrix[2][3]; // 2 rows, 3 columns\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    printf(\"Element at row 1, column 2: %d\\n\", matrix[0][1]);\n    return 0;\n}\n```\n```c\nOutput:\n\nElement at row 1, column 2: 2\n```"
+                },
+                {
+                    "topicId": "C1-M6-T4",
+                    "topicTitle": "Introduction to Strings",
+                    "topicContent": "Strings in C are arrays of characters ending with a special null character `\\0`.\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    char name[] = \"John\";\n    printf(\"Name: %s\\n\", name);\n    return 0;\n}\n```\n```c\nOutput:\n\nName: John\n```"
+                },
+                {
+                    "topicId": "C1-M6-T5",
+                    "topicTitle": "String Manipulation Functions",
+                    "topicContent": "C provides many functions to work with strings in the `<string.h>` library such as `strlen()`, `strcpy()`, and `strcmp()`.\n\nExample:\n```c\n#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str1[20] = \"Hello\";\n    char str2[20];\n    strcpy(str2, str1); // copy str1 to str2\n    printf(\"Length: %lu\\n\", strlen(str2));\n    printf(\"Compare: %d\\n\", strcmp(str1, str2));\n    return 0;\n}\n```\n```c\nOutput:\n\nLength: 5\nCompare: 0\n```"
+                }
+            ]
+
+        },
+        {
+            "moduleId": "C1-M7",
+            "moduleTitle": "Pointers in C",
+            "moduleDescription": "Understand the power of pointers, memory addresses, pointer arithmetic, and how pointers relate to arrays and functions.",
+            "topics": [
+                {
+                    "topicId": "C1-M7-T1",
+                    "topicTitle": "What is a Pointer?",
+                    "topicContent": "A pointer is a variable that stores the memory address of another variable.\n\nSyntax:\n```c\nint *ptr; // ptr is a pointer to an integer\n```\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int var = 10;\n    int *ptr = &var; // ptr holds the address of var\n    printf(\"Value of var: %d\\n\", var);\n    printf(\"Address of var: %p\\n\", ptr);\n    return 0;\n}\n```\n```c\nOutput:\n\nValue of var: 10\nAddress of var: 0x7ffee9b34a3c\n```"
+                },
+                {
+                    "topicId": "C1-M7-T2",
+                    "topicTitle": "Pointer Dereferencing",
+                    "topicContent": "Dereferencing a pointer means accessing the value stored at the memory address the pointer holds.\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int var = 20;\n    int *ptr = &var;\n    printf(\"Value via pointer: %d\\n\", *ptr); // dereference\n    return 0;\n}\n```\n```c\nOutput:\n\nValue via pointer: 20\n```"
+                },
+                {
+                    "topicId": "C1-M7-T3",
+                    "topicTitle": "Pointer Arithmetic",
+                    "topicContent": "Pointers can be incremented or decremented to point to the next or previous memory location of the same data type.\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int arr[3] = {5, 10, 15};\n    int *ptr = arr;\n    printf(\"First element: %d\\n\", *ptr);\n    ptr++;\n    printf(\"Second element: %d\\n\", *ptr);\n    return 0;\n}\n```\n```c\nOutput:\n\nFirst element: 5\nSecond element: 10\n```"
+                },
+                {
+                    "topicId": "C1-M7-T4",
+                    "topicTitle": "Pointers and Arrays",
+                    "topicContent": "Arrays and pointers are closely related. The array name acts as a pointer to its first element.\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    int arr[3] = {1, 2, 3};\n    int *ptr = arr; // points to first element\n    for(int i = 0; i < 3; i++) {\n        printf(\"Element %d: %d\\n\", i, *(ptr + i));\n    }\n    return 0;\n}\n```\n```c\nOutput:\n\nElement 0: 1\nElement 1: 2\nElement 2: 3\n```"
+                },
+                {
+                    "topicId": "C1-M7-T5",
+                    "topicTitle": "Pointers and Functions",
+                    "topicContent": "Pointers can be passed to functions to modify variables outside the function's scope.\n\nExample:\n```c\n#include <stdio.h>\n\nvoid increment(int *ptr) {\n    (*ptr)++;\n}\n\nint main() {\n    int num = 5;\n    increment(&num);\n    printf(\"Incremented value: %d\\n\", num);\n    return 0;\n}\n```\n```c\nOutput:\n\nIncremented value: 6\n```"
+                }
+            ]
+
+        },
+        {
+            "moduleId": "C1-M8",
+            "moduleTitle": "Structures and Unions",
+            "moduleDescription": "Group different data types together using structures and unions. Learn how to define and use them in real-world scenarios.",
+            "topics": [
+                {
+                    "topicId": "C1-M8-T1",
+                    "topicTitle": "What is a Structure?",
+                    "topicContent": "A structure in C is a user-defined data type that groups related variables of different types under one name.\n\nSyntax:\n```c\nstruct Person {\n    char name[50];\n    int age;\n    float height;\n};\n```\n\nExample:\n```c\n#include <stdio.h>\n\nstruct Person {\n    char name[50];\n    int age;\n    float height;\n};\n\nint main() {\n    struct Person p1 = {\"Alice\", 30, 5.6};\n    printf(\"Name: %s\\n\", p1.name);\n    printf(\"Age: %d\\n\", p1.age);\n    printf(\"Height: %.1f\\n\", p1.height);\n    return 0;\n}\n```\n```c\nOutput:\n\nName: Alice\nAge: 30\nHeight: 5.6\n```"
+                },
+                {
+                    "topicId": "C1-M8-T2",
+                    "topicTitle": "Accessing Structure Members",
+                    "topicContent": "You can access structure members using the dot (.) operator.\n\nExample:\n```c\nstruct Point {\n    int x;\n    int y;\n};\n\nstruct Point p = {10, 20};\nprintf(\"X: %d, Y: %d\", p.x, p.y);\n```\n\nOutput:\n```c\nOutput:\n\nX: 10, Y: 20\n```"
+                },
+                {
+                    "topicId": "C1-M8-T3",
+                    "topicTitle": "Pointers to Structures",
+                    "topicContent": "You can create pointers to structures and access members using the arrow (->) operator.\n\nExample:\n```c\nstruct Point {\n    int x;\n    int y;\n};\n\nstruct Point p = {10, 20};\nstruct Point *ptr = &p;\nprintf(\"X: %d, Y: %d\", ptr->x, ptr->y);\n```\n\nOutput:\n```c\nOutput:\n\nX: 10, Y: 20\n```"
+                },
+                {
+                    "topicId": "C1-M8-T4",
+                    "topicTitle": "What is a Union?",
+                    "topicContent": "A union is similar to a structure but stores different data types in the same memory location, saving space.\n\nSyntax:\n```c\nunion Data {\n    int i;\n    float f;\n    char str[20];\n};\n```\n\nExample:\n```c\n#include <stdio.h>\n\nunion Data {\n    int i;\n    float f;\n    char str[20];\n};\n\nint main() {\n    union Data data;\n    data.i = 10;\n    printf(\"data.i = %d\\n\", data.i);\n    data.f = 220.5;\n    printf(\"data.f = %.2f\\n\", data.f);\n    strcpy(data.str, \"Hello\");\n    printf(\"data.str = %s\\n\", data.str);\n    return 0;\n}\n```\n```c\nOutput:\n\ndata.i = 10\ndata.f = 220.50\ndata.str = Hello\n```"
+                },
+                {
+                    "topicId": "C1-M8-T5",
+                    "topicTitle": "Difference Between Structures and Unions",
+                    "topicContent": "**Structures:**\n- Allocate separate memory for each member.\n- Total size is the sum of sizes of all members.\n\n**Unions:**\n- Allocate shared memory for all members.\n- Size is equal to the size of the largest member.\n\nUse structures when you need to store multiple data types simultaneously.\nUse unions when you want to save memory and only one member is used at a time."
+                }
+            ]
+
+        },
+        {
+            "moduleId": "C1-M9",
+            "moduleTitle": "File Handling",
+            "moduleDescription": "Read from and write to files using C's file handling techniques. Understand file pointers, file modes, and functions like fopen, fread, and fwrite.",
+            "topics": [
+                {
+                    "topicId": "C1-M9-T1",
+                    "topicTitle": "Introduction to File Handling",
+                    "topicContent": "File handling allows you to store data permanently in storage devices like hard drives. In C, files are managed using the `FILE` type and functions provided in `<stdio.h>`.\n\nBasic Steps:\n1. Open a file using `fopen()`\n2. Read/Write the file\n3. Close the file using `fclose()`"
+                },
+                {
+                    "topicId": "C1-M9-T2",
+                    "topicTitle": "Opening a File",
+                    "topicContent": "Use `fopen()` to open a file. It returns a pointer of type `FILE*`.\n\nSyntax:\n```c\nFILE *fp;\nfp = fopen(\"filename.txt\", \"mode\");\n```\n\nModes:\n- \"r\" – read\n- \"w\" – write\n- \"a\" – append\n- \"r+\" – read/update\n- \"w+\" – write/update\n- \"a+\" – append/update\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"w\");\n    if (fp != NULL) {\n        fprintf(fp, \"Hello, file!\\n\");\n        fclose(fp);\n    }\n    return 0;\n}\n```\n```c\n//Output:\nFile named data.txt will be created with text: Hello, file!\n```"
+                },
+                {
+                    "topicId": "C1-M9-T3",
+                    "topicTitle": "Reading from a File",
+                    "topicContent": "You can read a file using `fgetc()`, `fgets()`, or `fscanf()`.\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"r\");\n    char ch;\n    if (fp != NULL) {\n        while ((ch = fgetc(fp)) != EOF) {\n            putchar(ch);\n        }\n        fclose(fp);\n    }\n    return 0;\n}\n```\n```c\n//Output:\nContents of data.txt will be printed character by character.\n```"
+                },
+                {
+                    "topicId": "C1-M9-T4",
+                    "topicTitle": "Writing to a File",
+                    "topicContent": "You can use `fprintf()` or `fputs()` to write to a file.\n\nExample:\n```c\n#include <stdio.h>\n\nint main() {\n    FILE *fp = fopen(\"example.txt\", \"w\");\n    if (fp != NULL) {\n        fprintf(fp, \"Learning C File Handling!\\n\");\n        fputs(\"This is line 2.\\n\", fp);\n        fclose(fp);\n    }\n    return 0;\n}\n```\n```c\n//Output:\nText will be written to example.txt file.\n```"
+                },
+                {
+                    "topicId": "C1-M9-T5",
+                    "topicTitle": "Closing a File",
+                    "topicContent": "Always close files using `fclose()` to ensure data is saved and to free system resources.\n\nSyntax:\n```c\nfclose(fp);\n```\nFailing to close files can cause memory leaks or data corruption."
+                },
+                {
+                    "topicId": "C1-M9-T6",
+                    "topicTitle": "File Modes Explained",
+                    "topicContent": "**Read Mode (\"r\")**: Opens file for reading. Error if file doesn’t exist.\n\n**Write Mode (\"w\")**: Creates a new file for writing. Overwrites if file exists.\n\n**Append Mode (\"a\")**: Opens file for writing at the end. Creates file if not exists.\n\n**Read+ Mode (\"r+\")**: Opens file for both reading and writing. File must exist.\n\n**Write+ Mode (\"w+\")**: Opens file for reading and writing. Creates new file or truncates existing.\n\n**Append+ Mode (\"a+\")**: Opens for reading and appending. File is created if it doesn’t exist."
+                }
+            ]
+
         }
     ]
 }
