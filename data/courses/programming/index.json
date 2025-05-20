@@ -69,18 +69,7 @@
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/typescript/banner_image.png",
     "pricingType": "Free",
     "bookmarked": false
-  },
-
-  {
-    "id": "C7",
-    "index": 6,
-    "slug": "course-7",
-    "language": "HTML",
-    "courseTitle": "Learn HTML Language",
-    "courseDescription": "Understand the foundation of web development with semantic HTML5 and best practices.",
-    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/html/banner_image.png",
-    "pricingType": "Free",
-    "bookmarked": false
+    
   }
 
 ]

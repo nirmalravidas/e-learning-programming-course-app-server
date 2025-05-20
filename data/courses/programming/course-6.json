@@ -1,47 +1,477 @@
 {
-    "id": "C6",
-    "index": 5,
-    "slug": "course-6",
-    "language": "TypeScript",
-    "courseTitle": "Learn TypeScript Programming",
-    "courseDescription": "Learn TypeScript to add static typing to JavaScript and build scalable applications.",
-    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/typescript/banner_image.png",
-    "pricingType": "Free",
-    "bookmarked": false,
-    "modules": [
+  "id": "C6",
+  "index": 5,
+  "slug": "course-6",
+  "language": "TypeScript",
+  "courseTitle": "Learn TypeScript Programming",
+  "courseDescription": "Learn TypeScript to add static typing to JavaScript and build scalable applications.",
+  "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/typescript/banner_image.png",
+  "pricingType": "Free",
+  "bookmarked": false,
+  "modules": [
+    {
+      "moduleId": "C6-M1",
+      "moduleTitle": "Introduction to TypeScript",
+      "moduleDescription": "Understand what TypeScript is, why it was created, its advantages over JavaScript, and how to set up the TypeScript development environment.",
+      "topics": [
         {
-            "moduleId": "C6-M1",
-            "moduleTitle": "Introduction to Python",
-            "topics": [
-                {
-                    "topicId": "C6-M1-T1",
-                    "topicTitle": "What is Python?",
-                    "topicContent": "Python is an interpreted, high-level, general-purpose programming language known for its readability."
-                },
-
-                {
-                    "topicId": "C6-M1-T2",
-                    "topicTitle": "Setting Up Python",
-                    "topicContent": "Download and install Python from the official site python.org and set up your development environment."
-                }
-            ]
+          "topicId": "C6-M1-T1",
+          "topicTitle": "What is TypeScript?",
+          "topicContent": "TypeScript is a strongly typed superset of JavaScript that compiles to plain JavaScript. It adds optional static typing to JavaScript, helping developers catch errors early and write more robust code. It is developed and maintained by Microsoft and widely used in modern web development."
         },
         {
-            "moduleId": "C6-M2",
-            "moduleTitle": "Basic Python Syntax",
-            "topics": [
-                {
-                    "topicId": "C6-M2-T1",
-                    "topicTitle": "Variables and Data Types",
-                    "topicContent": "Python supports various data types including int, float, str, list, dict, and more."
-                },
-
-                {
-                    "topicId": "C6-M2-T2",
-                    "topicTitle": "Control Flow Statements",
-                    "topicContent": "Learn how to use if-else, for loops, and while loops in Python."
-                }
-            ]
+          "topicId": "C6-M1-T2",
+          "topicTitle": "Why TypeScript was created?",
+          "topicContent": "JavaScript is flexible but can lead to runtime errors due to lack of static typing. TypeScript was created to address these issues by adding types, interfaces, and advanced tooling to improve developer productivity and code maintainability."
+        },
+        {
+          "topicId": "C6-M1-T3",
+          "topicTitle": "Advantages of TypeScript over JavaScript",
+          "topicContent": "TypeScript provides several advantages:\n- Static Typing: Detect type errors at compile time.\n- Enhanced IDE Support: Autocompletion, refactoring, and navigation.\n- Better Code Organization: Interfaces, enums, and namespaces.\n- Early Bug Detection: Helps avoid common JavaScript pitfalls.\n- Compatibility: TypeScript code compiles down to JavaScript, working in any browser or environment."
+        },
+        {
+          "topicId": "C6-M1-T4",
+          "topicTitle": "Setting Up the TypeScript Environment",
+          "topicContent": "You can set up TypeScript using Node.js and npm.\n\n1. Install Node.js from the official website.\n2. Install TypeScript globally using npm:\n```bash\nnpm install -g typescript\n```\n3. Verify installation:\n```bash\ntsc --version\n```\n4. Create a `tsconfig.json` file to configure the compiler.\n\nExample `tsconfig.json`:\n```json\n{\n  \"compilerOptions\": {\n    \"target\": \"es6\",\n    \"module\": \"commonjs\",\n    \"strict\": true,\n    \"outDir\": \"dist\"\n  }\n}\n```\n5. Compile your TypeScript files:\n```bash\ntsc\n```\n\nThis will compile `.ts` files into `.js` files in the `dist` folder."
+        },
+        {
+          "topicId": "C6-M1-T5",
+          "topicTitle": "Your First TypeScript Program",
+          "topicContent": "Create a file `hello.ts` with the following content:\n\n```typescript\nfunction greet(name: string): string {\n  return `Hello, ${name}!`;\n}\n\nconsole.log(greet('World'));\n```\n\nCompile it using:\n```bash\ntsc hello.ts\n```\n\nRun the generated JavaScript:\n```bash\nnode hello.js\n```\n\nOutput:\n```typescript\nOutput: \nHello, World!\n```\n\nThis demonstrates a typed function and string interpolation."
         }
+      ]
+    },
+    {
+      "moduleId": "C6-M2",
+      "moduleTitle": "Basic Types and Type Annotations",
+      "moduleDescription": "Learn about TypeScript's basic data types, type annotations, and how to explicitly declare types for variables and functions.",
+      "topics": [
+        {
+          "topicId": "C6-M2-T1",
+          "topicTitle": "Basic Data Types in TypeScript",
+          "topicContent": "TypeScript provides several basic data types that help define variables with specific kinds of values.\n\n- `boolean`: true or false\n- `number`: integer or floating-point numbers\n- `string`: text data\n- `array`: collections of elements\n- `tuple`: fixed-length arrays with known types\n- `enum`: named constants\n- `any`: opt-out of type checking\n- `void`: absence of any type (usually for functions that don't return)\n\nExample:\n\n```typescript\nlet isDone: boolean = false;\nlet decimal: number = 6;\nlet color: string = \"blue\";\nlet list: number[] = [1, 2, 3];\nlet tuple: [string, number] = [\"hello\", 10];\n```\n"
+        },
+        {
+          "topicId": "C6-M2-T2",
+          "topicTitle": "Type Annotations",
+          "topicContent": "Type annotations explicitly specify the type of a variable, function parameter, or return type.\n\nSyntax:\n```typescript\nlet variableName: type = value;\n```\n\nExample:\n```typescript\nlet username: string = \"Alice\";\nfunction add(a: number, b: number): number {\n  return a + b;\n}\n```\n\nExplicit type annotations improve readability and help catch errors during compilation."
+        },
+        {
+          "topicId": "C6-M2-T3",
+          "topicTitle": "Type Inference",
+          "topicContent": "When you don't provide an explicit type, TypeScript infers it based on the assigned value.\n\nExample:\n```typescript\nlet message = \"Hello\"; // inferred as string\nlet count = 10; // inferred as number\n```\n\nHowever, once inferred, the type is fixed, and assigning a different type will cause an error."
+        },
+        {
+          "topicId": "C6-M2-T4",
+          "topicTitle": "Declaring Variables with var, let, and const",
+          "topicContent": "TypeScript supports all JavaScript variable declarations:\n\n- `var`: function-scoped, avoid using it.\n- `let`: block-scoped, preferred for variables that change.\n- `const`: block-scoped, for variables that never change.\n\nExample:\n```typescript\nlet age: number = 30;\nconst pi: number = 3.14;\n```\n\nUse `const` whenever possible for immutability."
+        },
+        {
+          "topicId": "C6-M2-T5",
+          "topicTitle": "Working with Arrays and Tuples",
+          "topicContent": "Arrays hold collections of values of the same type.\n\nExample:\n```typescript\nlet numbers: number[] = [1, 2, 3];\nlet names: Array<string> = ['Alice', 'Bob'];\n```\n\nTuples are arrays with fixed sizes and types.\n\nExample:\n```typescript\nlet person: [string, number] = ['John', 25];\n```\nTuples are useful for representing fixed structures like key-value pairs."
+        },
+        {
+          "topicId": "C6-M2-T6",
+          "topicTitle": "Using the any Type",
+          "topicContent": "The `any` type disables type checking and allows variables to hold values of any type.\n\nExample:\n```typescript\nlet anything: any = 5;\nanything = \"Now I'm a string\";\n```\n\nUse `any` sparingly because it defeats the purpose of TypeScript's type safety."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M3",
+      "moduleTitle": "Interfaces and Type Aliases",
+      "moduleDescription": "Explore how interfaces and type aliases define the shape of objects and enable better code organization and type safety.",
+      "topics": [
+        {
+          "topicId": "C6-M3-T1",
+          "topicTitle": "Understanding Interfaces",
+          "topicContent": "Interfaces in TypeScript define the shape of an object by specifying the types of its properties and methods. They help enforce a contract for objects to follow.\n\nExample:\n```typescript\ninterface Person {\n  name: string;\n  age: number;\n  greet(): void;\n}\n\nconst user: Person = {\n  name: \"Alice\",\n  age: 30,\n  greet() {\n    console.log(`Hello, my name is ${this.name}`);\n  }\n};\n```\nInterfaces ensure objects adhere to the required structure."
+        },
+        {
+          "topicId": "C6-M3-T2",
+          "topicTitle": "Optional Properties and Readonly",
+          "topicContent": "Interfaces can have optional properties marked with `?` and readonly properties that cannot be changed after initialization.\n\nExample:\n```typescript\ninterface Car {\n  make: string;\n  model: string;\n  year?: number; // optional\n  readonly vin: string; // readonly\n}\n\nconst myCar: Car = {\n  make: \"Toyota\",\n  model: \"Corolla\",\n  vin: \"12345XYZ\"\n};\n// myCar.vin = \"67890ABC\"; // Error: Cannot assign to 'vin' because it is a read-only property\n```\nOptional and readonly properties enhance flexibility and immutability."
+        },
+        {
+          "topicId": "C6-M3-T3",
+          "topicTitle": "Extending Interfaces",
+          "topicContent": "Interfaces can extend other interfaces to create complex types by combining multiple interfaces.\n\nExample:\n```typescript\ninterface Animal {\n  name: string;\n}\n\ninterface Dog extends Animal {\n  breed: string;\n}\n\nconst myDog: Dog = {\n  name: \"Buddy\",\n  breed: \"Golden Retriever\"\n};\n```\nThis supports code reuse and better organization."
+        },
+        {
+          "topicId": "C6-M3-T4",
+          "topicTitle": "Type Aliases",
+          "topicContent": "Type aliases create new names for types. They can represent primitives, unions, tuples, or object types.\n\nExample:\n```typescript\ntype ID = string | number;\n\nlet userId: ID = \"abc123\";\nuserId = 12345; // both are valid\n\n// Object type alias\n\ntype Point = {\n  x: number;\n  y: number;\n};\n\nconst origin: Point = { x: 0, y: 0 };\n```\nType aliases provide more expressive and reusable type definitions."
+        },
+        {
+          "topicId": "C6-M3-T5",
+          "topicTitle": "Differences Between Interfaces and Type Aliases",
+          "topicContent": "Both interfaces and type aliases can define object shapes, but with some differences:\n\n- Interfaces support declaration merging (multiple declarations merge into one).\n- Type aliases can represent more complex types like unions and tuples.\n- Interfaces are generally preferred for object shapes; type aliases are more flexible.\n\nExample:\n```typescript\ninterface User {\n  name: string;\n}\n\ntype UserAlias = {\n  name: string;\n} | string;\n```\nUnderstanding when to use each helps create cleaner code."
+        },
+        {
+          "topicId": "C6-M3-T6",
+          "topicTitle": "Implementing Interfaces in Classes",
+          "topicContent": "Classes can implement interfaces to enforce that they provide specific properties and methods.\n\nExample:\n```typescript\ninterface Logger {\n  log(message: string): void;\n}\n\nclass ConsoleLogger implements Logger {\n  log(message: string) {\n    console.log(message);\n  }\n}\n\nconst logger = new ConsoleLogger();\nlogger.log(\"Hello World\");\n```\nThis ensures classes follow expected contracts."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M4",
+      "moduleTitle": "Functions and Optional Parameters",
+      "moduleDescription": "Learn how to define functions with typed parameters, optional parameters, default values, and function overloading.",
+      "topics": [
+        {
+          "topicId": "C6-M4-T1",
+          "topicTitle": "Defining Functions with Typed Parameters",
+          "topicContent": "In TypeScript, you declare function parameters with specific types to ensure type safety and catch errors early.\n\nExample:\n```typescript\nfunction add(a: number, b: number): number {\n  return a + b;\n}\n\nconst result = add(5, 3);\nconsole.log(result); // Output: 8\n```\nSpecifying types helps the compiler check correct usage."
+        },
+        {
+          "topicId": "C6-M4-T2",
+          "topicTitle": "Optional Parameters in Functions",
+          "topicContent": "Parameters can be marked optional with `?`. Optional parameters must come after required ones.\n\nExample:\n```typescript\nfunction greet(name: string, greeting?: string): string {\n  return greeting ? `${greeting}, ${name}!` : `Hello, ${name}!`;\n}\n\nconsole.log(greet(\"Alice\"));\nconsole.log(greet(\"Bob\", \"Good morning\"));\n```\nOptional parameters allow more flexible function calls."
+        },
+        {
+          "topicId": "C6-M4-T3",
+          "topicTitle": "Default Parameter Values",
+          "topicContent": "You can assign default values to parameters to use when no argument is provided.\n\nExample:\n```typescript\nfunction multiply(a: number, b: number = 2): number {\n  return a * b;\n}\n\nconsole.log(multiply(5)); // Output: 10\nconsole.log(multiply(5, 3)); // Output: 15\n```\nDefaults provide safer and simpler function calls."
+        },
+        {
+          "topicId": "C6-M4-T4",
+          "topicTitle": "Function Return Types",
+          "topicContent": "You can explicitly specify the return type of a function to improve readability and type safety.\n\nExample:\n```typescript\nfunction isEven(num: number): boolean {\n  return num % 2 === 0;\n}\n\nconsole.log(isEven(4)); // Output: true\n```\nReturn type annotations clarify the expected output."
+        },
+        {
+          "topicId": "C6-M4-T5",
+          "topicTitle": "Function Overloading",
+          "topicContent": "TypeScript supports function overloading to define multiple signatures for a function.\n\nExample:\n```typescript\nfunction combine(a: string, b: string): string;\nfunction combine(a: number, b: number): number;\nfunction combine(a: any, b: any): any {\n  return a + b;\n}\n\nconsole.log(combine(\"Hello, \", \"World!\")); // Output: Hello, World!\nconsole.log(combine(5, 10)); // Output: 15\n```\nOverloading enables different input-output combinations."
+        },
+        {
+          "topicId": "C6-M4-T6",
+          "topicTitle": "Rest Parameters",
+          "topicContent": "Functions can accept an indefinite number of arguments using rest parameters.\n\nExample:\n```typescript\nfunction sum(...numbers: number[]): number {\n  return numbers.reduce((acc, curr) => acc + curr, 0);\n}\n\nconsole.log(sum(1, 2, 3, 4)); // Output: 10\n```\nRest parameters provide flexibility in function inputs."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M5",
+      "moduleTitle": "Classes and Inheritance",
+      "moduleDescription": "Understand how TypeScript enhances JavaScript classes with strong typing, access modifiers, inheritance, and abstract classes.",
+      "topics": [
+        {
+          "topicId": "C6-M5-T1",
+          "topicTitle": "Defining Classes in TypeScript",
+          "topicContent": "TypeScript enhances JavaScript classes with static typing, making it easier to write robust code.\n\nExample:\n```typescript\nclass Person {\n  name: string;\n  age: number;\n\n  constructor(name: string, age: number) {\n    this.name = name;\n    this.age = age;\n  }\n\n  greet(): string {\n    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;\n  }\n}\n\nconst person = new Person('Alice', 30);\nconsole.log(person.greet()); // Output: Hello, my name is Alice and I am 30 years old.\n```\nClasses encapsulate data and behavior."
+        },
+        {
+          "topicId": "C6-M5-T2",
+          "topicTitle": "Access Modifiers: Public, Private, and Protected",
+          "topicContent": "TypeScript supports access modifiers to control visibility of class members.\n\n- `public`: accessible anywhere (default)\n- `private`: accessible only within the class\n- `protected`: accessible within the class and subclasses\n\nExample:\n```typescript\nclass Employee {\n  public name: string;\n  private salary: number;\n  protected department: string;\n\n  constructor(name: string, salary: number, department: string) {\n    this.name = name;\n    this.salary = salary;\n    this.department = department;\n  }\n\n  getSalary(): number {\n    return this.salary;\n  }\n}\n\nconst emp = new Employee('Bob', 50000, 'HR');\nconsole.log(emp.name); // OK\n// console.log(emp.salary); // Error: private\n// console.log(emp.department); // Error: protected\nconsole.log(emp.getSalary()); // OK\n```\nAccess modifiers help encapsulate and protect data."
+        },
+        {
+          "topicId": "C6-M5-T3",
+          "topicTitle": "Inheritance and Subclasses",
+          "topicContent": "Classes can inherit properties and methods from other classes using `extends`.\n\nExample:\n```typescript\nclass Animal {\n  constructor(public name: string) {}\n  move(distance: number): string {\n    return `${this.name} moved ${distance} meters.`;\n  }\n}\n\nclass Dog extends Animal {\n  bark(): string {\n    return 'Woof!';\n  }\n}\n\nconst dog = new Dog('Buddy');\nconsole.log(dog.bark()); // Output: Woof!\nconsole.log(dog.move(10)); // Output: Buddy moved 10 meters.\n```\nInheritance promotes code reuse and polymorphism."
+        },
+        {
+          "topicId": "C6-M5-T4",
+          "topicTitle": "Abstract Classes and Methods",
+          "topicContent": "Abstract classes cannot be instantiated and can include abstract methods that must be implemented by subclasses.\n\nExample:\n```typescript\nabstract class Vehicle {\n  constructor(public brand: string) {}\n  abstract startEngine(): void;\n\n  move(): string {\n    return `${this.brand} is moving.`;\n  }\n}\n\nclass Car extends Vehicle {\n  startEngine(): void {\n    console.log('Engine started');\n  }\n}\n\nconst car = new Car('Toyota');\ncar.startEngine(); // Output: Engine started\nconsole.log(car.move()); // Output: Toyota is moving.\n```\nAbstract classes define a blueprint for subclasses."
+        },
+        {
+          "topicId": "C6-M5-T5",
+          "topicTitle": "Readonly and Static Members",
+          "topicContent": "TypeScript supports `readonly` properties that cannot be changed after initialization, and `static` members that belong to the class itself.\n\nExample:\n```typescript\nclass Circle {\n  static pi: number = 3.1416;\n  readonly radius: number;\n\n  constructor(radius: number) {\n    this.radius = radius;\n  }\n\n  area(): number {\n    return Circle.pi * this.radius * this.radius;\n  }\n}\n\nconst circle = new Circle(5);\nconsole.log(circle.area()); // Output: 78.54\n// circle.radius = 10; // Error: readonly\nconsole.log(Circle.pi); // Output: 3.1416\n```\nThese modifiers add immutability and class-level functionality."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M6",
+      "moduleTitle": "Generics",
+      "moduleDescription": "Learn the concept of generics for creating reusable and type-safe components, functions, and classes.",
+      "topics": [
+        {
+          "topicId": "C6-M6-T1",
+          "topicTitle": "Introduction to Generics",
+          "topicContent": "Generics allow you to create reusable components that work with a variety of types while maintaining type safety.\n\nExample:\n```typescript\nfunction identity<T>(arg: T): T {\n  return arg;\n}\n\nconsole.log(identity<string>('Hello')); // Output: Hello\nconsole.log(identity<number>(42));      // Output: 42\n```\nHere, `<T>` is a type parameter that can represent any type."
+        },
+        {
+          "topicId": "C6-M6-T2",
+          "topicTitle": "Generic Functions",
+          "topicContent": "Generic functions can accept arguments of any type and return values of the same type, enhancing flexibility.\n\nExample:\n```typescript\nfunction loggingIdentity<T>(arg: T[]): T[] {\n  console.log(arg.length); // Array has a length property\n  return arg;\n}\n\nloggingIdentity<number>([1, 2, 3]); // Output: 3\n```\nGenerics let you enforce type constraints on function parameters."
+        },
+        {
+          "topicId": "C6-M6-T3",
+          "topicTitle": "Generic Interfaces",
+          "topicContent": "You can define interfaces with generics to describe flexible APIs.\n\nExample:\n```typescript\ninterface GenericIdentityFn<T> {\n  (arg: T): T;\n}\n\nfunction identity<T>(arg: T): T {\n  return arg;\n}\n\nlet myIdentity: GenericIdentityFn<number> = identity;\nconsole.log(myIdentity(100)); // Output: 100\n```\nThis helps create contracts for generic functions."
+        },
+        {
+          "topicId": "C6-M6-T4",
+          "topicTitle": "Generic Classes",
+          "topicContent": "Classes can use generics to handle data of various types while preserving type safety.\n\nExample:\n```typescript\nclass GenericNumber<T> {\n  zeroValue: T;\n  add: (x: T, y: T) => T;\n}\n\nlet myGenericNumber = new GenericNumber<number>();\nmyGenericNumber.zeroValue = 0;\nmyGenericNumber.add = (x, y) => x + y;\n\nconsole.log(myGenericNumber.add(5, 10)); // Output: 15\n```\nThis pattern is useful for data structures and algorithms."
+        },
+        {
+          "topicId": "C6-M6-T5",
+          "topicTitle": "Generic Constraints",
+          "topicContent": "You can restrict generics to types that satisfy certain requirements using constraints.\n\nExample:\n```typescript\ninterface Lengthwise {\n  length: number;\n}\n\nfunction loggingIdentity<T extends Lengthwise>(arg: T): T {\n  console.log(arg.length);\n  return arg;\n}\n\nloggingIdentity('Hello');       // Output: 5\nloggingIdentity([1, 2, 3, 4]);  // Output: 4\n// loggingIdentity(10);          // Error: number does not have length\n```\nConstraints allow safer, more specific generic code."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M7",
+      "moduleTitle": "Enums and Tuples",
+      "moduleDescription": "Explore TypeScript enums for defining named constants and tuples for fixed-length arrays with specific types.",
+      "topics": [
+        {
+          "topicId": "C6-M7-T1",
+          "topicTitle": "Introduction to Enums",
+          "topicContent": "Enums allow you to define a set of named constants, making your code more readable and intent clearer.\n\nExample:\n```typescript\nenum Direction {\n  Up = 1,\n  Down,\n  Left,\n  Right\n}\n\nlet dir: Direction = Direction.Up;\nconsole.log(dir); // Output: 1\n```\nBy default, enums start numbering from 0, but you can set custom values."
+        },
+        {
+          "topicId": "C6-M7-T2",
+          "topicTitle": "String Enums",
+          "topicContent": "Enums can also have string values instead of numbers.\n\nExample:\n```typescript\nenum Direction {\n  Up = 'UP',\n  Down = 'DOWN',\n  Left = 'LEFT',\n  Right = 'RIGHT'\n}\n\nconsole.log(Direction.Left); // Output: LEFT\n```\nString enums improve debugging and logging clarity."
+        },
+        {
+          "topicId": "C6-M7-T3",
+          "topicTitle": "Heterogeneous Enums",
+          "topicContent": "Enums can mix string and numeric members, but it is generally discouraged.\n\nExample:\n```typescript\nenum Mixed {\n  No = 0,\n  Yes = 'YES'\n}\n\nconsole.log(Mixed.No);  // Output: 0\nconsole.log(Mixed.Yes); // Output: YES\n```\nUse carefully as it can make code less predictable."
+        },
+        {
+          "topicId": "C6-M7-T4",
+          "topicTitle": "Introduction to Tuples",
+          "topicContent": "Tuples let you express an array with fixed length and types at specific positions.\n\nExample:\n```typescript\nlet tuple: [string, number];\ntuple = ['hello', 10]; // Correct\n// tuple = [10, 'hello']; // Error\n```\nTuples are useful for representing structured data like key-value pairs."
+        },
+        {
+          "topicId": "C6-M7-T5",
+          "topicTitle": "Tuple Usage Examples",
+          "topicContent": "Tuples can be used to represent data like coordinate points or user info.\n\nExample:\n```typescript\nfunction getUser(): [number, string] {\n  return [1, 'Alice'];\n}\n\nconst [id, name] = getUser();\nconsole.log(id);   // Output: 1\nconsole.log(name); // Output: Alice\n```\nDestructuring tuples enhances readability and maintainability."
+        },
+        {
+          "topicId": "C6-M7-T6",
+          "topicTitle": "Readonly Tuples",
+          "topicContent": "You can make tuples immutable using `readonly`.\n\nExample:\n```typescript\nlet point: readonly [number, number] = [10, 20];\n// point[0] = 5; // Error: Cannot assign to '0' because it is a read-only property.\n```\nReadonly tuples help prevent accidental modifications."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M8",
+      "moduleTitle": "Advanced Types and Type Guards",
+      "moduleDescription": "Dive into union types, intersection types, type guards, and discriminated unions for more precise type checking.",
+      "topics": [
+        {
+          "topicId": "C6-M8-T1",
+          "topicTitle": "Union Types",
+          "topicContent": "Union types allow a variable to hold values of multiple types, enhancing flexibility while maintaining type safety.\n\nExample:\n```typescript\ntype ID = number | string;\n\nlet userId: ID;\nuserId = 123;      // valid\nuserId = 'abc123'; // valid\n// userId = true;  // Error\n```\nUse union types when a value can be of several types."
+        },
+        {
+          "topicId": "C6-M8-T2",
+          "topicTitle": "Intersection Types",
+          "topicContent": "Intersection types combine multiple types into one, requiring the value to satisfy all types.\n\nExample:\n```typescript\ntype Admin = { name: string; privileges: string[] };\ntype Employee = { name: string; startDate: Date };\n\ntype ElevatedEmployee = Admin & Employee;\n\nconst e: ElevatedEmployee = {\n  name: 'John',\n  privileges: ['create-server'],\n  startDate: new Date()\n};\n```\nUse intersections to combine properties from multiple types."
+        },
+        {
+          "topicId": "C6-M8-T3",
+          "topicTitle": "Type Guards Using typeof",
+          "topicContent": "Type guards allow narrowing of union types using runtime checks.\n\nExample:\n```typescript\nfunction printId(id: number | string) {\n  if (typeof id === 'string') {\n    console.log('ID is a string: ' + id.toUpperCase());\n  } else {\n    console.log('ID is a number: ' + id.toFixed(2));\n  }\n}\n```\nUse `typeof` to check primitive types."
+        },
+        {
+          "topicId": "C6-M8-T4",
+          "topicTitle": "Type Guards Using instanceof",
+          "topicContent": "Use `instanceof` to narrow types for class instances.\n\nExample:\n```typescript\nclass Car {\n  drive() { console.log('Driving car'); }\n}\nclass Truck {\n  drive() { console.log('Driving truck'); }\n  loadCargo(amount: number) { console.log('Loading cargo: ' + amount); }\n}\n\nfunction useVehicle(vehicle: Car | Truck) {\n  vehicle.drive();\n  if (vehicle instanceof Truck) {\n    vehicle.loadCargo(1000);\n  }\n}\n```\nUse `instanceof` when checking object instances."
+        },
+        {
+          "topicId": "C6-M8-T5",
+          "topicTitle": "User-Defined Type Guards",
+          "topicContent": "Create custom type guard functions to narrow types based on your own logic.\n\nExample:\n```typescript\ntype Fish = { swim: () => void };\ntype Bird = { fly: () => void };\n\nfunction isFish(pet: Fish | Bird): pet is Fish {\n  return (pet as Fish).swim !== undefined;\n}\n\nfunction move(pet: Fish | Bird) {\n  if (isFish(pet)) {\n    pet.swim();\n  } else {\n    pet.fly();\n  }\n}\n```\nType guards improve code safety and clarity."
+        },
+        {
+          "topicId": "C6-M8-T6",
+          "topicTitle": "Discriminated Unions",
+          "topicContent": "Discriminated unions use a common property (usually a literal type) to distinguish between different types in a union.\n\nExample:\n```typescript\ntype Square = { kind: 'square'; size: number };\ntype Rectangle = { kind: 'rectangle'; width: number; height: number };\ntype Circle = { kind: 'circle'; radius: number };\n\ntype Shape = Square | Rectangle | Circle;\n\nfunction area(shape: Shape) {\n  switch (shape.kind) {\n    case 'square':\n      return shape.size * shape.size;\n    case 'rectangle':\n      return shape.width * shape.height;\n    case 'circle':\n      return Math.PI * shape.radius ** 2;\n  }\n}\n```\nDiscriminated unions simplify type checking in complex unions."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M9",
+      "moduleTitle": "Modules and Namespaces",
+      "moduleDescription": "Understand how to organize code using modules and namespaces to avoid naming collisions and improve maintainability.",
+      "topics": [
+        {
+          "topicId": "C6-M9-T1",
+          "topicTitle": "What are Modules in TypeScript?",
+          "topicContent": "Modules are files that contain code and export declarations such as variables, functions, classes, or interfaces. They help organize code by encapsulating functionality.\n\nExample:\n```typescript\n// mathUtils.ts\nexport function add(a: number, b: number): number {\n  return a + b;\n}\n```\nModules help keep code clean and maintainable."
+        },
+        {
+          "topicId": "C6-M9-T2",
+          "topicTitle": "Importing and Exporting Modules",
+          "topicContent": "Use `export` to make code accessible outside a module, and `import` to use exported code in another module.\n\nExample:\n```typescript\n// mathUtils.ts\nexport const PI = 3.14;\n\n// app.ts\nimport { add, PI } from './mathUtils';\nconsole.log(add(5, 3));\nconsole.log(PI);\n```\nSupports reusable and modular code design."
+        },
+        {
+          "topicId": "C6-M9-T3",
+          "topicTitle": "Default Exports",
+          "topicContent": "Modules can have a default export, which can be imported without curly braces.\n\nExample:\n```typescript\n// logger.ts\nexport default function log(message: string) {\n  console.log(message);\n}\n\n// app.ts\nimport log from './logger';\nlog('Hello TypeScript');\n```\nSimplifies importing the primary export of a module."
+        },
+        {
+          "topicId": "C6-M9-T4",
+          "topicTitle": "Namespaces in TypeScript",
+          "topicContent": "Namespaces group related code under a single global identifier, useful in older projects or when modules are not supported.\n\nExample:\n```typescript\nnamespace Validation {\n  export function isNumber(value: any): boolean {\n    return typeof value === 'number';\n  }\n}\n\nconsole.log(Validation.isNumber(123)); // true\n```\nNamespaces avoid polluting the global scope."
+        },
+        {
+          "topicId": "C6-M9-T5",
+          "topicTitle": "Nested Namespaces",
+          "topicContent": "Namespaces can be nested to organize code hierarchically.\n\nExample:\n```typescript\nnamespace App {\n  export namespace Utils {\n    export function greet(name: string) {\n      return `Hello, ${name}`;\n    }\n  }\n}\n\nconsole.log(App.Utils.greet('Alice'));\n```\nUseful for large projects without modules."
+        },
+        {
+          "topicId": "C6-M9-T6",
+          "topicTitle": "Namespaces vs Modules",
+          "topicContent": "Modules use file-based separation with `import` and `export`, whereas namespaces are internal and global.\n\n- Modules are preferred for modern codebases.\n- Namespaces are useful for legacy or simple scripts.\n\nUnderstanding when to use each helps maintainable architecture."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M10",
+      "moduleTitle": "Decorators and Metadata",
+      "moduleDescription": "Learn about decorators, their syntax, and how they can be used to add metadata and modify classes and methods.",
+      "topics": [
+        {
+          "topicId": "C6-M10-T1",
+          "topicTitle": "What are Decorators in TypeScript?",
+          "topicContent": "Decorators are special functions that can be attached to classes, methods, properties, or parameters to modify their behavior or add metadata. They provide a way to add annotations and a meta-programming syntax for class declarations and members.\n\nExample:\n```typescript\nfunction logClass(target: Function) {\n  console.log('Class decorated:', target.name);\n}\n\n@logClass\nclass Person {\n  constructor(public name: string) {}\n}\n```\n```typescript\nOutput:\nClass decorated: Person\n```\nThis example demonstrates a simple class decorator that logs the class name."
+        },
+        {
+          "topicId": "C6-M10-T2",
+          "topicTitle": "Class Decorators",
+          "topicContent": "Class decorators receive the constructor of the class as their only argument. They can be used to observe, modify, or replace a class definition.\n\nExample:\n```typescript\nfunction sealed(constructor: Function) {\n  Object.seal(constructor);\n  Object.seal(constructor.prototype);\n}\n\n@sealed\nclass Greeter {\n  greeting: string;\n  constructor(message: string) {\n    this.greeting = message;\n  }\n  greet() {\n    return 'Hello, ' + this.greeting;\n  }\n}\n```\nThe `sealed` decorator prevents any extensions or modifications to the class and its prototype."
+        },
+        {
+          "topicId": "C6-M10-T3",
+          "topicTitle": "Method Decorators",
+          "topicContent": "Method decorators are applied to methods of a class and receive the target object, method name, and property descriptor. They can modify or replace the method.\n\nExample:\n```typescript\nfunction enumerable(value: boolean) {\n  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n    descriptor.enumerable = value;\n  };\n}\n\nclass Person {\n  constructor(public name: string) {}\n\n  @enumerable(false)\n  greet() {\n    return `Hello, ${this.name}`;\n  }\n}\n```\nHere, the `enumerable` decorator controls whether the method shows up during property enumeration."
+        },
+        {
+          "topicId": "C6-M10-T4",
+          "topicTitle": "Property Decorators",
+          "topicContent": "Property decorators receive the target object and property name. They can be used to observe or modify properties.\n\nExample:\n```typescript\nfunction readonly(target: any, propertyKey: string) {\n  Object.defineProperty(target, propertyKey, {\n    writable: false\n  });\n}\n\nclass Person {\n  @readonly\n  name: string = 'John';\n}\n```\nThis makes the property `name` read-only, preventing modification after initialization."
+        },
+        {
+          "topicId": "C6-M10-T5",
+          "topicTitle": "Parameter Decorators",
+          "topicContent": "Parameter decorators receive the target object, method name, and parameter index. They can be used to add metadata about parameters.\n\nExample:\n```typescript\nfunction logParameter(target: any, propertyKey: string, parameterIndex: number) {\n  console.log(`Parameter at index ${parameterIndex} in method ${propertyKey} is decorated`);\n}\n\nclass Person {\n  greet(@logParameter message: string) {\n    console.log(message);\n  }\n}\n```\nWhen `greet` is called, the decorator logs the parameter index and method name."
+        },
+        {
+          "topicId": "C6-M10-T6",
+          "topicTitle": "Using Reflect Metadata with Decorators",
+          "topicContent": "TypeScript supports using the `reflect-metadata` library to add and read metadata on decorated declarations.\n\nExample:\n```typescript\nimport 'reflect-metadata';\n\nfunction required(target: Object, propertyKey: string) {\n  Reflect.defineMetadata('required', true, target, propertyKey);\n}\n\nclass Person {\n  @required\n  name: string;\n}\n\nconst isRequired = Reflect.getMetadata('required', new Person(), 'name');\nconsole.log('Is name required?', isRequired);\n```\n```typescript\nOutput:\nIs name required? true\n```\nThis allows decorators to store extra info about classes and properties."
+        },
+        {
+          "topicId": "C6-M10-T7",
+          "topicTitle": "Practical Use Cases of Decorators",
+          "topicContent": "Decorators are widely used in frameworks like Angular to add metadata to classes and members, implement dependency injection, logging, validation, and more.\n\nExample use cases:\n- Automatically register classes\n- Enforce validation rules\n- Log method calls\n- Add authorization checks\n\nDecorators help keep code clean, modular, and easier to maintain."
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M11",
+      "moduleTitle": "TypeScript with React",
+      "moduleDescription": "Explore how to use TypeScript in React projects, including typing props, state, and components effectively.",
+      "topics": [
+        {
+          "topicId": "C6-M11-T1",
+          "topicTitle": "Setting up a React Project with TypeScript",
+          "topicContent": "Learn how to create a new React project with TypeScript using Create React App or Vite.\n\nExample:\n```typescript\n// Using Create React App\nnpx create-react-app my-app --template typescript\n```\nThis sets up the project with TypeScript support and necessary type definitions."
+        },
+        {
+          "topicId": "C6-M11-T2",
+          "topicTitle": "Typing Functional Components and Props",
+          "topicContent": "Understand how to type React functional components and their props.\n\nExample:\n```typescript\ninterface GreetingProps {\n  name: string;\n}\n\nconst Greeting: React.FC<GreetingProps> = ({ name }) => {\n  return <h1>Hello, {name}!</h1>;\n};\n```\nThis defines props type for a functional component using an interface."
+        },
+        {
+          "topicId": "C6-M11-T3",
+          "topicTitle": "Typing State with useState Hook",
+          "topicContent": "Learn to explicitly type the state variable when using the `useState` hook.\n\nExample:\n```typescript\nconst [count, setCount] = React.useState<number>(0);\n```\nThis declares `count` as a number state."
+        },
+        {
+          "topicId": "C6-M11-T4",
+          "topicTitle": "Typing Event Handlers",
+          "topicContent": "Type React event handlers correctly to benefit from type checking.\n\nExample:\n```typescript\nconst handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {\n  console.log('Button clicked');\n};\n```\nThis types the event parameter as a mouse event on a button element."
+        },
+        {
+          "topicId": "C6-M11-T5",
+          "topicTitle": "Typing Component Refs",
+          "topicContent": "Use `React.RefObject` and `useRef` with types to reference DOM elements or components.\n\nExample:\n```typescript\nconst inputRef = React.useRef<HTMLInputElement>(null);\n\nconst focusInput = () => {\n  inputRef.current?.focus();\n};\n```\nThis creates a ref to an input element and calls focus on it."
+        },
+        {
+          "topicId": "C6-M11-T6",
+          "topicTitle": "Typing Context API",
+          "topicContent": "Learn how to define and use typed React context.\n\nExample:\n```typescript\ninterface AuthContextType {\n  user: string | null;\n  login: (username: string) => void;\n}\n\nconst AuthContext = React.createContext<AuthContextType | undefined>(undefined);\n```\nThis creates a context with a typed value."
+        },
+        {
+          "topicId": "C6-M11-T7",
+          "topicTitle": "Typing Higher-Order Components (HOCs)",
+          "topicContent": "Understand how to type HOCs to preserve component props.\n\nExample:\n```typescript\nfunction withLogger<P>(Component: React.ComponentType<P>) {\n  return (props: P) => {\n    console.log('Props:', props);\n    return <Component {...props} />;\n  };\n}\n```\nThis generic HOC preserves the props type of the wrapped component."
+        },
+        {
+          "topicId": "C6-M11-T8",
+          "topicTitle": "Using TypeScript with React Hooks",
+          "topicContent": "Explore typing for custom hooks and common hooks like `useReducer` and `useContext`.\n\nExample:\n```typescript\nfunction useCounter(initialValue: number) {\n  const [count, setCount] = React.useState<number>(initialValue);\n  const increment = () => setCount(c => c + 1);\n  return { count, increment };\n}\n```\nThis custom hook returns typed state and functions."
+        },
+        {
+          "topicId": "C6-M11-T9",
+          "topicTitle": "Best Practices for TypeScript in React",
+          "topicContent": "Tips for clean and maintainable React + TypeScript code:\n- Prefer interfaces for props\n- Use union types for conditional rendering\n- Avoid excessive use of `any`\n- Use type assertions carefully\n- Keep component props minimal and focused"
+        }
+      ]
+    },
+    {
+      "moduleId": "C6-M12",
+      "moduleTitle": "Tooling and Best Practices",
+      "moduleDescription": "Get familiar with TypeScript tooling, configuration, compiler options, and best practices for writing clean and maintainable code.",
+      "topics": [
+        {
+          "topicId": "C6-M12-T1",
+          "topicTitle": "Setting up TypeScript Configuration",
+          "topicContent": "Learn how to create and customize the `tsconfig.json` file to control TypeScript compiler options.\n\nKey options include:\n- `target`: JavaScript version output (e.g., ES5, ES6)\n- `module`: module system (e.g., CommonJS, ESNext)\n- `strict`: enables all strict type-checking options\n- `outDir`: output directory for compiled files\n\nExample:\n```typescript\n{\n  \"compilerOptions\": {\n    \"target\": \"ES6\",\n    \"module\": \"CommonJS\",\n    \"strict\": true,\n    \"outDir\": \"dist\"\n  }\n}\n```\n"
+        },
+        {
+          "topicId": "C6-M12-T2",
+          "topicTitle": "Using TypeScript with Build Tools",
+          "topicContent": "Understand how to integrate TypeScript with popular build tools like Webpack, Babel, and Rollup.\n\nLearn about loaders/plugins such as `ts-loader` and `babel-loader` for compiling TypeScript.\n\nExample Webpack config snippet:\n```typescript\nmodule.exports = {\n  module: {\n    rules: [\n      {\n        test: /\\.tsx?$/,\n        use: 'ts-loader',\n        exclude: /node_modules/\n      }\n    ]\n  },\n  resolve: {\n    extensions: ['.tsx', '.ts', '.js'],\n  },\n};\n```\n"
+        },
+        {
+          "topicId": "C6-M12-T3",
+          "topicTitle": "Linting and Formatting with ESLint and Prettier",
+          "topicContent": "Set up ESLint and Prettier for consistent code style and error checking.\n\nUse plugins like `@typescript-eslint/eslint-plugin` for TypeScript support.\n\nExample ESLint config snippet:\n```typescript\nmodule.exports = {\n  parser: '@typescript-eslint/parser',\n  extends: [\n    'plugin:@typescript-eslint/recommended',\n    'prettier'\n  ],\n  rules: {\n    // custom rules\n  }\n};\n```\n"
+        },
+        {
+          "topicId": "C6-M12-T4",
+          "topicTitle": "Debugging TypeScript Code",
+          "topicContent": "Learn techniques for debugging TypeScript using source maps, VSCode debugger, and browser developer tools.\n\nEnsure `sourceMap` is enabled in `tsconfig.json`.\n\nExample launch configuration for VSCode:\n```typescript\n{\n  \"type\": \"node\",\n  \"request\": \"launch\",\n  \"name\": \"Debug TypeScript\",\n  \"program\": \"${workspaceFolder}/src/index.ts\",\n  \"preLaunchTask\": \"tsc: build - tsconfig.json\",\n  \"outFiles\": [\"${workspaceFolder}/dist/**/*.js\"]\n}\n```\n"
+        },
+        {
+          "topicId": "C6-M12-T5",
+          "topicTitle": "Best Practices for Writing TypeScript Code",
+          "topicContent": "Explore best practices such as:\n- Prefer `interface` over `type` for object shapes\n- Avoid using `any` to maintain type safety\n- Use `readonly` and `const` where applicable\n- Prefer union and intersection types for flexible typing\n- Write small, reusable, and well-typed functions and classes\n- Document types and functions clearly\n"
+        },
+        {
+          "topicId": "C6-M12-T6",
+          "topicTitle": "Testing TypeScript Code",
+          "topicContent": "Learn how to set up testing frameworks like Jest with TypeScript.\n\nConfigure Jest to handle `.ts` and `.tsx` files using `ts-jest`.\n\nExample Jest config snippet:\n```typescript\nmodule.exports = {\n  preset: 'ts-jest',\n  testEnvironment: 'node',\n  testMatch: ['**/__tests__/**/*.ts', '**/?(*.)+(spec|test).ts'],\n};\n```\n\nWrite typed tests to ensure code correctness."
+        },
+        {
+          "topicId": "C6-M12-T7",
+          "topicTitle": "Managing Dependencies and Types",
+          "topicContent": "Understand how to manage type definitions for third-party libraries using DefinitelyTyped (`@types` packages).\n\nExample:\n```bash\nnpm install lodash\nnpm install --save-dev @types/lodash\n```\n\nThis ensures proper type checking and IntelliSense support."
+        },
+        {
+          "topicId": "C6-M12-T8",
+          "topicTitle": "Upgrading TypeScript Versions Safely",
+          "topicContent": "Learn strategies to upgrade TypeScript version in your projects with minimal disruption.\n\nSteps include:\n- Review changelogs for breaking changes\n- Incrementally enable strict flags\n- Use `--skipLibCheck` to avoid third-party type errors temporarily\n- Test thoroughly after upgrades"
+        },
+        {
+          "topicId": "C6-M12-T9",
+          "topicTitle": "TypeScript Project References",
+          "topicContent": "Explore project references for managing large codebases split into multiple TypeScript projects.\n\nSet up `references` in `tsconfig.json` to build projects incrementally.\n\nExample:\n```typescript\n{\n  \"references\": [\n    { \"path\": \"../core\" },\n    { \"path\": \"../utils\" }\n  ]\n}\n```\nThis helps improve build performance and code organization."
+        }
+      ]
+    }
   ]
 }

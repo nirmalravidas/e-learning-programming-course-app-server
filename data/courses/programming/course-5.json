@@ -1,46 +1,507 @@
 {
-    "id": "C5",
-    "index": 4,
-    "slug": "course-5",
-    "language": "JavaScript",
-    "courseTitle": "Learn JavaScript Programming",
-    "courseDescription": "Dive into JavaScript for web development with variables, functions, and DOM manipulation.",
-    "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javascript/banner_image.png",
-    "pricingType": "Free",
-    "bookmarked": true,
-    "modules": [
+  "id": "C5",
+  "index": 4,
+  "slug": "course-5",
+  "language": "JavaScript",
+  "courseTitle": "Learn JavaScript Programming",
+  "courseDescription": "Dive into JavaScript for web development with variables, functions, and DOM manipulation.",
+  "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javascript/banner_image.png",
+  "pricingType": "Free",
+  "bookmarked": true,
+  "modules": [
+    {
+      "moduleId": "C5-M1",
+      "moduleTitle": "Introduction to JavaScript",
+      "moduleDescription": "Learn what JavaScript is, its history, role in web development, and basic syntax. Set up your environment and write your first JavaScript program.",
+      "topics": [
         {
-            "moduleId": "C5-M1",
-            "moduleTitle": "Getting Started with C#",
-            "topics": [
-                {
-                    "topicId": "C5-M1-T1",
-                    "topicTitle": "Introduction to C#",
-                    "topicContent": "C# is a modern, object-oriented programming language developed by Microsoft as part of the .NET framework."
-                },
-                {
-                    "topicId": "C5-M1-T2",
-                    "topicTitle": "Setting up the Environment",
-                    "topicContent": "Install Visual Studio or Visual Studio Code with the C# extension to start coding."
-                }
-            ]
+          "topicId": "C5-M1-T1",
+          "topicTitle": "What is JavaScript?",
+          "topicContent": "JavaScript is a versatile, high-level programming language primarily used for enhancing the interactivity of web pages. It is a core technology alongside HTML and CSS. Originally created by Brendan Eich in 1995, JavaScript has evolved into a powerful language used not just in browsers but also on servers, mobile apps, and more."
         },
         {
-            "moduleId": "C5-M2",
-            "moduleTitle": "Core C# Concepts",
-            "topics": [
-                {
-                "topicId": "C5-M2-T1",
-                "topicTitle": "Variables and Data Types",
-                "topicContent": "Explore C# data types like int, string, bool, and complex types like arrays and classes."
-                },
-
-                {
-                "topicId": "C5-M2-T2",
-                "topicTitle": "Control Flow",
-                "topicContent": "Understand control flow with if, switch, for, while, and foreach statements."
-                }
-            ]
+          "topicId": "C5-M1-T2",
+          "topicTitle": "Brief History of JavaScript",
+          "topicContent": "JavaScript was introduced in 1995 by Netscape under the name Mocha, later renamed to LiveScript, and finally JavaScript. Despite the name similarity, JavaScript is unrelated to Java. Over time, it has become standardized through ECMAScript specifications, with major updates adding powerful features to the language."
+        },
+        {
+          "topicId": "C5-M1-T3",
+          "topicTitle": "Role of JavaScript in Web Development",
+          "topicContent": "JavaScript enables dynamic content on web pages such as animations, form validations, interactive maps, and real-time updates. It runs directly in the browser, allowing developers to build rich, engaging user experiences without needing to reload the page."
+        },
+        {
+          "topicId": "C5-M1-T4",
+          "topicTitle": "Setting Up Your Development Environment",
+          "topicContent": "To start coding JavaScript, you need a text editor like Visual Studio Code or Sublime Text and a modern web browser like Chrome or Firefox. JavaScript code can be embedded directly into HTML files or run through Node.js for server-side development."
+        },
+        {
+          "topicId": "C5-M1-T5",
+          "topicTitle": "Your First JavaScript Program",
+          "topicContent": "Let's write a simple JavaScript program that prints 'Hello, World!' to the console. This will introduce you to the basic syntax and how to run JavaScript code in the browser's console.\n\nExample:\n```javascript\nconsole.log(\"Hello, World!\");\n```\n\nOutput:\n```javascript\nHello, World!\n```"
+        },
+        {
+          "topicId": "C5-M1-T6",
+          "topicTitle": "Basic JavaScript Syntax",
+          "topicContent": "JavaScript syntax includes statements, variables, operators, expressions, and comments. Statements typically end with semicolons, but they are optional. Code blocks are defined using curly braces `{}`. Comments can be single-line using `//` or multi-line using `/* ... */`."
+        },
+        {
+          "topicId": "C5-M1-T7",
+          "topicTitle": "Running JavaScript Code",
+          "topicContent": "JavaScript code can be executed in various ways: embedded inside an HTML file within `<script>` tags, included as an external `.js` file linked to HTML, or directly typed into the browser's developer console for quick testing and debugging."
         }
-    ]
+      ]
+    },
+    {
+      "moduleId": "C5-M2",
+      "moduleTitle": "Variables, Data Types, and Operators",
+      "moduleDescription": "Understand how to declare variables using `var`, `let`, and `const`. Learn JavaScript data types and how to use different operators.",
+      "topics": [
+        {
+          "topicId": "C5-M2-T1",
+          "topicTitle": "Declaring Variables with var, let, and const",
+          "topicContent": "JavaScript provides three keywords to declare variables: `var`, `let`, and `const`.\n\n- `var` is function-scoped and can be redeclared and updated.\n- `let` is block-scoped, introduced in ES6, and can be updated but not redeclared in the same scope.\n- `const` is also block-scoped and used to declare constants, which cannot be updated or redeclared.\n\nExample:\n```javascript\nvar x = 10;\nlet y = 20;\nconst z = 30;\n```\n\nUnderstanding the differences is crucial for managing variable scope and immutability."
+        },
+        {
+          "topicId": "C5-M2-T2",
+          "topicTitle": "JavaScript Data Types",
+          "topicContent": "JavaScript has several data types:\n\n- **Primitive types**: Number, String, Boolean, Null, Undefined, Symbol, BigInt.\n- **Reference types**: Objects (including Arrays and Functions).\n\nExamples:\n```javascript\nlet num = 42; // Number\nlet name = \"Alice\"; // String\nlet isActive = true; // Boolean\nlet data = null; // Null\nlet notDefined; // Undefined\n```\n\nKnowing data types helps in writing type-safe code and debugging."
+        },
+        {
+          "topicId": "C5-M2-T3",
+          "topicTitle": "Type Coercion and Conversion",
+          "topicContent": "JavaScript performs type coercion, automatically converting values between types when needed.\n\nExample:\n```javascript\nlet result = '5' + 10; // '510' (number 10 coerced to string)\nlet sum = '5' - 2; // 3 (string '5' coerced to number)\n```\n\nYou can also explicitly convert types using functions like `Number()`, `String()`, and `Boolean()`.\n\nExample:\n```javascript\nNumber('123'); // 123\nString(123); // '123'\nBoolean(0); // false\n```"
+        },
+        {
+          "topicId": "C5-M2-T4",
+          "topicTitle": "Operators in JavaScript",
+          "topicContent": "JavaScript provides several types of operators:\n\n- **Arithmetic Operators**: `+`, `-`, `*`, `/`, `%`, `++`, `--`\n- **Assignment Operators**: `=`, `+=`, `-=`, `*=`, `/=`\n- **Comparison Operators**: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`\n- **Logical Operators**: `&&`, `||`, `!`\n- **Ternary Operator**: `condition ? expr1 : expr2`\n\nExample:\n```javascript\nlet a = 5;\nlet b = 10;\nlet sum = a + b; // 15\nlet isEqual = (a === b); // false\nlet result = (a > b) ? 'a is greater' : 'b is greater';\n```\n\nOperators form the foundation of expressions and decision making."
+        },
+        {
+          "topicId": "C5-M2-T5",
+          "topicTitle": "Operator Precedence and Associativity",
+          "topicContent": "Operator precedence determines the order in which operations are evaluated.\n\nFor example, multiplication has higher precedence than addition:\n```javascript\nlet result = 3 + 4 * 5; // 23\n```\nAssociativity defines how operators of the same precedence are processed (left-to-right or right-to-left).\n\nUnderstanding precedence helps avoid unexpected results without excessive parentheses."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M3",
+      "moduleTitle": "Control Flow and Looping",
+      "moduleDescription": "Master conditional statements (`if`, `else if`, `else`, `switch`) and loops (`for`, `while`, `do...while`) to control code execution.",
+      "topics": [
+        {
+          "topicId": "C5-M3-T1",
+          "topicTitle": "Conditional Statements: if, else if, else",
+          "topicContent": "Conditional statements allow your program to execute different code based on conditions.\n\n- `if` checks a condition and runs code if true.\n- `else if` checks additional conditions if previous `if` was false.\n- `else` runs if all previous conditions are false.\n\nExample:\n```javascript\nlet age = 18;\nif (age < 18) {\n  console.log('Minor');\n} else if (age === 18) {\n  console.log('Just became adult');\n} else {\n  console.log('Adult');\n}\n```\n\nThis structure helps control program flow based on different criteria."
+        },
+        {
+          "topicId": "C5-M3-T2",
+          "topicTitle": "Switch Statement",
+          "topicContent": "The `switch` statement is an alternative to multiple `if-else` for checking one variable against many values.\n\nSyntax:\n```javascript\nswitch(expression) {\n  case value1:\n    // code block\n    break;\n  case value2:\n    // code block\n    break;\n  default:\n    // default code block\n}\n```\n\nExample:\n```javascript\nlet day = 3;\nswitch(day) {\n  case 1:\n    console.log('Monday');\n    break;\n  case 2:\n    console.log('Tuesday');\n    break;\n  default:\n    console.log('Other day');\n}\n```\n\n`break` prevents fall-through to next cases."
+        },
+        {
+          "topicId": "C5-M3-T3",
+          "topicTitle": "For Loop",
+          "topicContent": "The `for` loop executes a block of code a specified number of times.\n\nSyntax:\n```javascript\nfor (initialization; condition; increment) {\n  // code to execute\n}\n```\n\nExample:\n```javascript\nfor (let i = 0; i < 5; i++) {\n  console.log(i);\n}\n```\n\nLoops are essential for repeating tasks efficiently."
+        },
+        {
+          "topicId": "C5-M3-T4",
+          "topicTitle": "While Loop",
+          "topicContent": "The `while` loop runs as long as its condition is true.\n\nSyntax:\n```javascript\nwhile (condition) {\n  // code to execute\n}\n```\n\nExample:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n  console.log(i);\n  i++;\n}\n```\n\nUseful when the number of iterations isn’t known beforehand."
+        },
+        {
+          "topicId": "C5-M3-T5",
+          "topicTitle": "Do...While Loop",
+          "topicContent": "The `do...while` loop executes code once, then repeats as long as the condition is true.\n\nSyntax:\n```javascript\ndo {\n  // code to execute\n} while (condition);\n```\n\nExample:\n```javascript\nlet i = 0;\ndo {\n  console.log(i);\n  i++;\n} while (i < 5);\n```\n\nEnsures the loop runs at least once."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M4",
+      "moduleTitle": "Functions and Scope",
+      "moduleDescription": "Learn how to declare and invoke functions, understand function scope, closures, and arrow functions.",
+      "topics": [
+        {
+          "topicId": "C5-M4-T1",
+          "topicTitle": "Function Declaration and Invocation",
+          "topicContent": "Functions are reusable blocks of code designed to perform a specific task.\n\n- **Declaration:** Use the `function` keyword followed by a name and parentheses.\n- **Invocation:** Call the function by its name followed by parentheses.\n\nExample:\n```javascript\nfunction greet(name) {\n  console.log('Hello, ' + name + '!');\n}\ngreet('Alice');\n```\nOutput:\n```javascript\nHello, Alice!\n```\nFunctions help organize and modularize code."
+        },
+        {
+          "topicId": "C5-M4-T2",
+          "topicTitle": "Function Expressions and Anonymous Functions",
+          "topicContent": "Functions can also be stored in variables. These are called function expressions.\n\nAnonymous functions have no name and are often used as callbacks.\n\nExample:\n```javascript\nconst add = function(a, b) {\n  return a + b;\n};\nconsole.log(add(2, 3));\n```\nOutput:\n```javascript\n5\n```\nUseful for passing functions as arguments."
+        },
+        {
+          "topicId": "C5-M4-T3",
+          "topicTitle": "Arrow Functions",
+          "topicContent": "Arrow functions provide a shorter syntax for writing functions.\n\nSyntax:\n```javascript\nconst func = (params) => expression;\n```\n\nExample:\n```javascript\nconst multiply = (a, b) => a * b;\nconsole.log(multiply(4, 5));\n```\nOutput:\n```javascript\n20\n```\nArrow functions also have lexical `this` binding."
+        },
+        {
+          "topicId": "C5-M4-T4",
+          "topicTitle": "Function Parameters and Default Values",
+          "topicContent": "Functions can accept parameters to work with dynamic data.\n\nYou can assign default values to parameters which are used if no argument is passed.\n\nExample:\n```javascript\nfunction greet(name = 'Guest') {\n  console.log('Hello, ' + name + '!');\n}\ngreet();\ngreet('John');\n```\nOutput:\n```javascript\nHello, Guest!\nHello, John!\n```\nDefault parameters make functions more flexible."
+        },
+        {
+          "topicId": "C5-M4-T5",
+          "topicTitle": "Function Scope and Variable Lifetime",
+          "topicContent": "Scope determines where variables and functions are accessible.\n\n- **Local scope:** Variables declared inside a function are local and cannot be accessed outside.\n- **Global scope:** Variables declared outside any function.\n\nExample:\n```javascript\nfunction test() {\n  let localVar = 'I am local';\n  console.log(localVar);\n}\ntest();\n// console.log(localVar); // Error: localVar is not defined\n```\nUnderstanding scope helps avoid variable conflicts."
+        },
+        {
+          "topicId": "C5-M4-T6",
+          "topicTitle": "Closures",
+          "topicContent": "A closure is a function that remembers its outer variables even after the outer function has finished.\n\nExample:\n```javascript\nfunction outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    console.log(count);\n  };\n}\nconst counter = outer();\ncounter();\ncounter();\n```\nOutput:\n```javascript\n1\n2\n```\nClosures are powerful for data privacy and function factories."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M5",
+      "moduleTitle": "Objects and Arrays",
+      "moduleDescription": "Understand JavaScript objects and arrays, how to create, access, and manipulate them.",
+      "topics": [
+        {
+          "topicId": "C5-M5-T1",
+          "topicTitle": "Introduction to Objects",
+          "topicContent": "Objects are collections of key-value pairs used to store related data and functionality.\n\nYou create objects using curly braces `{}`.\n\nExample:\n```javascript\nconst person = {\n  name: 'Alice',\n  age: 30,\n  greet: function() {\n    console.log('Hello, ' + this.name);\n  }\n};\nperson.greet();\n```\nOutput:\n```javascript\nHello, Alice\n```\nObjects help organize data in meaningful ways."
+        },
+        {
+          "topicId": "C5-M5-T2",
+          "topicTitle": "Accessing and Modifying Object Properties",
+          "topicContent": "You can access properties using dot notation or bracket notation.\n\nExample:\n```javascript\nconsole.log(person.name);      // Dot notation\nconsole.log(person['age']);   // Bracket notation\nperson.age = 31;              // Modify property\nconsole.log(person.age);\n```\nOutput:\n```javascript\nAlice\n30\n31\n```\nBracket notation is useful when property names are dynamic."
+        },
+        {
+          "topicId": "C5-M5-T3",
+          "topicTitle": "Nested Objects and Methods",
+          "topicContent": "Objects can contain other objects and functions (methods).\n\nExample:\n```javascript\nconst student = {\n  name: 'Bob',\n  marks: {\n    math: 90,\n    english: 85\n  },\n  displayMarks: function() {\n    console.log('Math:', this.marks.math);\n  }\n};\nstudent.displayMarks();\n```\nOutput:\n```javascript\nMath: 90\n```\nNested objects help represent complex data."
+        },
+        {
+          "topicId": "C5-M5-T4",
+          "topicTitle": "Arrays in JavaScript",
+          "topicContent": "Arrays are ordered lists of values that can hold any type of data.\n\nExample:\n```javascript\nconst colors = ['red', 'green', 'blue'];\nconsole.log(colors[0]); // red\n```\nOutput:\n```javascript\nred\n```\nArrays are useful for storing collections and lists."
+        },
+        {
+          "topicId": "C5-M5-T5",
+          "topicTitle": "Common Array Methods",
+          "topicContent": "JavaScript arrays come with many built-in methods for manipulation:\n\n- `push()`: add an element to the end\n- `pop()`: remove last element\n- `shift()`: remove first element\n- `unshift()`: add element at start\n- `forEach()`: iterate over elements\n\nExample:\n```javascript\nconst fruits = ['apple', 'banana'];\nfruits.push('cherry');\nfruits.forEach(fruit => console.log(fruit));\n```\nOutput:\n```javascript\napple\nbanana\ncherry\n```\nThese methods simplify array operations."
+        },
+        {
+          "topicId": "C5-M5-T6",
+          "topicTitle": "Array Iteration and Higher-Order Functions",
+          "topicContent": "Functions like `map()`, `filter()`, and `reduce()` allow powerful transformations on arrays.\n\nExample:\n```javascript\nconst numbers = [1, 2, 3, 4];\nconst doubled = numbers.map(n => n * 2);\nconsole.log(doubled);\n```\nOutput:\n```javascript\n[2, 4, 6, 8]\n```\nThese methods help write concise, expressive code."
+        },
+        {
+          "topicId": "C5-M5-T7",
+          "topicTitle": "Arrays vs Objects",
+          "topicContent": "While arrays store ordered data accessed by index, objects store unordered data accessed by keys.\n\nUse arrays when order matters and objects when you want to represent entities with properties.\n\nExample:\n```javascript\nconst arr = ['apple', 'banana'];\nconst obj = { first: 'apple', second: 'banana' };\n```\nChoosing the right structure is key for efficient coding."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M6",
+      "moduleTitle": "DOM Manipulation and Events",
+      "moduleDescription": "Learn how to interact with the Document Object Model (DOM), handle user events, and update webpage content dynamically.",
+      "topics": [
+        {
+          "topicId": "C5-M6-T1",
+          "topicTitle": "Understanding the DOM (Document Object Model)",
+          "topicContent": "The DOM represents the structure of a webpage as a tree of nodes (elements, attributes, text).\n\nJavaScript can interact with the DOM to dynamically change content, styles, and structure.\n\nExample:\n```javascript\nconsole.log(document.body);\n```\nOutput:\n```javascript\n<body>...</body>\n```\nUnderstanding the DOM is essential for dynamic web pages."
+        },
+        {
+          "topicId": "C5-M6-T2",
+          "topicTitle": "Selecting DOM Elements",
+          "topicContent": "JavaScript provides methods to select elements:\n\n- `getElementById()`\n- `getElementsByClassName()`\n- `getElementsByTagName()`\n- `querySelector()`\n- `querySelectorAll()`\n\nExample:\n```javascript\nconst heading = document.getElementById('main-heading');\nconsole.log(heading.textContent);\n```\nOutput:\n```javascript\nWelcome to JavaScript\n```\nSelecting elements is the first step to manipulation."
+        },
+        {
+          "topicId": "C5-M6-T3",
+          "topicTitle": "Manipulating DOM Elements",
+          "topicContent": "You can change element content, attributes, and styles dynamically.\n\nExample:\n```javascript\nconst para = document.querySelector('p');\npara.textContent = 'This text was changed with JavaScript.';\npara.style.color = 'blue';\n```\nOutput:\n```javascript\n(The paragraph text changes color to blue and updates content.)\n```\nThis allows creating interactive and dynamic web pages."
+        },
+        {
+          "topicId": "C5-M6-T4",
+          "topicTitle": "Creating and Removing Elements",
+          "topicContent": "You can create new elements and add or remove them from the DOM.\n\nExample:\n```javascript\nconst newDiv = document.createElement('div');\nnewDiv.textContent = 'I am a new div!';\ndocument.body.appendChild(newDiv);\n\n// Remove element\nnewDiv.remove();\n```\nOutput:\n```javascript\n(The new div is added then removed from the page.)\n```\nDynamic page updates become possible with these methods."
+        },
+        {
+          "topicId": "C5-M6-T5",
+          "topicTitle": "Handling Events in JavaScript",
+          "topicContent": "Events are actions like clicks, keypresses, or mouse movement.\n\nYou can listen for these events and run code in response.\n\nExample:\n```javascript\nconst button = document.querySelector('button');\nbutton.addEventListener('click', () => {\n  alert('Button clicked!');\n});\n```\nOutput:\n```javascript\n(An alert pops up when the button is clicked.)\n```\nEvents make webpages interactive."
+        },
+        {
+          "topicId": "C5-M6-T6",
+          "topicTitle": "Event Propagation: Bubbling and Capturing",
+          "topicContent": "Events propagate in two phases:\n\n- Capturing: event travels down to target\n- Bubbling: event bubbles up from target\n\nYou can control propagation using `stopPropagation()`.\n\nExample:\n```javascript\ndocument.body.addEventListener('click', () => {\n  console.log('Body clicked');\n});\nconst btn = document.querySelector('button');\nbtn.addEventListener('click', e => {\n  e.stopPropagation();\n  console.log('Button clicked');\n});\n```\nOutput:\n```javascript\n(Button clicked)\n```\nUnderstanding propagation helps in complex event handling."
+        },
+        {
+          "topicId": "C5-M6-T7",
+          "topicTitle": "Event Delegation",
+          "topicContent": "Instead of adding event listeners to many child elements, add one to a parent and use event.target to detect which child triggered it.\n\nExample:\n```javascript\ndocument.querySelector('ul').addEventListener('click', e => {\n  if(e.target && e.target.nodeName === 'LI') {\n    console.log('List item clicked:', e.target.textContent);\n  }\n});\n```\nOutput:\n```javascript\nList item clicked: Item 1\n```\nThis approach is efficient for dynamic lists."
+        },
+        {
+          "topicId": "C5-M6-T8",
+          "topicTitle": "Modifying Classes and Attributes",
+          "topicContent": "You can add, remove or toggle CSS classes and manipulate element attributes.\n\nExample:\n```javascript\nconst box = document.querySelector('.box');\nbox.classList.add('highlight');\nbox.setAttribute('data-status', 'active');\n```\nOutput:\n```javascript\n(The element gets a new CSS class and attribute.)\n```\nThis enables dynamic styling and data attributes."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M7",
+      "moduleTitle": "Asynchronous JavaScript",
+      "moduleDescription": "Explore callbacks, promises, async/await, and how to handle asynchronous operations.",
+      "topics": [
+        {
+          "topicId": "C5-M7-T1",
+          "topicTitle": "Introduction to Asynchronous JavaScript",
+          "topicContent": "JavaScript is single-threaded, meaning it can execute one task at a time. However, web applications often need to perform tasks like fetching data or waiting for user input without blocking the main thread. Asynchronous JavaScript allows code to run in the background while the main thread continues executing.\n\nExample:\n```javascript\nconsole.log('Start');\nsetTimeout(() => {\n  console.log('Timeout finished');\n}, 1000);\nconsole.log('End');\n```\nOutput:\n```javascript\nStart\nEnd\nTimeout finished\n```\nNotice how 'Timeout finished' logs after a delay, while the rest runs immediately."
+        },
+        {
+          "topicId": "C5-M7-T2",
+          "topicTitle": "Callbacks in JavaScript",
+          "topicContent": "Callbacks are functions passed as arguments to other functions, executed once an asynchronous operation completes.\n\nExample:\n```javascript\nfunction fetchData(callback) {\n  setTimeout(() => {\n    callback('Data loaded');\n  }, 1000);\n}\n\nfetchData((data) => {\n  console.log(data);\n});\n```\nOutput:\n```javascript\nData loaded\n```\nCallbacks can cause nested structures called 'callback hell' if not managed properly."
+        },
+        {
+          "topicId": "C5-M7-T3",
+          "topicTitle": "Promises: Handling Async Operations",
+          "topicContent": "Promises provide a cleaner way to handle asynchronous code by representing a value that may be available now, later, or never.\n\nExample:\n```javascript\nconst promise = new Promise((resolve, reject) => {\n  setTimeout(() => {\n    resolve('Promise resolved!');\n  }, 1000);\n});\n\npromise.then(data => {\n  console.log(data);\n});\n```\nOutput:\n```javascript\nPromise resolved!\n```\nPromises can be chained and catch errors easily."
+        },
+        {
+          "topicId": "C5-M7-T4",
+          "topicTitle": "Promise Chaining and Error Handling",
+          "topicContent": "Promises can be chained to perform sequential async operations. Errors can be caught with `.catch()`.\n\nExample:\n```javascript\nnew Promise((resolve, reject) => {\n  resolve(10);\n})\n.then(value => {\n  console.log(value); // 10\n  return value * 2;\n})\n.then(value => {\n  console.log(value); // 20\n  throw new Error('Something went wrong!');\n})\n.catch(error => {\n  console.error(error.message);\n});\n```\nOutput:\n```javascript\n10\n20\nSomething went wrong!\n```\nError handling is essential for reliable asynchronous code."
+        },
+        {
+          "topicId": "C5-M7-T5",
+          "topicTitle": "Async/Await Syntax",
+          "topicContent": "Async/await is syntactic sugar over promises that makes asynchronous code look synchronous.\n\nExample:\n```javascript\nfunction wait(ms) {\n  return new Promise(resolve => setTimeout(resolve, ms));\n}\n\nasync function asyncFunc() {\n  console.log('Waiting...');\n  await wait(1000);\n  console.log('Done!');\n}\n\nasyncFunc();\n```\nOutput:\n```javascript\nWaiting...\nDone!\n```\nThis improves readability and maintainability."
+        },
+        {
+          "topicId": "C5-M7-T6",
+          "topicTitle": "Handling Errors in Async/Await",
+          "topicContent": "Errors in async functions can be handled using `try/catch` blocks.\n\nExample:\n```javascript\nasync function asyncWithError() {\n  try {\n    await Promise.reject('Error occurred');\n  } catch (error) {\n    console.error('Caught:', error);\n  }\n}\n\nasyncWithError();\n```\nOutput:\n```javascript\nCaught: Error occurred\n```\nThis pattern helps prevent uncaught promise rejections."
+        },
+        {
+          "topicId": "C5-M7-T7",
+          "topicTitle": "Promise.all and Promise.race",
+          "topicContent": "`Promise.all` runs multiple promises in parallel and waits for all to resolve.\n\nExample:\n```javascript\nconst p1 = Promise.resolve(1);\nconst p2 = new Promise(resolve => setTimeout(() => resolve(2), 1000));\n\nPromise.all([p1, p2]).then(values => {\n  console.log(values);\n});\n```\nOutput:\n```javascript\n[1, 2]\n```\n\n`Promise.race` resolves or rejects as soon as one promise settles.\n\nExample:\n```javascript\nPromise.race([p1, p2]).then(value => {\n  console.log(value);\n});\n```\nOutput:\n```javascript\n1\n```\nThese methods help coordinate multiple async tasks."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M8",
+      "moduleTitle": "Error Handling and Debugging",
+      "moduleDescription": "Learn how to handle errors using try/catch, and use debugging tools effectively.",
+      "topics": [
+        {
+          "topicId": "C5-M8-T1",
+          "topicTitle": "Introduction to Error Handling",
+          "topicContent": "Errors are inevitable in any programming language. JavaScript provides mechanisms to detect and handle errors gracefully so that the program can recover or fail without crashing.\n\nCommon error types include syntax errors, runtime errors, and logical errors."
+        },
+        {
+          "topicId": "C5-M8-T2",
+          "topicTitle": "Using try...catch Statement",
+          "topicContent": "The `try...catch` statement allows you to test a block of code for errors and handle them.\n\nExample:\n```javascript\ntry {\n  let result = riskyOperation();\n  console.log(result);\n} catch (error) {\n  console.error('Error caught:', error.message);\n}\n```\nIf `riskyOperation` throws an error, the catch block executes, preventing the program from crashing."
+        },
+        {
+          "topicId": "C5-M8-T3",
+          "topicTitle": "The finally Block",
+          "topicContent": "The `finally` block executes after the `try` and `catch` blocks, regardless of whether an error occurred.\n\nExample:\n```javascript\ntry {\n  console.log('Try block');\n} catch (e) {\n  console.log('Catch block');\n} finally {\n  console.log('Finally block');\n}\n```\nOutput:\n```javascript\nTry block\nFinally block\n```\nIt is useful for cleanup actions like closing connections or releasing resources."
+        },
+        {
+          "topicId": "C5-M8-T4",
+          "topicTitle": "Throwing Custom Errors",
+          "topicContent": "You can throw your own errors using the `throw` statement.\n\nExample:\n```javascript\nfunction validateAge(age) {\n  if (age < 18) {\n    throw new Error('Age must be at least 18');\n  }\n  return true;\n}\n\ntry {\n  validateAge(15);\n} catch (error) {\n  console.error(error.message);\n}\n```\nOutput:\n```javascript\nAge must be at least 18\n```\nThis allows more control over error conditions."
+        },
+        {
+          "topicId": "C5-M8-T5",
+          "topicTitle": "Debugging with console Methods",
+          "topicContent": "The browser console provides methods to log information and debug your code.\n\n- `console.log()` – logs general messages.\n- `console.error()` – logs errors.\n- `console.warn()` – logs warnings.\n- `console.table()` – displays data as a table.\n\nExample:\n```javascript\nconsole.log('Info message');\nconsole.error('Error message');\n```\nUsing these strategically helps understand program flow and issues."
+        },
+        {
+          "topicId": "C5-M8-T6",
+          "topicTitle": "Using Debugger Statement",
+          "topicContent": "The `debugger` statement pauses code execution and opens debugging tools if available.\n\nExample:\n```javascript\nfunction test() {\n  let x = 5;\n  debugger; // Execution will pause here\n  x += 10;\n  return x;\n}\ntest();\n```\nWhen running in developer tools, this helps inspect variables and step through code."
+        },
+        {
+          "topicId": "C5-M8-T7",
+          "topicTitle": "Common JavaScript Errors and How to Fix Them",
+          "topicContent": "Some common errors include:\n- ReferenceError: Accessing variables that don’t exist.\n- TypeError: Using a value in an inappropriate way.\n- SyntaxError: Mistyped code.\n\nUnderstanding error messages and stack traces is crucial to quickly fix bugs."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M9",
+      "moduleTitle": "JavaScript ES6+ Features",
+      "moduleDescription": "Explore modern JavaScript features like template literals, destructuring, spread/rest operators, classes, and modules.",
+      "topics": [
+        {
+          "topicId": "C5-M9-T1",
+          "topicTitle": "Introduction to ES6 and Beyond",
+          "topicContent": "ES6 (ECMAScript 2015) introduced many powerful features that modernize JavaScript syntax and capabilities. This module covers key ES6+ features to write cleaner, more efficient code."
+        },
+        {
+          "topicId": "C5-M9-T2",
+          "topicTitle": "Let and Const Declarations",
+          "topicContent": "Unlike `var`, `let` and `const` provide block-scoped variables. `const` declares constants whose values cannot be reassigned.\n\nExample:\n```javascript\nlet count = 10;\ncount = 15; // valid\nconst PI = 3.14;\n// PI = 3.15; // Error: Assignment to constant variable.\n```\nThis reduces bugs related to variable hoisting and reassignment."
+        },
+        {
+          "topicId": "C5-M9-T3",
+          "topicTitle": "Arrow Functions",
+          "topicContent": "Arrow functions offer a concise syntax and lexical `this` binding.\n\nExample:\n```javascript\nconst add = (a, b) => a + b;\nconsole.log(add(2, 3)); // 5\n```\nThey are especially useful for callbacks and functional programming."
+        },
+        {
+          "topicId": "C5-M9-T4",
+          "topicTitle": "Template Literals",
+          "topicContent": "Template literals allow embedded expressions and multi-line strings using backticks `` ` ``.\n\nExample:\n```javascript\nconst name = 'Alice';\nconst greeting = `Hello, ${name}!`;\nconsole.log(greeting); // Hello, Alice!\n```\nThis improves readability and avoids cumbersome string concatenation."
+        },
+        {
+          "topicId": "C5-M9-T5",
+          "topicTitle": "Destructuring Assignment",
+          "topicContent": "Destructuring extracts values from arrays or properties from objects into variables.\n\nExample:\n```javascript\nconst user = {name: 'Bob', age: 30};\nconst {name, age} = user;\nconsole.log(name, age); // Bob 30\n\nconst arr = [1, 2, 3];\nconst [first, second] = arr;\nconsole.log(first, second); // 1 2\n```\nThis leads to more concise and readable code."
+        },
+        {
+          "topicId": "C5-M9-T6",
+          "topicTitle": "Spread and Rest Operators",
+          "topicContent": "The `...` operator expands iterable elements or collects multiple elements.\n\nExample:\n```javascript\n// Spread\nconst arr1 = [1, 2];\nconst arr2 = [...arr1, 3, 4];\nconsole.log(arr2); // [1, 2, 3, 4]\n\n// Rest\nfunction sum(...numbers) {\n  return numbers.reduce((a, b) => a + b, 0);\n}\nconsole.log(sum(1, 2, 3)); // 6\n```\nUseful for flexible argument handling and cloning arrays/objects."
+        },
+        {
+          "topicId": "C5-M9-T7",
+          "topicTitle": "Classes and Inheritance",
+          "topicContent": "ES6 introduced `class` syntax to simplify object-oriented programming.\n\nExample:\n```javascript\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} makes a sound.`);\n  }\n}\n\nclass Dog extends Animal {\n  speak() {\n    console.log(`${this.name} barks.`);\n  }\n}\n\nconst dog = new Dog('Buddy');\ndog.speak(); // Buddy barks.\n```\nClasses improve code organization and reuse."
+        },
+        {
+          "topicId": "C5-M9-T8",
+          "topicTitle": "Modules",
+          "topicContent": "JavaScript modules allow code to be split into reusable pieces.\n\nExample:\n```javascript\n// module.js\nexport const PI = 3.14;\nexport function square(x) { return x * x; }\n\n// main.js\nimport { PI, square } from './module.js';\nconsole.log(PI); // 3.14\nconsole.log(square(5)); // 25\n```\nModules promote maintainability and namespace management."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M10",
+      "moduleTitle": "Working with APIs and Fetch",
+      "moduleDescription": "Understand how to make HTTP requests using Fetch API, handle JSON data, and work with REST APIs.",
+      "topics": [
+        {
+          "topicId": "C5-M10-T1",
+          "topicTitle": "Introduction to APIs and HTTP",
+          "topicContent": "APIs (Application Programming Interfaces) allow different software applications to communicate. HTTP is the protocol used for web APIs. Understanding HTTP methods like GET, POST, PUT, DELETE is essential for interacting with REST APIs."
+        },
+        {
+          "topicId": "C5-M10-T2",
+          "topicTitle": "Using Fetch API for HTTP Requests",
+          "topicContent": "The Fetch API provides a modern, promise-based way to make HTTP requests in JavaScript.\n\nExample:\n```javascript\nfetch('https://api.example.com/data')\n  .then(response => response.json())\n  .then(data => console.log(data))\n  .catch(error => console.error('Error:', error));\n```\nFetch supports GET requests easily and handles promises for asynchronous operations."
+        },
+        {
+          "topicId": "C5-M10-T3",
+          "topicTitle": "Handling POST Requests with Fetch",
+          "topicContent": "Fetch can also send data with POST requests by passing a configuration object.\n\nExample:\n```javascript\nfetch('https://api.example.com/data', {\n  method: 'POST',\n  headers: {'Content-Type': 'application/json'},\n  body: JSON.stringify({name: 'John', age: 30})\n})\n.then(response => response.json())\n.then(data => console.log(data))\n.catch(error => console.error('Error:', error));\n```\nThis allows sending JSON data to APIs."
+        },
+        {
+          "topicId": "C5-M10-T4",
+          "topicTitle": "Working with JSON Data",
+          "topicContent": "Most APIs use JSON format for data exchange. JavaScript's `JSON.parse()` converts JSON strings to objects, and `JSON.stringify()` converts objects to JSON strings.\n\nExample:\n```javascript\nconst jsonData = '{\"name\":\"Alice\",\"age\":25}';\nconst obj = JSON.parse(jsonData);\nconsole.log(obj.name); // Alice\n\nconst str = JSON.stringify(obj);\nconsole.log(str); // '{\"name\":\"Alice\",\"age\":25}'\n```\nHandling JSON correctly is crucial when working with APIs."
+        },
+        {
+          "topicId": "C5-M10-T5",
+          "topicTitle": "Error Handling and Response Status",
+          "topicContent": "Fetch does not reject on HTTP error status (like 404 or 500). You must check the response status manually.\n\nExample:\n```javascript\nfetch('https://api.example.com/data')\n  .then(response => {\n    if (!response.ok) {\n      throw new Error('Network response was not ok ' + response.status);\n    }\n    return response.json();\n  })\n  .then(data => console.log(data))\n  .catch(error => console.error('Fetch error:', error));\n```\nProper error handling improves app reliability."
+        },
+        {
+          "topicId": "C5-M10-T6",
+          "topicTitle": "Asynchronous Functions with Async/Await",
+          "topicContent": "Using `async` and `await` makes asynchronous code look synchronous and easier to read.\n\nExample:\n```javascript\nasync function fetchData() {\n  try {\n    const response = await fetch('https://api.example.com/data');\n    if (!response.ok) throw new Error('HTTP error ' + response.status);\n    const data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error('Error:', error);\n  }\n}\nfetchData();\n```\nAsync/await is now widely used in modern JavaScript."
+        },
+        {
+          "topicId": "C5-M10-T7",
+          "topicTitle": "Working with RESTful APIs",
+          "topicContent": "REST (Representational State Transfer) APIs follow a standard design using HTTP methods and URLs to manage resources. Understanding REST principles helps you interact effectively with APIs."
+        },
+        {
+          "topicId": "C5-M10-T8",
+          "topicTitle": "Cross-Origin Resource Sharing (CORS)",
+          "topicContent": "CORS is a browser security feature that restricts web pages from making requests to a different domain than the one that served the web page. Understanding CORS and how to handle it is important when consuming third-party APIs."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M11",
+      "moduleTitle": "JavaScript Design Patterns",
+      "moduleDescription": "Learn important design patterns like module, singleton, factory, and observer patterns in JavaScript.",
+      "topics": [
+        {
+          "topicId": "C5-M11-T1",
+          "topicTitle": "Introduction to Design Patterns",
+          "topicContent": "Design patterns are proven solutions to common software design problems. In JavaScript, they help write reusable, maintainable, and scalable code by providing standard approaches to common tasks."
+        },
+        {
+          "topicId": "C5-M11-T2",
+          "topicTitle": "Module Pattern",
+          "topicContent": "The Module pattern allows encapsulating private variables and methods inside a function scope, exposing only the public API.\n\nExample:\n```javascript\nconst Counter = (function() {\n  let count = 0;\n  return {\n    increment: function() { count++; },\n    getCount: function() { return count; }\n  };\n})();\nCounter.increment();\nconsole.log(Counter.getCount()); // 1\n```\nThis helps prevent polluting the global namespace and controls access."
+        },
+        {
+          "topicId": "C5-M11-T3",
+          "topicTitle": "Singleton Pattern",
+          "topicContent": "Singleton ensures only one instance of an object is created, providing a single point of access.\n\nExample:\n```javascript\nconst Singleton = (function() {\n  let instance;\n  function createInstance() {\n    return { timestamp: Date.now() };\n  }\n  return {\n    getInstance: function() {\n      if (!instance) {\n        instance = createInstance();\n      }\n      return instance;\n    }\n  };\n})();\nconst a = Singleton.getInstance();\nconst b = Singleton.getInstance();\nconsole.log(a === b); // true\n```\nUseful for managing shared resources."
+        },
+        {
+          "topicId": "C5-M11-T4",
+          "topicTitle": "Factory Pattern",
+          "topicContent": "Factory pattern creates objects without exposing the creation logic to the client.\n\nExample:\n```javascript\nfunction CarFactory() {}\nCarFactory.prototype.createCar = function(type) {\n  if (type === 'sedan') return { type: 'sedan', wheels: 4 };\n  if (type === 'truck') return { type: 'truck', wheels: 6 };\n};\nconst factory = new CarFactory();\nconst sedan = factory.createCar('sedan');\nconsole.log(sedan);\n```\nHelps manage object creation for different types."
+        },
+        {
+          "topicId": "C5-M11-T5",
+          "topicTitle": "Observer Pattern",
+          "topicContent": "Observer pattern allows an object (subject) to notify other objects (observers) about changes.\n\nExample:\n```javascript\nfunction Subject() {\n  this.observers = [];\n}\nSubject.prototype = {\n  subscribe: function(fn) { this.observers.push(fn); },\n  unsubscribe: function(fn) { this.observers = this.observers.filter(sub => sub !== fn); },\n  notify: function(data) { this.observers.forEach(fn => fn(data)); }\n};\nconst subject = new Subject();\nfunction observer1(data) { console.log('Observer 1:', data); }\nsubject.subscribe(observer1);\nsubject.notify('Hello Observers');\n```\nUseful for event-driven programming."
+        },
+        {
+          "topicId": "C5-M11-T6",
+          "topicTitle": "Prototype Pattern",
+          "topicContent": "Prototype pattern uses existing objects as prototypes for creating new objects, enabling object cloning.\n\nExample:\n```javascript\nconst proto = {\n  greet() { console.log('Hello ' + this.name); }\n};\nconst obj = Object.create(proto);\nobj.name = 'Alice';\nobj.greet(); // Hello Alice\n```\nEfficient for sharing methods between objects."
+        },
+        {
+          "topicId": "C5-M11-T7",
+          "topicTitle": "Summary and Best Practices",
+          "topicContent": "Choosing the right design pattern depends on the problem context. Understanding patterns improves code organization, reduces bugs, and enhances maintainability."
+        }
+      ]
+    },
+    {
+      "moduleId": "C5-M12",
+      "moduleTitle": "Introduction to JavaScript Frameworks",
+      "moduleDescription": "Get an overview of popular frameworks and libraries like React, Vue, and Angular, and understand where JavaScript fits in modern web development.",
+      "topics": [
+        {
+          "topicId": "C5-M12-T1",
+          "topicTitle": "Overview of JavaScript Frameworks and Libraries",
+          "topicContent": "JavaScript frameworks and libraries simplify web development by providing pre-built tools and components. Frameworks offer a complete structure (e.g., Angular), while libraries focus on specific tasks (e.g., React for UI)."
+        },
+        {
+          "topicId": "C5-M12-T2",
+          "topicTitle": "Introduction to React",
+          "topicContent": "React is a popular library for building user interfaces using components. It uses a virtual DOM for efficient updates and encourages reusable UI elements.\n\nKey features include JSX syntax, component-based architecture, and hooks for managing state and lifecycle."
+        },
+        {
+          "topicId": "C5-M12-T3",
+          "topicTitle": "Introduction to Vue.js",
+          "topicContent": "Vue.js is a progressive framework for building UIs with an approachable core library and optional ecosystem. It features reactive data binding, components, and a simple learning curve suitable for both small and large projects."
+        },
+        {
+          "topicId": "C5-M12-T4",
+          "topicTitle": "Introduction to Angular",
+          "topicContent": "Angular is a full-featured framework by Google for building scalable web applications. It uses TypeScript, offers two-way data binding, dependency injection, and a rich set of built-in features including routing and forms."
+        },
+        {
+          "topicId": "C5-M12-T5",
+          "topicTitle": "Comparing React, Vue, and Angular",
+          "topicContent": "React focuses on UI components with flexibility, Vue offers simplicity and easy integration, while Angular provides a complete solution with extensive tooling. The choice depends on project needs, team expertise, and scalability."
+        },
+        {
+          "topicId": "C5-M12-T6",
+          "topicTitle": "Where JavaScript Fits in Modern Web Development",
+          "topicContent": "JavaScript powers client-side interactivity, and frameworks/libraries enhance productivity and maintainability. Backend JavaScript (Node.js) enables full-stack development, making JavaScript a versatile language in the web ecosystem."
+        },
+        {
+          "topicId": "C5-M12-T7",
+          "topicTitle": "Getting Started with Frameworks",
+          "topicContent": "To start with any framework, understand its core concepts, set up development environment, and build small projects. Online tutorials and official documentation are invaluable resources."
+        }
+      ]
+    }
+  ]
 }
