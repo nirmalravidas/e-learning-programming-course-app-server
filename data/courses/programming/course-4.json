@@ -16,7 +16,7 @@
                 {
                     "topicId": "C4-M1-T1",
                     "topicTitle": "What is Java?",
-                    "topicContent": "**Java** is a high-level, object-oriented programming language designed to be platform-independent.\n\nIt runs on the **Java Virtual Machine (JVM)**, which enables Java code to run on any device that has the JVM installed.\n ------------- \n**Key Features:**\n- Object-Oriented\n- Platform Independent\n- Secure\n- Robust\n- Multithreaded\n ------------- \n**Example:**\n```code\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\n\nThis program prints \"Hello, World!\" to the console.\n```Hello, World!```\n"
+                    "topicContent": "**Java** is a high-level, object-oriented programming language designed to be platform-independent.\n\nIt runs on the **Java Virtual Machine (JVM)**, which enables Java code to run on any device that has the JVM installed.\n ------------- \n**Key Features:**\n- Object-Oriented\n- Platform Independent\n- Secure\n- Robust\n- Multithreaded\n ------------- \n**Example:**\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\n\nThis program prints \"Hello, World!\" to the console.\n```text\nHello, World!```\n"
                 },
                 {
                     "topicId": "C4-M1-T2",
