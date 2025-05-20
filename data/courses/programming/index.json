@@ -9,7 +9,7 @@
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/c/banner_image.png",
     "pricingType": "Free",
     "bookmarked": false,
-    "totalModules": "9"
+    "totalModules": 9
   },
 
   {
@@ -22,7 +22,7 @@
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/cpp/banner_image.png",
     "pricingType": "Free",
     "bookmarked": false,
-    "totalModules": "13"
+    "totalModules": 13
   },
 
   {
@@ -35,7 +35,7 @@
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/python/banner_image.png",
     "pricingType": "Free",
     "bookmarked": true,
-    "totalModules": "20"
+    "totalModules": 20
   },
 
   {
@@ -48,7 +48,7 @@
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/java/banner_image.png",
     "pricingType": "Free",
     "bookmarked": false,
-    "totalModules": "13"
+    "totalModules": 13
   },
 
   {
@@ -61,7 +61,7 @@
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/javascript/banner_image.png",
     "pricingType": "Free",
     "bookmarked": true,
-    "totalModules": "12"
+    "totalModules": 12
   },
 
   {
@@ -74,7 +74,7 @@
     "courseBannerImageLink": "https://raw.githubusercontent.com/nirmalravidas/e-learning-programming-course-app-server/main/public/images/courses/typescript/banner_image.png",
     "pricingType": "Free",
     "bookmarked": false,
-    "totalModules":"12"
+    "totalModules": 12
   }
 
 ]
