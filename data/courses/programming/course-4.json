@@ -12,6 +12,7 @@
     {
       "moduleId": "C4-M1",
       "moduleTitle": "Java Overview",
+      "moduleDescription": "This module provides a foundational understanding of Java programming, including its features, platform components (JDK, JRE, JVM), installation process, and writing your first Java program. It’s ideal for beginners starting their journey in Java.",
       "topics": [
         {
           "topicId": "C4-M1-T1",
@@ -43,6 +44,7 @@
     {
       "moduleId": "C4-M2",
       "moduleTitle": "Java Basics",
+      "moduleDescription": "This module covers the fundamentals of Java programming, including variables, data types, operators, control flow statements, and methods. It’s a great starting point for learning the basics of Java.",
       "topics": [
         {
           "topicId": "C4-M2-T1",
@@ -74,6 +76,7 @@
     {
       "moduleId": "C4-M3",
       "moduleTitle": "Java Flow Control",
+      "moduleDescription": "This module focuses on controlling the flow of execution in Java programs using decision-making statements, loops, and exception handling. It’s essential for writing programs that can make choices and handle unexpected situations.",
       "topics": [
         {
           "topicId": "C4-M3-T1",
@@ -100,6 +103,7 @@
     {
       "moduleId": "C4-M4",
       "moduleTitle": "Java Methods",
+      "moduleDescription": "This module covers the fundamentals of Java methods, including defining and calling methods, method parameters and return types, and overloading. It’s essential for understanding how to write reusable code in Java.",
       "topics": [
         {
           "topicId": "C4-M4-T1",
@@ -131,6 +135,7 @@
     {
       "moduleId": "C4-M5",
       "moduleTitle": "Java Arrays",
+      "moduleDescription": "This module introduces the concept of arrays in Java, including single and multi-dimensional arrays, array iteration and sorting, common array algorithms, and arrays utility methods. It’s essential for working with collections of data in Java.",
       "topics": [
         {
           "topicId": "C4-M5-T1",
@@ -162,6 +167,7 @@
     {
       "moduleId": "C4-M6",
       "moduleTitle": "Java Strings",
+      "moduleDescription": "This module covers the basics of Java strings, including string class and immutability, string methods and manipulation, and regular expressions with strings. It’s essential for working with text data in Java.",
       "topics": [
         {
           "topicId": "C4-M6-T1",
@@ -193,6 +199,7 @@
     {
       "moduleId": "C4-M7",
       "moduleTitle": "Java OOPs Concepts",
+      "moduleDescription": "This module covers the fundamentals of object-oriented programming (OOP) in Java, including classes and objects, constructors, inheritance, polymorphism, encapsulation, and abstraction. It’s essential for understanding how to design and implement complex applications in Java.",
       "topics": [
         {
           "topicId": "C4-M7-T1",
@@ -224,6 +231,7 @@
     {
       "moduleId": "C4-M8",
       "moduleTitle": "Java Interfaces",
+      "moduleDescription": "This module introduces the concept of interfaces in Java, including what an interface is, implementing interfaces, multiple inheritance, functional interfaces, and interfaces vs abstract classes. It’s essential for understanding how to design and implement modular and extensible code in Java.",
       "topics": [
         {
           "topicId": "C4-M8-T1",
@@ -255,6 +263,7 @@
     {
       "moduleId": "C4-M9",
       "moduleTitle": "Java Collections",
+      "moduleDescription": "This module introduces the Java Collections Framework, which provides a set of classes and interfaces for storing and manipulating groups of objects. It’s essential for working with collections of data in Java.",
       "topics": [
         {
           "topicId": "C4-M9-T1",
@@ -286,6 +295,7 @@
     {
       "moduleId": "C4-M10",
       "moduleTitle": "Java Exception Handling",
+      "moduleDescription": "This module covers the basics of exception handling in Java, including types of exceptions, try-catch-finally blocks, throw and throws keywords, custom exceptions, and best practices. It’s essential for handling errors and exceptions in Java programs.",
       "topics": [
         {
           "topicId": "C4-M10-T1",
@@ -317,6 +327,7 @@
     {
       "moduleId": "C4-M11",
       "moduleTitle": "Java Multithreading",
+      "moduleDescription": "This module covers the basics of multithreading in Java, including introduction to threads, creating threads: Thread and Runnable, thread lifecycle and methods, synchronization in Java, concurrency utilities (Executors), and best practices. It’s essential for writing concurrent and parallel programs in Java.",
       "topics": [
         {
           "topicId": "C4-M11-T1",
@@ -348,6 +359,7 @@
     {
       "moduleId": "C4-M12",
       "moduleTitle": "Java File Handling",
+      "moduleDescription": "This module covers the basics of file handling in Java, including file class and operations, reading and writing text files, buffered reader and writer, working with directories, and Java NIO basics. It’s essential for working with files and directories in Java.",
       "topics": [
         {
           "topicId": "C4-M12-T1",
@@ -379,6 +391,7 @@
     {
       "moduleId": "C4-M13",
       "moduleTitle": "Java Input-Output",
+      "moduleDescription": "This module covers the basics of input and output (I/O) operations in Java, including Java I/O streams overview, byte streams vs character streams, input stream and output stream classes, serialization and deserialization, scanner and console input. It’s essential for working with files and input/output in Java.",
       "topics": [
         {
           "topicId": "C4-M13-T1",
